@@ -562,6 +562,50 @@ button {
   }
 }
 
+@media (min-width: 901px) and (max-width: 1180px) {
+  .mobile-app-header {
+    height: 88px !important;
+    padding: 0 28px;
+  }
+
+  .mobile-wordmark-link {
+    top: 50%;
+  }
+
+  .desktop-logo {
+    height: 74px;
+    max-width: 250px;
+  }
+
+  .mobile-delivery-row {
+    min-height: 0;
+    padding: 14px 28px 16px;
+  }
+
+  .mobile-delivery-address {
+    flex: 1 1 auto;
+    max-width: 360px;
+  }
+
+  .mobile-delivery-row .font-brand-menu {
+    font-size: 14px;
+  }
+
+  .mobile-delivery-row span span:last-child {
+    font-size: 14px;
+  }
+
+  .mobile-delivery-phone {
+    height: 50px;
+    width: 60px;
+  }
+
+  .mobile-category-scroll {
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+}
+
 @media (max-width: 900px) {
   .delivery-note {
     grid-template-columns: 1fr;
