@@ -368,13 +368,13 @@ button {
 
 @media (max-width: 1023px) {
   .site-header {
-    background: var(--color-green-dark);
+    background: var(--color-white);
     border-bottom: 0;
-    color: var(--color-white);
+    color: var(--color-green-dark);
   }
 
   .mobile-app-header {
-    background: var(--color-green-dark);
+    background: var(--color-white);
     height: 72px;
     justify-content: center;
     max-width: none;
@@ -391,7 +391,7 @@ button {
   }
 
   .mobile-wordmark {
-    color: var(--color-white);
+    color: var(--color-green-dark);
     display: none;
     font-family: var(--font-display) !important;
     font-size: 40px;
@@ -409,9 +409,9 @@ button {
 
   .mobile-delivery-row {
     align-items: center;
-    background: var(--color-green-dark);
+    background: var(--color-white);
     border-bottom: 0;
-    color: var(--color-white);
+    color: var(--color-green-dark);
     gap: 12px;
     justify-content: space-between;
     padding: 0 18px 16px;
@@ -420,7 +420,7 @@ button {
   .mobile-delivery-row svg,
   .mobile-delivery-row span,
   .mobile-delivery-row .font-brand-menu {
-    color: var(--color-white);
+    color: var(--color-green-dark);
   }
 
   .mobile-delivery-address {
@@ -442,13 +442,14 @@ button {
   }
 
   .mobile-delivery-row span span:last-child {
-    color: rgba(255, 255, 255, 0.9);
+    color: var(--color-green-medium);
     font-size: 17px;
   }
 
   .mobile-category-nav {
     background: var(--color-white);
     border-bottom: 1px solid var(--color-green-border);
+    border-top: 2px solid var(--color-green-border);
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
   }
 
@@ -689,7 +690,9 @@ button {
   }
 
   .footer-brand {
+    border-bottom: 1px solid var(--color-green-border);
     grid-column: 1 / -1;
+    padding-bottom: 28px;
     text-align: center;
   }
 
