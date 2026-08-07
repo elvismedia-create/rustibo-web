@@ -1,9 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export",
+  ...(process.env.NEXT_OUTPUT === "export" ? { output: "export" } : {}),
   trailingSlash: true,
   images: {
-    unoptimized: true,
+    unoptimized: process.env.NEXT_OUTPUT === "export",
   },
   reactCompiler: true,
   // Cualquier otra configuración que ya tuvieras fuera de experimental

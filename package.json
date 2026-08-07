@@ -5,10 +5,10 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "export": "next build",
+    "export": "NEXT_OUTPUT=export next build",
     "preview:static": "npx serve out",
     "seo:extract": "node scripts/extract-seo.js",
-    "start": "npx serve out",
+    "start": "next start",
     "lint": "eslint"
   },
   "dependencies": {
