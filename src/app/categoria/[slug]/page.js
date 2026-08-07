@@ -43,7 +43,7 @@ const RenderPrecio = ({ precio }) => {
             <div key={opcion} className="flex flex-col items-center">
               <PizzaIcon size={isSmall ? "small" : "large"} />
               <span className="font-brand-menu text-[13px] uppercase tracking-wide text-[var(--color-green-dark)]">{tamano}</span>
-              <span className="text-2xl uppercase text-[var(--color-red-price)] sm:text-3xl">{valor}</span>
+              <span className="menu-item-price text-2xl uppercase sm:text-3xl">{valor}</span>
             </div>
           );
         })}

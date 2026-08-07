@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { ChevronDown, ChevronLeft, ChevronRight, MapPin, Menu, Phone, Star, Store } from "lucide-react";
@@ -8,8 +8,10 @@ import { categoriasData } from "@/data/menuData";
 
 export default function Header() {
   const [isCartaOpen, setIsCartaOpen] = useState(false);
+  const [isHomeHeaderHidden, setIsHomeHeaderHidden] = useState(false);
   const megaMenuRef = useRef(null);
   const pathname = usePathname();
+  const isHome = pathname === "/" || pathname === "";
 
   const categorias = Object.entries(categoriasData).map(([key, data]) => ({
     slug: data.slug || data.id || key,
@@ -24,10 +26,26 @@ export default function Header() {
     });
   };
 
+  useEffect(() => {
+    if (!isHome) {
+      setIsHomeHeaderHidden(false);
+      return undefined;
+    }
+
+    const onScroll = () => {
+      setIsHomeHeaderHidden(window.scrollY > 120);
+    };
+
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+
+    return () => window.removeEventListener("scroll", onScroll);
+  }, [isHome]);
+
   return (
     <>
-      <header className="site-header sticky top-0 z-50 border-b-2 border-[var(--color-green-border)] bg-[var(--color-white)] text-[var(--color-green-dark)]">
-        <div>
+      <header className={`site-header sticky top-0 z-50 border-b-2 border-[var(--color-green-border)] bg-[var(--color-white)] text-[var(--color-green-dark)] ${isHome ? "is-home-header" : ""} ${isHomeHeaderHidden ? "is-home-header-hidden" : ""}`}>
+        <div className="header-logo-shell">
           <div className="mobile-app-header mx-auto flex h-20 max-w-7xl items-center gap-4 px-4 sm:px-6 lg:px-8">
             <Link href="/" prefetch={false} className="mobile-wordmark-link flex shrink-0 items-center">
               <span className="mobile-wordmark hidden">RUSTIBO</span>

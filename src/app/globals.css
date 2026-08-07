@@ -383,6 +383,15 @@ button {
     position: relative;
   }
 
+  .mobile-app-header,
+  .mobile-delivery-row {
+    overflow: hidden;
+    transition:
+      max-height 180ms ease,
+      opacity 180ms ease,
+      padding 180ms ease;
+  }
+
   .mobile-wordmark-link {
     left: 50%;
     position: absolute;
@@ -455,9 +464,9 @@ button {
 
   .mobile-category-scroll {
     display: flex;
-    gap: 12px;
+    gap: 8px;
     overflow-x: auto;
-    padding: 14px 18px 15px;
+    padding: 6px 12px 7px;
     scroll-snap-type: x proximity;
     -ms-overflow-style: none;
     scrollbar-width: none;
@@ -472,9 +481,9 @@ button {
     color: var(--color-green-dark);
     flex: 0 0 auto;
     font-family: var(--font-display) !important;
-    font-size: 24px;
+    font-size: 18px;
     line-height: 1;
-    padding: 13px 20px 11px;
+    padding: 7px 12px 6px;
     scroll-snap-align: start;
     text-transform: uppercase;
     white-space: nowrap;
@@ -486,6 +495,14 @@ button {
 
   .mobile-category-link.is-active {
     background: var(--color-lime);
+  }
+
+  .is-home-header.is-home-header-hidden .mobile-app-header,
+  .is-home-header.is-home-header-hidden .mobile-delivery-row {
+    max-height: 0 !important;
+    opacity: 0;
+    padding-bottom: 0 !important;
+    padding-top: 0 !important;
   }
 }
 
