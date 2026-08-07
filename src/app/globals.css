@@ -756,6 +756,36 @@ button {
     --section-gap: 46px;
   }
 
+  .mobile-app-header {
+    height: 84px;
+  }
+
+  .desktop-logo {
+    height: 66px;
+    max-width: 220px;
+  }
+
+  .mobile-delivery-row {
+    padding: 0 18px 14px;
+  }
+
+  .mobile-delivery-row .font-brand-menu {
+    font-size: 14px;
+  }
+
+  .mobile-delivery-row span span:last-child {
+    font-size: 15px;
+  }
+
+  .mobile-delivery-address {
+    gap: 8px;
+  }
+
+  .mobile-delivery-address svg {
+    height: 19px;
+    width: 19px;
+  }
+
   .footer-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
     gap: 34px 24px;
