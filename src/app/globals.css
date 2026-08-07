@@ -644,6 +644,32 @@ button {
   }
 }
 
+@media (min-width: 641px) and (max-width: 900px) {
+  .delivery-note {
+    align-items: center;
+    gap: 14px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    padding: 18px 20px;
+  }
+
+  .delivery-note-item,
+  .delivery-note-item-left {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .delivery-note-item {
+    font-size: 13px;
+    line-height: 1.35;
+  }
+
+  .delivery-note-item svg {
+    height: 18px;
+    width: 18px;
+  }
+}
+
 .menu-section-heading {
   border-bottom: 1px solid var(--color-green-border);
   color: var(--color-red-price);
