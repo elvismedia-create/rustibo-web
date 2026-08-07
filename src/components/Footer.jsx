@@ -1,0 +1,89 @@
+import Link from "next/link";
+import { Facebook, Instagram } from "lucide-react";
+
+const footerColumns = [
+  {
+    title: "RUSTIBO",
+    links: [
+      { label: "Acerca de nosotros", href: "/" },
+      { label: "Novedades", href: "/novedades" },
+      { label: "Llamar a Rustibo", href: "tel:962413948" },
+      { label: "Promociones", href: "/promociones" },
+    ],
+  },
+  {
+    title: "PEDIDOS",
+    links: [
+      { label: "Carta completa", href: "/carta" },
+      { label: "Recogida en tienda", href: "/carta" },
+      { label: "Domicilio en Alzira", href: "/carta" },
+      { label: "Pedir por teléfono", href: "tel:962413948" },
+    ],
+  },
+  {
+    title: "CARTA",
+    links: [
+      { label: "Promociones", href: "/promociones" },
+      { label: "Pizzas", href: "/categoria/pizzas" },
+      { label: "Entrantes", href: "/categoria/entrantes" },
+      { label: "Tex Mex", href: "/categoria/tex-mex" },
+      { label: "Arroces", href: "/categoria/arroces" },
+      { label: "Hamburguesas", href: "/categoria/hamburguesas" },
+      { label: "Rusti Chicken", href: "/categoria/pollo-rustichicken" },
+    ],
+  },
+  {
+    title: "BLOG",
+    links: [
+      { label: "Pizza viral dulce-picante", href: "/blog/pizza-viral-dulce-picante-alzira" },
+      { label: "Pollo crujiente viral", href: "/blog/pollo-crujiente-sandwiches-virales-alzira" },
+      { label: "Cena viral para compartir", href: "/blog/cena-viral-para-compartir-pizzas-nachos-pollo" },
+      { label: "Ver todos los artículos", href: "/blog" },
+    ],
+  },
+  {
+    title: "LEGAL",
+    links: [
+      { label: "Aviso legal", href: "/aviso-legal" },
+      { label: "Política de privacidad", href: "/privacidad" },
+    ],
+  },
+];
+
+export default function Footer() {
+  return (
+    <footer className="bg-[var(--color-green-bg)]">
+      <div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-4 pb-10 pt-[60px] sm:px-6 min-[481px]:grid-cols-2 md:grid-cols-[1.25fr_repeat(5,1fr)] lg:px-8">
+        <div>
+          <img src="/images/rustibo_logo.png" alt="Rustibo" className="h-12 w-auto object-contain" />
+          <div className="mt-7 flex items-center gap-4">
+            <span className="text-[14px] font-normal text-[var(--color-green-medium)]">Síguenos en:</span>
+            <a href="https://www.instagram.com/rustibo/" aria-label="Instagram" className="text-[var(--color-green-dark)] hover:text-[var(--color-green-medium)]">
+              <Instagram size={22} strokeWidth={2.4} />
+            </a>
+            <a href="https://www.facebook.com/rustibomenjarperemportarsl" aria-label="Facebook" className="text-[var(--color-green-dark)] hover:text-[var(--color-green-medium)]">
+              <Facebook size={21} strokeWidth={2.4} />
+            </a>
+          </div>
+        </div>
+
+        {footerColumns.map((column) => (
+          <div key={column.title}>
+            <h3 className="footer-title mb-4 uppercase text-[var(--color-green-dark)]">{column.title}</h3>
+            <div>
+              {column.links.map((link) => (
+                <Link key={`${column.title}-${link.label}`} href={link.href} className="footer-link block text-[var(--color-green-medium)] hover:text-[var(--color-green-dark)] hover:underline">
+                  {link.label}
+                </Link>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <div className="border-t border-[var(--color-green-border)] bg-[var(--color-green-bg-dark)] p-5 text-center text-[14px] font-normal text-[var(--color-green-medium)]">
+        © 2026 Rustibo. Todos los derechos reservados
+      </div>
+    </footer>
+  );
+}
