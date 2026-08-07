@@ -16,6 +16,11 @@ export const metadata = {
   description: "Tu opción para cenar en Alzira. Pizzas, hamburguesas, pollo frito y más.",
 };
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+};
+
 const reviewsData = {
   rating: "4.8",
   reviews: "250",
