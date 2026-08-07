@@ -552,6 +552,108 @@ button {
 }
 
 @media (max-width: 640px) {
+  :root {
+    --section-gap: 46px;
+  }
+
+  body {
+    padding-bottom: 84px;
+  }
+
+  .home-hero {
+    border-radius: 22px;
+    min-height: 560px;
+  }
+
+  .home-hero-content {
+    min-height: 560px;
+    max-width: 78%;
+    padding: 44px 22px;
+  }
+
+  .home-hero-content h1 {
+    font-size: clamp(46px, 14vw, 58px);
+  }
+
+  .home-hero-content p {
+    font-size: 15px;
+    line-height: 1.35;
+    max-width: 280px;
+    margin-top: 12px;
+  }
+
+  .home-hero-actions {
+    align-items: stretch;
+    display: grid;
+    gap: 12px;
+    margin-top: 24px;
+    width: min(100%, 280px);
+  }
+
+  .home-hero-actions a {
+    justify-content: center;
+    padding: 15px 18px;
+    width: 100%;
+  }
+
+  .delivery-note {
+    gap: 18px;
+    line-height: 1.45;
+    padding: 20px 18px;
+  }
+
+  .delivery-note-item,
+  .delivery-note-item-left {
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+  }
+
+  .section-heading-tight {
+    margin-bottom: 22px;
+  }
+
+  .section-heading-row {
+    align-items: flex-end;
+    gap: 12px;
+  }
+
+  .section-title-compact {
+    font-size: 28px;
+  }
+
+  .section-view-all {
+    font-size: 17px;
+    padding-bottom: 2px;
+  }
+
+  .promo-info-panel {
+    gap: 14px;
+    grid-template-columns: minmax(0, 1fr) 46px;
+    min-height: 156px;
+    padding: 20px;
+  }
+
+  .promo-title {
+    font-size: 31px;
+  }
+
+  .promo-highlight {
+    font-size: 19px;
+  }
+
+  .promo-description {
+    font-size: 13px;
+    line-height: 1.35;
+  }
+
+  .mobile-sticky-order {
+    bottom: 14px;
+    max-width: calc(100vw - 32px);
+    padding: 14px 22px;
+    width: max-content;
+  }
+
   .menu-section-heading {
     font-size: 26px;
     margin-bottom: 18px;
@@ -596,6 +698,20 @@ button {
   .phone-cta-icon {
     height: 30px;
     width: 30px;
+  }
+}
+
+@media (max-width: 420px) {
+  .home-hero-content {
+    max-width: 82%;
+  }
+
+  .home-hero-content p {
+    max-width: 250px;
+  }
+
+  .home-hero-actions {
+    width: min(100%, 250px);
   }
 }
 
