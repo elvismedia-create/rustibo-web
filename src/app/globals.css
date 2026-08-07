@@ -972,6 +972,25 @@ button {
   }
 }
 
+@media (max-width: 480px) {
+  .mobile-app-header {
+    height: 84px;
+  }
+
+  .desktop-logo {
+    height: 66px;
+    max-width: 220px;
+  }
+
+  .mobile-delivery-row .font-brand-menu {
+    font-size: 14px;
+  }
+
+  .mobile-delivery-row span span:last-child {
+    font-size: 15px;
+  }
+}
+
 .zona-infantil {
   background-color: var(--color-lime);
   position: relative;
