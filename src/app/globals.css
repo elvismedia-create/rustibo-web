@@ -362,6 +362,121 @@ button {
   text-align: left;
 }
 
+@media (max-width: 1023px) {
+  .site-header {
+    background: var(--color-green-dark);
+    border-bottom: 0;
+    color: var(--color-white);
+  }
+
+  .mobile-app-header {
+    background: var(--color-green-dark);
+    height: 72px;
+    justify-content: space-between;
+    max-width: none;
+    padding-left: 18px;
+    padding-right: 18px;
+    position: relative;
+  }
+
+  .mobile-menu-trigger,
+  .mobile-phone-quick {
+    display: inline-flex !important;
+  }
+
+  .mobile-menu-trigger {
+    margin-right: auto;
+    padding-left: 0;
+  }
+
+  .mobile-phone-quick {
+    height: 48px;
+    margin-left: auto;
+    width: 58px;
+  }
+
+  .mobile-wordmark-link {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .mobile-wordmark {
+    color: var(--color-white);
+    display: block;
+    font-family: var(--font-display) !important;
+    font-size: 40px;
+    line-height: 1;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+  .desktop-logo {
+    display: none;
+  }
+
+  .mobile-delivery-row {
+    background: var(--color-green-dark);
+    border-bottom: 0;
+    color: var(--color-white);
+    gap: 10px;
+    padding: 0 18px 16px;
+  }
+
+  .mobile-delivery-row svg,
+  .mobile-delivery-row span,
+  .mobile-delivery-row .font-brand-menu {
+    color: var(--color-white);
+  }
+
+  .mobile-delivery-row .font-brand-menu {
+    font-size: 18px;
+  }
+
+  .mobile-delivery-row span span:last-child {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 17px;
+  }
+
+  .mobile-category-nav {
+    background: var(--color-white);
+    border-bottom: 1px solid var(--color-green-border);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  }
+
+  .mobile-category-scroll {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding: 14px 18px;
+    scroll-snap-type: x proximity;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .mobile-category-scroll::-webkit-scrollbar {
+    display: none;
+  }
+
+  .mobile-category-link {
+    border-radius: 999px;
+    color: var(--color-green-dark);
+    flex: 0 0 auto;
+    font-family: var(--font-display) !important;
+    font-size: 24px;
+    line-height: 1;
+    padding: 13px 20px 11px;
+    scroll-snap-align: start;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+  .mobile-category-link.is-active {
+    background: var(--color-lime);
+  }
+}
+
 @media (max-width: 900px) {
   .delivery-note {
     grid-template-columns: 1fr;
