@@ -44,7 +44,7 @@ export default function Header() {
 
   return (
     <>
-      <header className={`site-header sticky top-0 z-50 border-b-2 border-[var(--color-green-border)] bg-[var(--color-white)] text-[var(--color-green-dark)] ${isHome ? "is-home-header" : ""} ${isHomeHeaderHidden ? "is-home-header-hidden" : ""}`}>
+      <header className={`site-header top-0 z-50 border-b-2 border-[var(--color-green-border)] bg-[var(--color-white)] text-[var(--color-green-dark)] ${isHome ? "sticky is-home-header" : "relative"} ${isHomeHeaderHidden ? "is-home-header-hidden" : ""}`}>
         <div className="header-logo-shell">
           <div className="mobile-app-header mx-auto flex h-20 max-w-7xl items-center gap-4 px-4 sm:px-6 lg:px-8">
             <Link href="/" prefetch={false} className="mobile-wordmark-link flex shrink-0 items-center">
