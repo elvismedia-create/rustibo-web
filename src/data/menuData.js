@@ -91,8 +91,8 @@ export const categoriasData = {
     imagenPrincipal: "/images/bocadillos-hero.jpg",
     productos: [
       { id: "boc1", nombre: "Vidalas", descripcion: "Pechuga empanada, queso, bacon, patatas, huevo, salsa cheddar y mayonesa.", precio: "7,50€" },
-      { id: "boc2", nombre: "Chivito", descripcion: "Lomo, bacon, queso, huevo frito, lechuga y tomate.", precio: "6,00€" },
-      { id: "boc3", nombre: "Brascada", descripcion: "Ternera, jamón a la plancha, cebolla y catalana.", precio: "6,00€" },
+      { id: "boc2", nombre: "Chivito", descripcion: "Lomo, bacon, queso, huevo frito, lechuga y tomate.", precio: "6,50€" },
+      { id: "boc3", nombre: "Brascada", descripcion: "Ternera, jamón a la plancha, cebolla y catalana.", precio: "6,50€" },
       { id: "boc4", nombre: "Lomo con Queso", descripcion: "Lomo con queso.", precio: "5,00€" },
       { id: "boc5", nombre: "Picantón", descripcion: "Lomo, queso, patatas fritas y salsa brava.", precio: "5,50€" },
       { id: "boc6", nombre: "Lomo a la Catalana", descripcion: "Lomo con tomate restregado.", precio: "4,50€" },
@@ -104,7 +104,7 @@ export const categoriasData = {
       { id: "boc12", nombre: "Rustibó", descripcion: "Lomo, pimiento verde, patatas fritas, cebolla y alioli.", precio: "6,00€" },
       { id: "boc13", nombre: "Vegetal con Pollo", descripcion: "Lechuga, tomate, pollo y mayonesa.", precio: "6,00€" },
       { id: "boc14", nombre: "Pechuga con cebolla", descripcion: "Pechuga, cebolla caramelizada y queso.", precio: "5,80€" },
-      { id: "boc15", nombre: "Ternera con cebolla", descripcion: "Ternera, cebolla caramelizada y queso.", precio: "5,80€" },
+      { id: "boc15", nombre: "Ternera con cebolla", descripcion: "Ternera, cebolla caramelizada y queso.", precio: "6,20€" },
       { id: "boc16", nombre: "Jamón a la Catalana", descripcion: "Jamón serrano con tomate.", precio: "4,50€" },
       { id: "boc17", nombre: "Vegetal", descripcion: "Lechuga, tomate, queso, jamón york, huevo, atún y mayonesa.", precio: "6,00€" },
       { id: "boc18", nombre: "Queso Chili", descripcion: "Sobrasada, bacon, queso picante y cebolla.", precio: "6,00€" }
@@ -119,7 +119,7 @@ export const categoriasData = {
     subtitulo: "Patatas, tequeños, alitas, nachos... Para picar antes de que llegue lo bueno o para montarte una cena de picoteo que no olvidas. Recién hechos, calientes y con ese punto que engancha.",
     imagenPrincipal: "/images/entrantes-hero.jpg",
     productos: [
-      { id: "ent1", nombre: "Tequeños (4u)", descripcion: "Rellenos de bacon con queso, gouda, nutella, sobrasada con queso y kinder.", precio: "5,50€" },
+      { id: "ent1", nombre: "Tequeños (4u)", descripcion: "Rellenos de bacon con queso, gouda, nutella, sobrasada con queso, kinder y chocolate con pistacho.", precio: "5,50€" },
       { id: "ent2", nombre: "Nachos Rellenos (6u)", descripcion: "Rellenos de queso cheddar o guacamole.", precio: "4,00€" },
       { id: "ent3", nombre: "Bolas Mc&Cheese (5u)", descripcion: "", precio: "4,50€" },
       { id: "ent4", nombre: "Bolitas de Pollo o Queso (10u)", descripcion: "", precio: "4,30€" },
@@ -169,7 +169,7 @@ export const categoriasData = {
       { id: "ens2", nombre: "Ensalada Especial", descripcion: "Lechuga, tomate, cebolla, aceitunas, espárragos, atún y huevo duro.", precio: "4,00€" },
       { id: "ens3", nombre: "Ensalada con Pollo y Salsa Rosa", descripcion: "Lechuga, tomate, maíz, pollo y salsa rosa.", precio: "4,00€" },
       { id: "ens4", nombre: "Ensalada con Marisco", descripcion: "Lechuga, tomate, gambas, surimi, maíz, cebolla, salsa rosa.", precio: "5,00€" },
-      { id: "ens5", nombre: "Ensalada Griega", descripcion: "Lechuga, tomate, cebolla, pimiento, alcaparras, queso feta y aceitunas negras.", precio: "Consultar" }
+      { id: "ens5", nombre: "Ensalada Griega", descripcion: "Lechuga, tomate, cebolla, pimiento, alcaparras, queso feta y aceitunas negras.", precio: "4,50€" }
     ]
   },
 
@@ -272,7 +272,7 @@ export const categoriasData = {
       { id: "rz8", nombre: "Barbacoa", descripcion: "Tomate, queso, salsa de carne y salsa barbacoa.", precio: "5,50€" },
       { id: "rz9", nombre: "Carbonara", descripcion: "Tomate, queso, bacon, champiñón y nata.", precio: "5,50€" },
       { id: "rz10", nombre: "Especial", descripcion: "Tomate, queso, bacon, cebolla, champiñón, nata y huevo.", precio: "6,00€" },
-      { id: "rz11", nombre: "Mariachi", descripcion: "Salsa de tomate picante, queso, pimiento verde, pimiento rojo, cebolla, pollo, guacamole y queso cheddar.", precio: "6,50€" }
+      { id: "rz11", nombre: "Mariachi", descripcion: "Salsa de tomate picante, queso, pimiento verde, pimiento rojo, cebolla, pollo, guacamole y queso cheddar.", precio: "6,00€" }
     ]
   },
 
