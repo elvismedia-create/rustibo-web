@@ -84,6 +84,10 @@ h6,
   text-decoration: none;
 }
 
+.footer-social {
+  flex-wrap: wrap;
+}
+
 a,
 button {
   -webkit-tap-highlight-color: transparent;
@@ -372,27 +376,11 @@ button {
   .mobile-app-header {
     background: var(--color-green-dark);
     height: 72px;
-    justify-content: space-between;
+    justify-content: center;
     max-width: none;
     padding-left: 18px;
     padding-right: 18px;
     position: relative;
-  }
-
-  .mobile-menu-trigger,
-  .mobile-phone-quick {
-    display: inline-flex !important;
-  }
-
-  .mobile-menu-trigger {
-    margin-right: auto;
-    padding-left: 0;
-  }
-
-  .mobile-phone-quick {
-    height: 48px;
-    margin-left: auto;
-    width: 58px;
   }
 
   .mobile-wordmark-link {
@@ -417,10 +405,12 @@ button {
   }
 
   .mobile-delivery-row {
+    align-items: center;
     background: var(--color-green-dark);
     border-bottom: 0;
     color: var(--color-white);
-    gap: 10px;
+    gap: 12px;
+    justify-content: space-between;
     padding: 0 18px 16px;
   }
 
@@ -428,6 +418,20 @@ button {
   .mobile-delivery-row span,
   .mobile-delivery-row .font-brand-menu {
     color: var(--color-white);
+  }
+
+  .mobile-delivery-address {
+    min-width: 0;
+  }
+
+  .mobile-delivery-phone {
+    border: 2px solid var(--color-lime);
+    height: 46px;
+    width: 54px;
+  }
+
+  .mobile-delivery-phone svg {
+    color: var(--color-green-dark);
   }
 
   .mobile-delivery-row .font-brand-menu {
@@ -447,9 +451,9 @@ button {
 
   .mobile-category-scroll {
     display: flex;
-    gap: 10px;
+    gap: 12px;
     overflow-x: auto;
-    padding: 14px 18px;
+    padding: 14px 18px 15px;
     scroll-snap-type: x proximity;
     -ms-overflow-style: none;
     scrollbar-width: none;
@@ -470,6 +474,10 @@ button {
     scroll-snap-align: start;
     text-transform: uppercase;
     white-space: nowrap;
+  }
+
+  .mobile-category-link:hover {
+    background: var(--color-green-bg);
   }
 
   .mobile-category-link.is-active {
@@ -671,8 +679,40 @@ button {
     --section-gap: 46px;
   }
 
-  body {
-    padding-bottom: 84px;
+  .footer-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 34px 24px;
+    padding-top: 44px;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+    text-align: center;
+  }
+
+  .footer-logo {
+    height: 58px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer-social {
+    justify-content: center;
+    margin-top: 18px;
+  }
+
+  .footer-column {
+    min-width: 0;
+  }
+
+  .footer-title {
+    font-size: 19px;
+    white-space: normal;
+  }
+
+  .footer-link {
+    font-size: 14px;
+    line-height: 1.85;
   }
 
   .home-hero {
@@ -760,13 +800,6 @@ button {
   .promo-description {
     font-size: 13px;
     line-height: 1.35;
-  }
-
-  .mobile-sticky-order {
-    bottom: 14px;
-    max-width: calc(100vw - 32px);
-    padding: 14px 22px;
-    width: max-content;
   }
 
   .menu-section-heading {

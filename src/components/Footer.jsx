@@ -53,10 +53,10 @@ const footerColumns = [
 export default function Footer() {
   return (
     <footer className="bg-[var(--color-green-bg)]">
-      <div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-4 pb-10 pt-[60px] sm:px-6 min-[481px]:grid-cols-2 md:grid-cols-[1.25fr_repeat(5,1fr)] lg:px-8">
-        <div>
-          <img src="/images/rustibo_logo.png" alt="Rustibo" className="h-12 w-auto object-contain" />
-          <div className="mt-7 flex items-center gap-4">
+      <div className="footer-grid mx-auto grid max-w-7xl grid-cols-1 gap-10 px-4 pb-10 pt-[60px] sm:px-6 min-[481px]:grid-cols-2 md:grid-cols-[1.25fr_repeat(5,1fr)] lg:px-8">
+        <div className="footer-brand">
+          <img src="/images/rustibo_logo.png" alt="Rustibo" className="footer-logo h-12 w-auto object-contain" />
+          <div className="footer-social mt-7 flex items-center gap-4">
             <span className="text-[14px] font-normal text-[var(--color-green-medium)]">Síguenos en:</span>
             <a href="https://www.instagram.com/rustibo/" aria-label="Instagram" className="text-[var(--color-green-dark)] hover:text-[var(--color-green-medium)]">
               <Instagram size={22} strokeWidth={2.4} />
@@ -68,7 +68,7 @@ export default function Footer() {
         </div>
 
         {footerColumns.map((column) => (
-          <div key={column.title}>
+          <div key={column.title} className="footer-column">
             <h3 className="footer-title mb-4 uppercase text-[var(--color-green-dark)]">{column.title}</h3>
             <div>
               {column.links.map((link) => (

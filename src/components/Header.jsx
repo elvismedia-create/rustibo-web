@@ -1,14 +1,13 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { ChevronDown, ChevronLeft, ChevronRight, MapPin, Menu, Phone, Star, Store, X } from "lucide-react";
+import { ChevronDown, ChevronLeft, ChevronRight, MapPin, Menu, Phone, Star, Store } from "lucide-react";
 import { categoriasData } from "@/data/menuData";
 
 export default function Header() {
   const [isCartaOpen, setIsCartaOpen] = useState(false);
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const megaMenuRef = useRef(null);
   const pathname = usePathname();
 
@@ -16,13 +15,6 @@ export default function Header() {
     slug: data.slug || data.id || key,
     ...data,
   }));
-
-  useEffect(() => {
-    document.body.style.overflow = isMobileMenuOpen ? "hidden" : "";
-    return () => {
-      document.body.style.overflow = "";
-    };
-  }, [isMobileMenuOpen]);
 
   const scrollMegaMenu = (direction) => {
     if (!megaMenuRef.current) return;
@@ -37,14 +29,6 @@ export default function Header() {
       <header className="site-header sticky top-0 z-50 border-b-2 border-[var(--color-green-border)] bg-[var(--color-white)] text-[var(--color-green-dark)]">
         <div>
           <div className="mobile-app-header mx-auto flex h-20 max-w-7xl items-center gap-4 px-4 sm:px-6 lg:px-8">
-            <button
-              className="mobile-menu-trigger hidden rounded-full p-3 text-[var(--color-white)] lg:hidden"
-              onClick={() => setIsMobileMenuOpen(true)}
-              aria-label="Abrir menú"
-            >
-              <Menu size={31} strokeWidth={2.6} />
-            </button>
-
             <Link href="/" prefetch={false} className="mobile-wordmark-link flex shrink-0 items-center">
               <span className="mobile-wordmark hidden">RUSTIBO</span>
               <img
@@ -142,36 +126,25 @@ export default function Header() {
                 <span className="block truncate text-sm text-[var(--color-green-medium)]">Carrer Pastora, 9, Alzira</span>
               </span>
             </Link>
-
-            <a
-              href="tel:962413948"
-              className="mobile-phone-quick hidden items-center justify-center rounded-xl bg-[var(--color-lime)] text-[var(--color-green-dark)] lg:hidden"
-              aria-label="Llamar a Rustibo"
-            >
-              <Phone size={25} strokeWidth={2.5} />
-            </a>
-
-            <button
-              className="hidden"
-              onClick={() => setIsMobileMenuOpen(true)}
-              aria-label="Abrir menú"
-            >
-              <Menu size={28} />
-            </button>
           </div>
         </div>
 
-        <Link
-          href="/carta"
-          prefetch={false}
-          className="mobile-delivery-row flex items-center gap-3 border-b border-[var(--color-green-border)] bg-[var(--color-green-bg)] px-4 py-3 text-left lg:hidden"
-        >
-          <MapPin size={22} className="shrink-0 text-[var(--color-green-dark)]" />
-          <span className="min-w-0">
-            <span className="font-brand-menu block text-base uppercase leading-none text-[var(--color-green-dark)]">Domicilio o recogida</span>
-            <span className="block truncate text-sm text-[var(--color-green-medium)]">Carrer Pastora, 9, Alzira</span>
-          </span>
-        </Link>
+        <div className="mobile-delivery-row flex items-center gap-3 border-b border-[var(--color-green-border)] bg-[var(--color-green-bg)] px-4 py-3 text-left lg:hidden">
+          <Link href="/carta" prefetch={false} className="mobile-delivery-address flex min-w-0 flex-1 items-center gap-3">
+            <MapPin size={22} className="shrink-0 text-[var(--color-green-dark)]" />
+            <span className="min-w-0">
+              <span className="font-brand-menu block text-base uppercase leading-none text-[var(--color-green-dark)]">Domicilio o recogida</span>
+              <span className="block truncate text-sm text-[var(--color-green-medium)]">Carrer Pastora, 9, Alzira</span>
+            </span>
+          </Link>
+          <a
+            href="tel:962413948"
+            className="mobile-delivery-phone flex shrink-0 items-center justify-center rounded-xl bg-[var(--color-lime)] text-[var(--color-green-dark)]"
+            aria-label="Llamar a Rustibo"
+          >
+            <Phone size={24} strokeWidth={2.5} />
+          </a>
+        </div>
 
         <nav className="mobile-category-nav lg:hidden" aria-label="Categorías principales">
           <div className="mobile-category-scroll">
@@ -193,45 +166,6 @@ export default function Header() {
           </div>
         </nav>
       </header>
-
-      <div className={`fixed inset-0 z-[100] bg-[var(--color-white)] transition-transform duration-300 lg:hidden ${isMobileMenuOpen ? "translate-x-0" : "translate-x-full pointer-events-none"}`}>
-        <div className="flex h-20 items-center justify-between border-b border-[var(--color-green-border)] bg-[var(--color-green-dark)] px-4">
-          <span className="font-brand-menu text-4xl uppercase text-[var(--color-white)]">Rustibo</span>
-          <button onClick={() => setIsMobileMenuOpen(false)} className="rounded-full border border-[var(--color-lime)] p-3 text-[var(--color-white)]" aria-label="Cerrar menú">
-            <X size={26} />
-          </button>
-        </div>
-
-        <div className="h-[calc(100vh-5rem)] overflow-y-auto px-5 py-6">
-          <div className="grid gap-3">
-            <Link onClick={() => setIsMobileMenuOpen(false)} href="/carta" className="order-button rounded-2xl px-6 py-4 text-center text-xl font-black uppercase">
-              Comenzar pedido
-            </Link>
-            <Link onClick={() => setIsMobileMenuOpen(false)} href="/promociones" className="font-brand-menu rounded-2xl bg-[var(--color-green-nav)] px-6 py-4 text-center text-xl uppercase text-[var(--color-white)]">
-              Promociones
-            </Link>
-            <Link onClick={() => setIsMobileMenuOpen(false)} href="/novedades" className="font-brand-menu rounded-2xl border border-[var(--color-green-border)] px-6 py-4 text-center text-xl uppercase text-[var(--color-green-dark)]">
-              Novedades
-            </Link>
-          </div>
-
-          <h3 className="mt-8 text-3xl uppercase text-[var(--color-green-dark)]">Nuestra carta</h3>
-          <div className="mt-4 grid gap-3">
-            {categorias.map((cat) => (
-              <Link
-                key={cat.slug}
-                href={`/categoria/${cat.slug}`}
-                prefetch={false}
-                onClick={() => setIsMobileMenuOpen(false)}
-                className="flex items-center justify-between rounded-2xl border border-[var(--color-green-border)] bg-[var(--color-green-bg)] px-5 py-4"
-              >
-                <span className="font-brand-menu text-2xl uppercase text-[var(--color-green-dark)]">{cat.titulo}</span>
-                <ChevronDown className="-rotate-90 text-[var(--color-green-dark)]" size={20} />
-              </Link>
-            ))}
-          </div>
-        </div>
-      </div>
     </>
   );
 }

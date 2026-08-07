@@ -113,7 +113,7 @@ function RustiPointsSection() {
 
 export default function Home() {
   return (
-    <div className="pb-20 md:pb-0">
+    <div>
       <section className="mx-auto max-w-7xl px-4 pt-8 sm:px-6 lg:px-8">
         <div className="home-hero group relative min-h-[520px] overflow-hidden rounded-[28px] border border-[var(--color-green-border)] bg-[var(--color-green-dark)] text-[var(--color-white)]">
           <div
@@ -249,14 +249,6 @@ export default function Home() {
       {SHOW_RUSTI_POINTS && <RustiPointsSection />}
 
       <AboutSection />
-
-      <Link
-        href="/carta"
-        className="mobile-sticky-order order-button font-brand-menu fixed bottom-5 left-1/2 z-40 flex -translate-x-1/2 items-center gap-3 rounded-2xl px-8 py-4 text-xl uppercase md:hidden"
-      >
-        Comenzar pedido
-        <Phone size={22} />
-      </Link>
     </div>
   );
 }
