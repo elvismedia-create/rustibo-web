@@ -38,7 +38,7 @@ export default function Header() {
               />
             </Link>
 
-            <nav className="font-brand-menu ml-auto hidden items-center gap-8 text-xl uppercase lg:flex">
+            <nav className="desktop-main-nav font-brand-menu ml-auto hidden items-center gap-8 text-xl uppercase lg:flex">
               <div
                 className="relative flex h-20 items-center"
                 onMouseEnter={() => setIsCartaOpen(true)}
@@ -118,7 +118,7 @@ export default function Header() {
             <Link
               href="/carta"
               prefetch={false}
-              className="ml-auto hidden min-w-0 items-center gap-3 rounded-xl border border-[var(--color-green-border)] bg-[var(--color-green-bg)] px-4 py-2 text-left lg:flex lg:max-w-xs"
+              className="desktop-address-link ml-auto hidden min-w-0 items-center gap-3 rounded-xl border border-[var(--color-green-border)] bg-[var(--color-green-bg)] px-4 py-2 text-left lg:flex lg:max-w-xs"
             >
               <MapPin size={22} className="shrink-0 text-[var(--color-green-dark)]" />
               <span className="min-w-0">
