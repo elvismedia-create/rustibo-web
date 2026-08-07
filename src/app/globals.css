@@ -392,7 +392,7 @@ button {
 
   .mobile-wordmark {
     color: var(--color-white);
-    display: block;
+    display: none;
     font-family: var(--font-display) !important;
     font-size: 40px;
     line-height: 1;
@@ -401,7 +401,10 @@ button {
   }
 
   .desktop-logo {
-    display: none;
+    display: block;
+    height: 52px;
+    max-width: 170px;
+    object-fit: contain;
   }
 
   .mobile-delivery-row {
