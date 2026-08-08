@@ -143,7 +143,7 @@ export const categoriasData = {
       { id: "ent22", nombre: "Finger de Pollo (6u)", descripcion: "", precio: "4,50€" },
       { id: "ent23", nombre: "Nuggets (6u)", descripcion: "", precio: "4,00€" },
       { id: "ent24", nombre: "Jalapeños", descripcion: "", precio: "1,30€ / ud" },
-      { id: "ent25", nombre: "Albóndigas de Bacalao (3u)", descripcion: "", precio: "4,00€" },
+      { id: "ent25", nombre: "Albóndigas de Bacalao (6u)", descripcion: "", precio: "4,00€" },
       { id: "ent26", nombre: "Croquetas Caseras (6u)", descripcion: "Setas, ibérico o cocido.", precio: "4,00€" },
       { id: "ent27", nombre: "Croquetas (6u) Pollo o Jamón", descripcion: "Pollo o Jamón.", precio: "4,00€" },
       { id: "ent28", nombre: "Croquetas (6u) Bogavante", descripcion: "Bogavante.", precio: "5,50€" },
