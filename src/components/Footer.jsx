@@ -13,15 +13,6 @@ const footerColumns = [
     ],
   },
   {
-    title: "PEDIDOS",
-    links: [
-      { label: "Carta completa", href: "/carta" },
-      { label: "Recogida en tienda", href: "/carta" },
-      { label: "Domicilio en Alzira", href: "/carta" },
-      { label: "Pedir por teléfono", href: "tel:962413948" },
-    ],
-  },
-  {
     title: "CARTA",
     links: [
       { label: "Promociones", href: "/promociones" },
@@ -55,7 +46,7 @@ const footerColumns = [
 export default function Footer() {
   return (
     <footer className="bg-[var(--color-green-bg)]">
-      <div className="footer-grid mx-auto grid max-w-7xl grid-cols-1 gap-10 px-4 pb-10 pt-[60px] sm:px-6 min-[481px]:grid-cols-2 md:grid-cols-[1.25fr_repeat(5,1fr)] lg:px-8">
+      <div className="footer-grid mx-auto grid max-w-7xl grid-cols-1 gap-10 px-4 pb-10 pt-[60px] sm:px-6 min-[481px]:grid-cols-2 md:grid-cols-[1.25fr_repeat(4,1fr)] lg:px-8">
         <div className="footer-brand">
           <img src="/images/rustibo_logo.png" alt="Rustibo" className="footer-logo h-12 w-auto object-contain" />
           <div className="footer-social mt-7 flex items-center gap-4">
