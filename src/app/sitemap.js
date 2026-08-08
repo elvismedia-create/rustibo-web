@@ -22,6 +22,7 @@ export default function sitemap() {
     page("/blog", 0.65, "weekly"),
     page("/aviso-legal", 0.25, "yearly"),
     page("/privacidad", 0.25, "yearly"),
+    page("/cookies", 0.25, "yearly"),
   ];
 
   const categoryPages = Object.keys(categoriasData).map((slug) =>

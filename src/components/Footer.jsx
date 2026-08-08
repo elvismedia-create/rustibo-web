@@ -46,6 +46,7 @@ const footerColumns = [
     links: [
       { label: "Aviso legal", href: "/aviso-legal" },
       { label: "Política de privacidad", href: "/privacidad" },
+      { label: "Política de cookies", href: "/cookies" },
     ],
   },
 ];
