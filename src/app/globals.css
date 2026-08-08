@@ -935,6 +935,16 @@ button {
     width: 19px;
   }
 
+  .mobile-category-scroll {
+    padding-left: 24px !important;
+    padding-right: 18px !important;
+    scroll-padding-left: 24px;
+  }
+
+  .mobile-category-promo-link {
+    margin-left: 0;
+  }
+
   .footer-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
     gap: 34px 24px;
