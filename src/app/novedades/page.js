@@ -8,25 +8,25 @@ const novedades = [
   {
     title: "Tex Mex",
     text: "Sabores potentes para pedir y compartir: nachos, burgers y ese punto picante que engancha.",
-    image: "/images/novedad-texmex.jpg",
+    image: "/images/novedad-texmex.png",
     href: "/categoria/tex-mex",
   },
   {
     title: "Tequeños",
     text: "Crujientes, dorados y perfectos para empezar la cena con algo para picar.",
-    image: "/images/novedad-tequenos.jpg",
+    image: "/images/novedad-tequenos.png",
     href: "/categoria/entrantes",
   },
   {
     title: "Bolas de Mac&Cheese",
     text: "Bocados cremosos de mac and cheese con rebozado crujiente.",
-    image: "/images/novedad-mac-cheese.jpg",
+    image: "/images/novedad-mac-cheese.png",
     href: "/categoria/entrantes",
   },
   {
     title: "Nachos Rellenos",
     text: "Triángulos crujientes con relleno sabroso para acompañar cualquier pedido.",
-    image: "/images/novedad-nachos-rellenos.jpg",
+    image: "/images/novedad-nachos-rellenos.png",
     href: "/categoria/entrantes",
   },
 ];
@@ -41,11 +41,11 @@ export default function NovedadesPage() {
         </h1>
       </div>
 
-      <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+      <div className="grid gap-6 md:grid-cols-2">
         {novedades.map((item) => (
           <Link key={item.title} href={item.href} className="promo-card group overflow-hidden rounded-2xl bg-[var(--color-white)]">
             <div
-              className="aspect-[4/3] bg-cover bg-center transition-transform duration-500 group-hover:scale-[1.02]"
+              className="aspect-[16/9] bg-cover bg-center transition-transform duration-500 group-hover:scale-[1.02]"
               style={{ backgroundImage: `url('${item.image}')` }}
             />
             <div className="p-6">
