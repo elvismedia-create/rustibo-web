@@ -166,6 +166,14 @@ export default function Header() {
 
         <nav className="mobile-category-nav lg:hidden" aria-label="Categorías principales">
           <div className="mobile-category-scroll">
+            <Link
+              href="/promociones"
+              prefetch={false}
+              className={`mobile-category-link mobile-category-promo-link ${pathname === "/promociones" || pathname === "/promociones/" ? "is-active" : ""}`}
+            >
+              <Star size={15} strokeWidth={2.7} />
+              Promo
+            </Link>
             {categorias.map((cat) => {
               const href = `/categoria/${cat.slug}`;
               const isActive = pathname === href || pathname === `${href}/`;

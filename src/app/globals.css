@@ -477,11 +477,14 @@ button {
   }
 
   .mobile-category-link {
+    align-items: center;
     border-radius: 999px;
     color: var(--color-green-dark);
+    display: inline-flex;
     flex: 0 0 auto;
     font-family: var(--font-display) !important;
     font-size: 18px;
+    gap: 5px;
     line-height: 1;
     padding: 7px 12px 6px;
     scroll-snap-align: start;
@@ -495,6 +498,17 @@ button {
 
   .mobile-category-link.is-active {
     background: var(--color-lime);
+  }
+
+  .mobile-category-promo-link {
+    background: var(--color-red-price);
+    color: var(--color-white);
+  }
+
+  .mobile-category-promo-link:hover,
+  .mobile-category-promo-link.is-active {
+    background: var(--color-red-price);
+    color: var(--color-white);
   }
 
   .is-home-header.is-home-header-hidden .mobile-app-header,
@@ -634,11 +648,14 @@ button {
   }
 
   .mobile-category-link {
+    align-items: center;
     border-radius: 999px;
     color: var(--color-green-dark);
+    display: inline-flex;
     flex: 0 0 auto;
     font-family: var(--font-display) !important;
     font-size: 24px;
+    gap: 6px;
     line-height: 1;
     padding: 13px 20px 11px;
     scroll-snap-align: start;
@@ -652,6 +669,17 @@ button {
 
   .mobile-category-link.is-active {
     background: var(--color-lime);
+  }
+
+  .mobile-category-promo-link {
+    background: var(--color-red-price);
+    color: var(--color-white);
+  }
+
+  .mobile-category-promo-link:hover,
+  .mobile-category-promo-link.is-active {
+    background: var(--color-red-price);
+    color: var(--color-white);
   }
 }
 
