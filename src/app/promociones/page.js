@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowRight, BadgePercent, Phone } from "lucide-react";
+import { ArrowRight, BadgePercent, Phone, Store } from "lucide-react";
 import { metadataFromSeo, pageSeo } from "@/data/seoData";
 
 export const metadata = metadataFromSeo(pageSeo.promociones);
@@ -47,6 +47,10 @@ export default function PromocionesPage() {
                 className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
                 style={{ backgroundImage: `url('${promo.image}')` }}
               />
+              <span className="font-brand-menu absolute left-4 top-4 inline-flex items-center gap-2 rounded-full bg-[var(--color-lime)] px-4 py-2 text-lg uppercase text-[var(--color-green-dark)]">
+                <Store size={18} strokeWidth={2.4} />
+                Recoger en tienda
+              </span>
             </div>
             <div className="mt-4 flex items-start justify-between gap-4 px-1">
               <div>
