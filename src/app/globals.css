@@ -503,6 +503,7 @@ button {
   .mobile-category-promo-link {
     background: var(--color-red-price);
     color: var(--color-white);
+    margin-left: 4px;
   }
 
   .mobile-category-promo-link:hover,
@@ -674,6 +675,7 @@ button {
   .mobile-category-promo-link {
     background: var(--color-red-price);
     color: var(--color-white);
+    margin-left: 4px;
   }
 
   .mobile-category-promo-link:hover,
