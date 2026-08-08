@@ -7,21 +7,21 @@ export const metadata = metadataFromSeo(pageSeo.promociones);
 const promos = [
   {
     title: "50% en tu 2ª pizza",
-    detail: "De lunes a viernes para pedidos de recoger en tienda.",
+    detail: "De lunes a viernes para pedidos de recoger en tienda. Elige tus pizzas favoritas, pasa a recogerlas y aprovecha la segunda con descuento.",
     price: "Segunda pizza al 50%",
     image: "/images/promo_pizza_2_uni.png",
     href: "/categoria/pizzas",
   },
   {
     title: "3x2 en pizzas",
-    detail: "Fines de semana. Pide tres pizzas y paga dos recogiendo en tienda.",
+    detail: "Fines de semana. Pide tres pizzas y paga dos recogiendo en tienda. Perfecta para compartir en casa, probar varios sabores y cenar sin complicarte.",
     price: "3x2",
     image: "/images/promo_pizza_3_uni.png",
     href: "/categoria/pizzas",
   },
   {
     title: "RustiChicken Combo",
-    detail: "Incluye 3 piezas de pollo, 3 tiras de pollo y 3 alitas.",
+    detail: "Incluye 3 piezas de pollo, 3 tiras de pollo y 3 alitas. Un combo crujiente y contundente para compartir o completar tu pedido Rustibo.",
     price: "3 + 3 + 3",
     image: "/images/promo_rustichicken.png",
     href: "/categoria/pollo-rustichicken",

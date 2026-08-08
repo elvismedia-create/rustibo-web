@@ -7,25 +7,25 @@ export const metadata = metadataFromSeo(pageSeo.novedades);
 const novedades = [
   {
     title: "Tex Mex",
-    text: "Sabores potentes para pedir y compartir: nachos, burgers y ese punto picante que engancha.",
+    text: "Sabores potentes para pedir y compartir: nachos, burgers y ese punto picante que engancha. Ideal para una cena informal con mucho queso, salsas y bocados para el centro.",
     image: "/images/novedad-texmex.png",
     href: "/categoria/tex-mex",
   },
   {
     title: "Tequeños",
-    text: "Crujientes, dorados y perfectos para empezar la cena con algo para picar.",
+    text: "Crujientes, dorados y perfectos para empezar la cena con algo para picar. Van genial como entrante antes de la pizza o para sumar variedad a cualquier pedido.",
     image: "/images/novedad-tequenos.png",
     href: "/categoria/entrantes",
   },
   {
     title: "Bolas de Mac&Cheese",
-    text: "Bocados cremosos de mac and cheese con rebozado crujiente.",
+    text: "Bocados cremosos de mac and cheese con rebozado crujiente. Pequeñas, intensas y pensadas para compartir mientras llega el plato fuerte.",
     image: "/images/novedad-mac-cheese.png",
     href: "/categoria/entrantes",
   },
   {
     title: "Nachos Rellenos",
-    text: "Triángulos crujientes con relleno sabroso para acompañar cualquier pedido.",
+    text: "Triángulos crujientes con relleno sabroso para acompañar cualquier pedido. Un entrante fácil de picar, con ese punto caliente que apetece desde el primer bocado.",
     image: "/images/novedad-nachos-rellenos.png",
     href: "/categoria/entrantes",
   },
