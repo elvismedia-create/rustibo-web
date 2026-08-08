@@ -1,6 +1,6 @@
 export default function AboutSection() {
   return (
-    <section className="section-gap-bottom mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <section id="sobre-rustibo" className="section-gap-bottom mx-auto max-w-7xl scroll-mt-28 px-4 sm:px-6 lg:px-8">
       <div className="relative overflow-hidden rounded-[28px] border border-[var(--color-green-border)] bg-[var(--color-black)]">
         <div
           className="about-history-bg absolute inset-0 bg-cover bg-center"
