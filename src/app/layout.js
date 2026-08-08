@@ -2,6 +2,7 @@ import { Bebas_Neue } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import CookieConsent from "@/components/CookieConsent";
 
 const bebas = Bebas_Neue({
   weight: "400",
@@ -77,6 +78,7 @@ export default function RootLayout({ children }) {
           {children}
           <Footer /> 
         </main>
+        <CookieConsent />
       </body>
     </html>
   );

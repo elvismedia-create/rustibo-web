@@ -34,7 +34,7 @@ export const privacySections = [
   {
     title: "6. Cookies",
     content: [
-      "Utilizamos cookies para mejorar su experiencia en nuestro sitio web. Puede configurar su navegador para rechazar cookies, aunque esto puede afectar a la funcionalidad del sitio.",
+      "Utilizamos cookies técnicas necesarias y un sistema de preferencias para recordar su elección. En caso de incorporar analítica u otros servicios no esenciales, se solicitará consentimiento previo mediante el selector de cookies.",
     ],
   },
   {
@@ -62,22 +62,22 @@ export const cookiesSections = [
   {
     title: "2. Tipos de cookies que utilizamos",
     content: [
-      "Cookies esenciales: son necesarias para el funcionamiento del sitio web y no se pueden desactivar en nuestros sistemas. Generalmente se configuran en respuesta a acciones realizadas por usted, como establecer preferencias de privacidad, iniciar sesión o completar formularios.",
-      "Cookies de rendimiento: nos permiten contar visitas y fuentes de tráfico para medir y mejorar el rendimiento del sitio. Nos ayudan a saber qué páginas son las más y las menos populares y cómo se mueven los visitantes por la web.",
-      "Cookies funcionales: permiten que el sitio web proporcione una mejor funcionalidad y personalización. Pueden ser establecidas por nosotros o por proveedores externos cuyos servicios hemos añadido a nuestras páginas.",
-      "Cookies de publicidad: pueden ser establecidas a través de nuestro sitio por socios publicitarios para crear un perfil sobre sus intereses y mostrarle anuncios relevantes en otros sitios.",
+      "Cookies o tecnologías esenciales: son necesarias para el funcionamiento básico del sitio web y para recordar las preferencias de privacidad seleccionadas por el usuario.",
+      "Cookies de analítica: actualmente la web no carga herramientas de analítica de terceros. Si en el futuro se incorporan, solo se activarán cuando el usuario haya dado su consentimiento.",
+      "Cookies de publicidad: actualmente la web no carga cookies publicitarias ni píxeles de seguimiento. Si en el futuro se añadieran servicios publicitarios, se solicitará consentimiento previo.",
     ],
   },
   {
     title: "3. Cómo controlar las cookies",
     content: [
-      "Puede controlar y eliminar las cookies como desee. Puede eliminar todas las cookies que ya están en su ordenador y configurar la mayoría de navegadores para que no se almacenen. Si lo hace, es posible que tenga que ajustar manualmente algunas preferencias cada vez que visite el sitio y que algunos servicios y funcionalidades no funcionen correctamente.",
+      "Puede aceptar, rechazar o configurar las cookies desde el selector disponible en la web. También puede modificar su elección desde el enlace Configuración de cookies situado en el footer.",
+      "Además, puede eliminar cookies o datos locales desde la configuración de su navegador. Si borra sus preferencias, la web volverá a solicitar su elección en la siguiente visita.",
     ],
   },
   {
     title: "4. Consentimiento",
     content: [
-      "Al utilizar nuestro sitio web, usted acepta el uso de cookies según lo descrito en esta política. Puede retirar su consentimiento en cualquier momento eliminando las cookies de su dispositivo y configurando su navegador para rechazar nuevas cookies.",
+      "Las cookies no esenciales no se activarán sin consentimiento. Puede retirar o modificar su consentimiento en cualquier momento desde el selector de cookies.",
     ],
   },
   {

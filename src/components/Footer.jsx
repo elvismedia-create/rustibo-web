@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Facebook, Instagram } from "lucide-react";
+import CookiePreferencesLink from "./CookiePreferencesLink";
 
 const footerColumns = [
   {
@@ -77,6 +78,9 @@ export default function Footer() {
                   {link.label}
                 </Link>
               ))}
+              {column.title === "LEGAL" ? (
+                <CookiePreferencesLink className="footer-link block text-left text-[var(--color-green-medium)] hover:text-[var(--color-green-dark)] hover:underline" />
+              ) : null}
             </div>
           </div>
         ))}
