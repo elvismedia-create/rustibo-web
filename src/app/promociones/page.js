@@ -42,15 +42,15 @@ export default function PromocionesPage() {
       <div className="grid gap-6 md:grid-cols-2">
         {promos.map((promo) => (
           <Link key={promo.title} href={promo.href} className="group block transition hover:brightness-95">
+            <span className="promo-store-badge font-brand-menu mb-3 inline-flex items-center gap-2 rounded-full bg-[var(--color-lime)] px-4 py-2 text-lg uppercase text-[var(--color-green-dark)]">
+              <Store size={18} strokeWidth={2.4} />
+              Recoger en tienda
+            </span>
             <div className="promo-card relative min-h-72 overflow-hidden rounded-2xl">
               <div
                 className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
                 style={{ backgroundImage: `url('${promo.image}')` }}
               />
-              <span className="font-brand-menu absolute left-4 top-4 inline-flex items-center gap-2 rounded-full bg-[var(--color-lime)] px-4 py-2 text-lg uppercase text-[var(--color-green-dark)]">
-                <Store size={18} strokeWidth={2.4} />
-                Recoger en tienda
-              </span>
             </div>
             <div className="mt-4 flex items-start justify-between gap-4 px-1">
               <div>
