@@ -249,7 +249,7 @@ export const categoriasData = {
   // ==========================================
   "rustibizza": {
     titulo: "RustiBizzas",
-    subtitulo: "Nuestra creación más original. Una base crujiente enrollada y rellena de los mejores ingredientes. ¡Solo en Rustibo!",
+    subtitulo: "Descubre nuestros genuinos rollos de pizza. ¡Pruébalos!",
     imagenPrincipal: "/images/rustibizza-hero.jpg",
     productos: [
       { id: "rz1", nombre: "York", descripcion: "Tomate, queso y jamón york.", precio: "4,50€" },
