@@ -20,6 +20,7 @@ const heroSlides = [
     highlight: "para rematar!",
     text: "Kinder, carrot cake y horchata con fartons en temporada. Añade un tarrito a tu pedido y termina la cena como toca.",
     image: "/images/novedades-postre-tarritos-rustibo.jpg",
+    video: "/video/hero-rustibo-tarritos.mp4",
     secondaryHref: "/categoria/postres",
     secondaryLabel: "Ver postres",
   },
@@ -44,10 +45,24 @@ export default function HomeHeroSlider() {
           className={`home-hero-slide ${index === activeSlide ? "is-active" : ""}`}
           aria-hidden={index !== activeSlide}
         >
-          <div
-            className="home-hero-slide-bg absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
-            style={{ backgroundImage: `url('${slide.image}')` }}
-          />
+          {slide.video ? (
+            <video
+              className="home-hero-slide-media absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="metadata"
+              poster={slide.image}
+            >
+              <source src={slide.video} type="video/mp4" />
+            </video>
+          ) : (
+            <div
+              className="home-hero-slide-media absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
+              style={{ backgroundImage: `url('${slide.image}')` }}
+            />
+          )}
           <div className="home-hero-content relative z-10 flex min-h-[520px] max-w-lg flex-col items-start justify-center px-6 py-10 sm:px-10 lg:px-14 bg-gradient-to-r from-[var(--color-green-dark)] via-[var(--color-green-dark)]/80 to-transparent">
             <span className="font-brand-menu mb-3 inline-flex w-fit rounded-full bg-[var(--color-lime)] px-4 py-2 text-lg uppercase text-[var(--color-green-dark)]">
               {slide.eyebrow}
