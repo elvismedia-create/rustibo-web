@@ -6,6 +6,16 @@ import { ArrowRight, Phone } from "lucide-react";
 
 const heroSlides = [
   {
+    eyebrow: "Recién hecho",
+    title: "Sabor Rustibo",
+    highlight: "en movimiento!",
+    text: "Primeros planos de nuestro producto, packaging Rustibo y ese punto caliente que entra por los ojos antes de llamar.",
+    image: "/images/novedades-postre-tarritos-rustibo.jpg",
+    video: "/video/hero-rustibo-tarritos.mp4",
+    secondaryHref: "/carta",
+    secondaryLabel: "Ver carta",
+  },
+  {
     eyebrow: "Para llevar y domicilio",
     title: "Pide Rustibo",
     highlight: "y disfruta!",
@@ -20,7 +30,6 @@ const heroSlides = [
     highlight: "para rematar!",
     text: "Kinder, carrot cake y horchata con fartons en temporada. Añade un tarrito a tu pedido y termina la cena como toca.",
     image: "/images/novedades-postre-tarritos-rustibo.jpg",
-    video: "/video/hero-rustibo-tarritos.mp4",
     secondaryHref: "/categoria/postres",
     secondaryLabel: "Ver postres",
   },
