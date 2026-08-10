@@ -305,7 +305,7 @@ export const categoriasData = {
   "postres": {
     titulo: "Postres",
     subtitulo: "Termina tu pedido con nuestros tarritos dulces. Kinder, carrot cake y sabores de temporada.",
-    imagenPrincipal: "/images/novedad-mac-cheese.jpg",
+    imagenPrincipal: "/images/postres_ustibo.jpg",
     productos: [
       { id: "po1", nombre: "Tarrito Kinder", descripcion: "Postre en tarrito con sabor Kinder.", precio: "4,50€" },
       { id: "po2", nombre: "Tarrito Carrot Cake", descripcion: "Postre en tarrito estilo carrot cake.", precio: "4,50€" },
