@@ -214,7 +214,7 @@ export const categoriasData = {
   // ==========================================
   "kebabs": {
     titulo: "Kebabs",
-    subtitulo: "Auténtico sabor kebab con nuestra receta especial. Elige entre ternera o pollo con vegetales frescos y nuestras salsas.",
+    subtitulo: "Prueba nuestros excelentes kebabs turcos preparados con ingredientes de primerísima calidad.",
     imagenPrincipal: "/images/kebabs-hero.jpg",
     productos: [
       { id: "kb1", nombre: "Normal", descripcion: "(De ternera o pollo) lechuga, repollo, tomate, cebolla y salsa de yogurt.", precio: "5,00€" },
