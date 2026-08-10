@@ -304,10 +304,12 @@ export const categoriasData = {
   // ==========================================
   "postres": {
     titulo: "Postres",
-    subtitulo: "Termina tu pedido con algo dulce. Consulta nuestros postres disponibles al llamar o en tienda.",
+    subtitulo: "Termina tu pedido con nuestros tarritos dulces. Kinder, carrot cake y sabores de temporada.",
     imagenPrincipal: "/images/novedad-mac-cheese.jpg",
     productos: [
-      { id: "po1", nombre: "Postres disponibles en tienda", descripcion: "Llámanos y te contamos las opciones dulces del día para completar tu pedido.", precio: "" }
+      { id: "po1", nombre: "Tarrito Kinder", descripcion: "Postre en tarrito con sabor Kinder.", precio: "4,50€" },
+      { id: "po2", nombre: "Tarrito Carrot Cake", descripcion: "Postre en tarrito estilo carrot cake.", precio: "4,50€" },
+      { id: "po3", nombre: "Tarrito de Horchata con Fartons", descripcion: "Sabor de temporada. En octubre se sustituye por filipinos o tarta de queso según disponibilidad.", precio: "4,50€" }
     ]
   },
 
