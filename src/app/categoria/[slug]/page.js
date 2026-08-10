@@ -150,9 +150,9 @@ export default async function CategoryPage({ params }) {
             className="absolute inset-0 bg-cover bg-center"
             style={{ backgroundImage: `url('${categoria.imagenPrincipal}')` }}
           />
-          <div className="relative z-10 max-w-lg px-6 py-10 sm:px-10 lg:px-14 lg:py-12 bg-gradient-to-r from-[var(--color-green-dark)] via-[var(--color-green-dark)]/80 to-transparent">
+          <div className="category-hero-content relative z-10 max-w-lg px-6 py-10 sm:px-10 lg:px-14 lg:py-12 bg-gradient-to-r from-[var(--color-green-dark)] via-[var(--color-green-dark)]/80 to-transparent">
             <p className="mb-3 text-sm font-normal uppercase text-[var(--color-lime)]">Carta Rustibo</p>
-            <h1 className="text-6xl uppercase leading-none sm:text-7xl lg:text-8xl whitespace-nowrap">{categoria.titulo}</h1>
+            <h1 className="category-hero-title text-6xl uppercase leading-none sm:text-7xl lg:text-8xl">{categoria.titulo}</h1>
             {categoria.subtitulo && (
               <p className="mt-4 text-lg font-normal leading-relaxed text-[var(--color-white)]">{categoria.subtitulo}</p>
             )}

@@ -201,6 +201,16 @@ button {
   box-shadow: none;
 }
 
+.category-hero-title {
+  max-width: min(100%, 8.5em);
+  overflow-wrap: normal;
+  text-wrap: balance;
+}
+
+.category-hero-content {
+  min-height: 360px;
+}
+
 .phone-cta-button {
   border-radius: 22px;
   min-height: 82px;
