@@ -230,11 +230,11 @@ export const categoriasData = {
   // CATEGORÍA: PASTA
   // ==========================================
   "pasta": {
-    titulo: "Pasta",
-    subtitulo: "Platos de pasta casera listos para disfrutar. Elaborados con bechamel suave y mucho queso gratinado.",
+    titulo: "Pastas",
+    subtitulo: "Siente todo el sabor de Italia con nuestras estupendas pastas. ¡Bon Appétit!",
     imagenPrincipal: "/images/pasta-hero.jpg",
     productos: [
-      { id: "pa1", nombre: "Macarrones Boloñesa", descripcion: "Nuestra clásica salsa boloñesa casera con carne.", precio: "5,50€" },
+      { id: "pa1", nombre: "Macarrones Boloñesas", descripcion: "Nuestra clásica salsa boloñesa casera con carne.", precio: "5,50€" },
       { id: "pa2", nombre: "Tallarines Carbonara", descripcion: "Deliciosa salsa carbonara cremosa.", precio: "5,50€" },
       { id: "pa3", nombre: "Canelones de Carne", descripcion: "Carne, tomate, bechamel y queso.", precio: "7,00€" },
       { id: "pa4", nombre: "Lasaña de Carne", descripcion: "Carne, tomate, bechamel y queso.", precio: "7,00€" },
