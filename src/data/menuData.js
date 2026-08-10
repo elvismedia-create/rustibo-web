@@ -128,7 +128,7 @@ export const categoriasData = {
       { id: "ent7", nombre: "Alitas en Adobo", descripcion: "", precio: "4,50€" },
       { id: "ent8", nombre: "Sepia a la Plancha", descripcion: "", precio: "7,50€" },
       { id: "ent9", nombre: "Sepia a la Romana", descripcion: "", precio: "7,50€" },
-      { id: "ent10", nombre: "Calamares Rebozados", descripcion: "", precio: "6,50€" },
+      { id: "ent10", nombre: "Calamares Rebozada", descripcion: "", precio: "6,50€" },
       { id: "ent11", nombre: "Combo Rustibó", descripcion: "2 fingers de queso, 2 jalapeños, 2 nuggets, 2 aros de cebolla y patatas luxe.", precio: "6,50€" },
       { id: "ent12", nombre: "Gambas al Ajillo", descripcion: "", precio: "6,50€" },
       { id: "ent13", nombre: "Patatas Bravas", descripcion: "", precio: "4,00€" },
@@ -210,12 +210,12 @@ export const categoriasData = {
       { id: "ca2", nombre: "1/2 Pollo Asado", descripcion: "", precio: "6,50€" },
       { id: "ca3", nombre: "Alitas en Adobo", descripcion: "", precio: "4,50€" },
       { id: "ca4", nombre: "6 Alas de Pollo", descripcion: "", precio: "7,00€" },
-      { id: "ca5", nombre: "Pollo al Curry", descripcion: "", precio: "13,50€" },
+      { id: "ca5", nombre: "Pollo a Curry", descripcion: "", precio: "13,50€" },
       { id: "ca6", nombre: "Pollo al Ajillo", descripcion: "", precio: "13,50€" },
       { id: "ca7", nombre: "Conejo al Ajillo", descripcion: "", precio: "15,50€" },
       { id: "ca8", nombre: "Conejo Asado", descripcion: "", precio: "13,50€" },
       { id: "ca9", nombre: "Paletilla de Cordero*", descripcion: "Pedido mínimo 2 personas.", precio: "S/M" },
-      { id: "ca10", nombre: "Costillar a la Barbacoa", descripcion: "Salsa barbacoa, mostaza y miel.", precio: "12,00€" }
+      { id: "ca10", nombre: "Costillar a la Barbacoa, mostaza y miel", descripcion: "", precio: "12,00€" }
     ]
   },
 
