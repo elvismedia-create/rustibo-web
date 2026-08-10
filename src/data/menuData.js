@@ -270,8 +270,8 @@ export const categoriasData = {
   // CATEGORÍA: POLLO RUSTICHICKEN
   // ==========================================
   "pollo-rustichicken": {
-    titulo: "Rusti Chicken",
-    subtitulo: "Auténtico pollo frito americano. Crujiente por fuera, jugoso por dentro y elaborado con nuestra receta secreta.",
+    titulo: "Pollo RustiChicken",
+    subtitulo: "Descubre nuestro genuino pollo frito al estilo americano. ¡Para chuparse los dedos!",
     imagenPrincipal: "/images/pollo-hero.jpg",
     productos: [
       { id: "rc1", nombre: "6 Piezas de Pollo", descripcion: "Seis piezas de nuestro pollo frito más crujiente.", precio: "9,50€" },
