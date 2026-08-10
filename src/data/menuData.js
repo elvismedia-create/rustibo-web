@@ -11,9 +11,9 @@ export const categoriasData = {
     imagenPrincipal: "/images/texmex-hero.jpg", 
     productos: [
       { id: "tm1", seccion: "Para Empezar y Compartir", nombre: "Nachos Rustibò", descripcion: "Con salsa de carne, chilli, cheddar, salsa agria y guacamole.", precio: "7,50€" },
-      { id: "tm2", seccion: "Para Empezar y Compartir", nombre: "Patatas Fritas del Chef", descripcion: "Con bacon, salsa de queso cheddar y salsa ranchera.", precio: "8,00€" },
+      { id: "tm2", seccion: "Para Empezar y Compartir", nombre: "Patatas Fritas del Chef", descripcion: "Con bacon, salsa de queso cheddar y salsa ranchera.", precio: "7,50€" },
       { id: "tm3", seccion: "Para Empezar y Compartir", nombre: "Jalapeños", descripcion: "", precio: "1,50€ / ud" },
-      { id: "tm4", seccion: "Para Empezar y Compartir", nombre: "Pizza Mariachi", descripcion: "Salsa de tomate picante, queso, pimiento verde y rojo, cebolla, pollo, guacamole y cheddar.", precio: "Peq: 8,50€ | Med: 13,30€" },
+      { id: "tm4", seccion: "Para Empezar y Compartir", nombre: "Pizza Mariachi", descripcion: "Salsa de tomate picante, queso, pimiento verde y rojo, cebolla, pollo, guacamole y cheddar.", precio: "Peq: 9,00€ | Med: 13,70€" },
       { id: "tm5", seccion: "Para Empezar y Compartir", nombre: "Sandwich Pulled Pork", descripcion: "Mezclum, tomate, cheddar, pulled pork, cebolla roja y crema agria.", precio: "6,50€" },
       { id: "tm6", seccion: "Para Empezar y Compartir", nombre: "Rustibizza Mariachi", descripcion: "Salsa de tomate picante, queso, pimientos, cebolla, pollo, guacamole y cheddar.", precio: "6,00€" },
       
@@ -57,7 +57,7 @@ export const categoriasData = {
       { id: "pz20", nombre: "Calzone", descripcion: "Tomate, queso, bacon, york, atún, alcachofa, pimiento rojo y huevo.", precio: "PEQ: 8,50€ | MED: 13,00€" },
       { id: "pz21", nombre: "Rustibó", descripcion: "Tomate, queso, champiñón, atún, bacon, anchoas, huevo, pimiento rojo y cebolla.", precio: "PEQ: 8,50€ | MED: 13,00€" },
       { id: "pz22", nombre: "Pizza Kebab", descripcion: "Tomate, queso, pimiento verde, kebab y salsa de yogurt.", precio: "PEQ: 8,50€ | MED: 12,50€" },
-      { id: "pz23", nombre: "Mix de Carne", descripcion: "Tomate, salsa barbacoa, queso, ternera, cerdo y pollo a la brasa.", precio: "PEQ: 8,00€ | MED: 13,00€" },
+      { id: "pz23", nombre: "Mix de Carne", descripcion: "Tomate, salsa barbacoa, queso, ternera, cerdo y pollo a la brasa.", precio: "PEQ: 9,00€ | MED: 13,00€" },
       { id: "pz24", nombre: "Especial Quesos", descripcion: "Tomate, nata, mezcla de 4 quesos y queso de cabra.", precio: "PEQ: 9,00€ | MED: 13,70€" },
       { id: "pz25", nombre: "Pollo Crujiente", descripcion: "Tomate, queso, bacon, maíz, champiñon, y pollo crujiente (empanado).", precio: "PEQ: 9,00€ | MED: 13,70€" },
       { id: "pz26", nombre: "Especial Marinera", descripcion: "Tomate, queso, atún, anchoas, gambas, tronquitos, cebolla, sepia y picadillo.", precio: "PEQ: 9,00€ | MED: 13,70€" },
