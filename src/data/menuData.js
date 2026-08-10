@@ -32,7 +32,7 @@ export const categoriasData = {
   // ==========================================
   "pizzas": {
     titulo: "Pizzas",
-    subtitulo: "Masa fresca elaborada a diario, salsa de tomate premium y queso 100% mozzarella. ¡Descubre nuestras combinaciones!",
+    subtitulo: "Descubre nuestro delicioso surtido de pizzas. Pizzas hechas con todo el sabor de Italia.",
     imagenPrincipal: "/images/pizzas-hero.jpg",
     productos: [
       { id: "pz1", nombre: "Proscuito", descripcion: "Tomate, queso y jamón york.", precio: "PEQ: 7,30€ | MED: 11,30€" },
