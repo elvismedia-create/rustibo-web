@@ -10,20 +10,20 @@ export const categoriasData = {
     subtitulo: "El genuino sabor Tex Mex. México y Texas llegan a Rustibó. ¡Prueba los nuevos sabores!",
     imagenPrincipal: "/images/texmex-hero.jpg", 
     productos: [
-      { id: "tm1", seccion: "Para Empezar y Compartir", nombre: "Nachos Rustibò", descripcion: "Con salsa de carne, chilli, cheddar, salsa agria y guacamole.", precio: "7,00€" },
-      { id: "tm2", seccion: "Para Empezar y Compartir", nombre: "Patatas Fritas del Chef", descripcion: "Con bacon, salsa de queso cheddar y salsa ranchera.", precio: "7,50€" },
-      { id: "tm3", seccion: "Para Empezar y Compartir", nombre: "Jalapeños", descripcion: "", precio: "1,00€ / ud" },
-      { id: "tm4", seccion: "Para Empezar y Compartir", nombre: "Pizza Mariachi", descripcion: "Salsa de tomate picante, queso, pimiento verde y rojo, cebolla, pollo, guacamole y cheddar.", precio: "Peq: 8,00€ | Med: 12,80€" },
-      { id: "tm5", seccion: "Para Empezar y Compartir", nombre: "Sandwich Pulled Pork", descripcion: "Mezclum, tomate, cheddar, pulled pork, cebolla roja y crema agria.", precio: "6,00€" },
-      { id: "tm6", seccion: "Para Empezar y Compartir", nombre: "Rustibizza Mariachi", descripcion: "Salsa de tomate picante, queso, pimientos, cebolla, pollo, guacamole y cheddar.", precio: "5,50€" },
+      { id: "tm1", seccion: "Para Empezar y Compartir", nombre: "Nachos Rustibò", descripcion: "Con salsa de carne, chilli, cheddar, salsa agria y guacamole.", precio: "7,50€" },
+      { id: "tm2", seccion: "Para Empezar y Compartir", nombre: "Patatas Fritas del Chef", descripcion: "Con bacon, salsa de queso cheddar y salsa ranchera.", precio: "8,00€" },
+      { id: "tm3", seccion: "Para Empezar y Compartir", nombre: "Jalapeños", descripcion: "", precio: "1,50€ / ud" },
+      { id: "tm4", seccion: "Para Empezar y Compartir", nombre: "Pizza Mariachi", descripcion: "Salsa de tomate picante, queso, pimiento verde y rojo, cebolla, pollo, guacamole y cheddar.", precio: "Peq: 8,50€ | Med: 13,30€" },
+      { id: "tm5", seccion: "Para Empezar y Compartir", nombre: "Sandwich Pulled Pork", descripcion: "Mezclum, tomate, cheddar, pulled pork, cebolla roja y crema agria.", precio: "6,50€" },
+      { id: "tm6", seccion: "Para Empezar y Compartir", nombre: "Rustibizza Mariachi", descripcion: "Salsa de tomate picante, queso, pimientos, cebolla, pollo, guacamole y cheddar.", precio: "6,00€" },
       
-      { id: "tm7", seccion: "Hamburguesas Tex-Mex", nombre: "Hamburguesa Texas", descripcion: "Buey 200g, mermelada de arándanos, mezclum, cebolla caramelizada, queso de cabra y foie.", precio: "9,00€" },
-      { id: "tm8", seccion: "Hamburguesas Tex-Mex", nombre: "Hamburguesa Arizona", descripcion: "Buey 200g, mezclum, cheddar, aros de cebolla, bacon y salsa barbacoa.", precio: "8,00€" },
-      { id: "tm9", seccion: "Hamburguesas Tex-Mex", nombre: "Hamburguesa Atlanta", descripcion: "Buey 200g, mezclum, queso de cabra, berenjena, cebolla caramelizada y mostaza vieja.", precio: "8,00€" },
-      { id: "tm10", seccion: "Hamburguesas Tex-Mex", nombre: "Hamburguesa New York", descripcion: "Buey 200g, mezclum, cheddar, bacon, cebolla, tomate y huevo frito.", precio: "9,00€" },
-      { id: "tm11", seccion: "Hamburguesas Tex-Mex", nombre: "Pulled Pork Burger", descripcion: "Pulled pork, mezclum, tomate, cebolla roja, guacamole y queso cheddar.", precio: "9,00€" },
-      { id: "tm12", seccion: "Hamburguesas Tex-Mex", nombre: "Hamburguesa California", descripcion: "Buey 200g, mezclum, tomate, queso picante, jalapeños, cebolla roja y salsa chipotle.", precio: "8,00€" },
-      { id: "tm13", seccion: "Hamburguesas Tex-Mex", nombre: "Hamburguesa Miami (Vegana)", descripcion: "Hamburguesa vegana, tomate, mezclum, cebolla y salsa de mostaza.", precio: "7,50€" }
+      { id: "tm7", seccion: "Hamburguesas Tex-Mex", nombre: "Hamburguesa Texas", descripcion: "Buey 200g, mermelada de arándanos, mezclum, cebolla caramelizada, queso de cabra y foie.", precio: "9,50€" },
+      { id: "tm8", seccion: "Hamburguesas Tex-Mex", nombre: "Hamburguesa Arizona", descripcion: "Buey 200g, mezclum, cheddar, aros de cebolla, bacon y salsa barbacoa.", precio: "8,50€" },
+      { id: "tm9", seccion: "Hamburguesas Tex-Mex", nombre: "Hamburguesa Atlanta", descripcion: "Buey 200g, mezclum, queso de cabra, berenjena, cebolla caramelizada y mostaza vieja.", precio: "8,50€" },
+      { id: "tm10", seccion: "Hamburguesas Tex-Mex", nombre: "Hamburguesa New York", descripcion: "Buey 200g, mezclum, cheddar, bacon, cebolla, tomate y huevo frito.", precio: "9,50€" },
+      { id: "tm11", seccion: "Hamburguesas Tex-Mex", nombre: "Pulled Pork Burger", descripcion: "Pulled pork, mezclum, tomate, cebolla roja, guacamole y queso cheddar.", precio: "9,50€" },
+      { id: "tm12", seccion: "Hamburguesas Tex-Mex", nombre: "Hamburguesa California", descripcion: "Buey 200g, mezclum, tomate, queso picante, jalapeños, cebolla roja y salsa chipotle.", precio: "8,50€" },
+      { id: "tm13", seccion: "Hamburguesas Tex-Mex", nombre: "Hamburguesa Miami (Vegana)", descripcion: "Hamburguesa vegana, tomate, mezclum, cebolla y salsa de mostaza.", precio: "8,00€" }
     ]
   },
 
@@ -153,7 +153,7 @@ export const categoriasData = {
       { id: "ent32", nombre: "Flautas de Pollo (1u)", descripcion: "", precio: "2,50€" },
       { id: "ent33", nombre: "Camembert Frito", descripcion: "", precio: "2,50€" },
       { id: "ent34", nombre: "Tiras RustiChicken (10u)", descripcion: "", precio: "8,50€" },
-      { id: "ent35", nombre: "Alitas RustiChicken (10u)", descripcion: "", precio: "8,00€" }
+      { id: "ent35", nombre: "Alitas RustiChicken (10u)", descripcion: "", precio: "8,50€" }
     ]
   },
 
@@ -188,13 +188,13 @@ export const categoriasData = {
       { id: "ham4", nombre: "Rustibó", descripcion: "Lechuga, tomate, cebolla, queso, huevo, bacon y hamburguesa de sabor (*pinchito o verduras).", precio: "6,00€" },
       
       // --- HAMBURGUESAS TEX-MEX (Con sección para generar el título separador) ---
-      { id: "tm7", seccion: "Hamburguesas Tex-Mex", nombre: "Hamburguesa Texas", descripcion: "Buey 200g, mermelada de arándanos, mezclum, cebolla caramelizada, queso de cabra y foie.", precio: "9,00€" },
-      { id: "tm8", seccion: "Hamburguesas Tex-Mex", nombre: "Hamburguesa Arizona", descripcion: "Buey 200g, mezclum, cheddar, aros de cebolla, bacon y salsa barbacoa.", precio: "8,00€" },
-      { id: "tm9", seccion: "Hamburguesas Tex-Mex", nombre: "Hamburguesa Atlanta", descripcion: "Buey 200g, mezclum, queso de cabra, berenjena, cebolla caramelizada y mostaza vieja.", precio: "8,00€" },
-      { id: "tm10", seccion: "Hamburguesas Tex-Mex", nombre: "Hamburguesa New York", descripcion: "Buey 200g, mezclum, cheddar, bacon, cebolla, tomate y huevo frito.", precio: "9,00€" },
-      { id: "tm11", seccion: "Hamburguesas Tex-Mex", nombre: "Pulled Pork Burger", descripcion: "Pulled pork, mezclum, tomate, cebolla roja, guacamole y queso cheddar.", precio: "9,00€" },
-      { id: "tm12", seccion: "Hamburguesas Tex-Mex", nombre: "Hamburguesa California", descripcion: "Buey 200g, mezclum, tomate, queso picante, jalapeños, cebolla roja y salsa chipotle.", precio: "8,00€" },
-      { id: "tm13", seccion: "Hamburguesas Tex-Mex", nombre: "Hamburguesa Miami (Vegana)", descripcion: "Hamburguesa vegana, tomate, mezclum, cebolla y salsa de mostaza.", precio: "7,50€" }
+      { id: "tm7", seccion: "Hamburguesas Tex-Mex", nombre: "Hamburguesa Texas", descripcion: "Buey 200g, mermelada de arándanos, mezclum, cebolla caramelizada, queso de cabra y foie.", precio: "9,50€" },
+      { id: "tm8", seccion: "Hamburguesas Tex-Mex", nombre: "Hamburguesa Arizona", descripcion: "Buey 200g, mezclum, cheddar, aros de cebolla, bacon y salsa barbacoa.", precio: "8,50€" },
+      { id: "tm9", seccion: "Hamburguesas Tex-Mex", nombre: "Hamburguesa Atlanta", descripcion: "Buey 200g, mezclum, queso de cabra, berenjena, cebolla caramelizada y mostaza vieja.", precio: "8,50€" },
+      { id: "tm10", seccion: "Hamburguesas Tex-Mex", nombre: "Hamburguesa New York", descripcion: "Buey 200g, mezclum, cheddar, bacon, cebolla, tomate y huevo frito.", precio: "9,50€" },
+      { id: "tm11", seccion: "Hamburguesas Tex-Mex", nombre: "Pulled Pork Burger", descripcion: "Pulled pork, mezclum, tomate, cebolla roja, guacamole y queso cheddar.", precio: "9,50€" },
+      { id: "tm12", seccion: "Hamburguesas Tex-Mex", nombre: "Hamburguesa California", descripcion: "Buey 200g, mezclum, tomate, queso picante, jalapeños, cebolla roja y salsa chipotle.", precio: "8,50€" },
+      { id: "tm13", seccion: "Hamburguesas Tex-Mex", nombre: "Hamburguesa Miami (Vegana)", descripcion: "Hamburguesa vegana, tomate, mezclum, cebolla y salsa de mostaza.", precio: "8,00€" }
     ]
   },
 
@@ -244,8 +244,8 @@ export const categoriasData = {
     subtitulo: "Platos de pasta casera listos para disfrutar. Elaborados con bechamel suave y mucho queso gratinado.",
     imagenPrincipal: "/images/pasta-hero.jpg",
     productos: [
-      { id: "pa1", nombre: "Macarrones Boloñesa", descripcion: "Nuestra clásica salsa boloñesa casera con carne.", precio: "4,50€" },
-      { id: "pa2", nombre: "Tallarines Carbonara", descripcion: "Deliciosa salsa carbonara cremosa.", precio: "4,50€" },
+      { id: "pa1", nombre: "Macarrones Boloñesa", descripcion: "Nuestra clásica salsa boloñesa casera con carne.", precio: "5,50€" },
+      { id: "pa2", nombre: "Tallarines Carbonara", descripcion: "Deliciosa salsa carbonara cremosa.", precio: "5,50€" },
       { id: "pa3", nombre: "Canelones de Carne", descripcion: "Carne, tomate, bechamel y queso.", precio: "7,00€" },
       { id: "pa4", nombre: "Lasaña de Carne", descripcion: "Carne, tomate, bechamel y queso.", precio: "7,00€" },
       { id: "pa5", nombre: "Lasaña de Espinaca", descripcion: "Espinacas, bechamel y queso.", precio: "7,00€" },
