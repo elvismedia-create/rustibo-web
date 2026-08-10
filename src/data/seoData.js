@@ -150,7 +150,7 @@ export const pageSeo = {
   novedades: {
     title: "Novedades | Comida para llevar en Alzira - Rustibo",
     description:
-      "Descubre las novedades de Rustibo en Alzira, Valencia. Prueba nuestros nuevos nachos rellenos, bolas de Mac&cheese, sabores Tex-Mex, tequeños y jalapeños cheese bites.",
+      "Descubre las novedades de Rustibo en Alzira, Valencia. Prueba nuestros nuevos nachos rellenos, bolas de Mac&cheese, sabores Tex-Mex, tequeños y tarritos dulces.",
     canonical: "/novedades/",
   },
   promociones: {

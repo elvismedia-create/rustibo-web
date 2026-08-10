@@ -29,6 +29,12 @@ const novedades = [
     image: "/images/novedad-nachos-rellenos.png",
     href: "/categoria/entrantes",
   },
+  {
+    title: "Tarritos dulces",
+    text: "Postres en tarrito para rematar el pedido: Kinder, carrot cake y horchata con fartons en temporada. Cremosos, frescos y perfectos para pedir uno más.",
+    image: "/images/postres_ustibo.jpg",
+    href: "/categoria/postres",
+  },
 ];
 
 export default function NovedadesPage() {
