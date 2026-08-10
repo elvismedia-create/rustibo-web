@@ -287,7 +287,7 @@ export const categoriasData = {
   // ==========================================
   "sandwiches": {
     titulo: "Sandwiches",
-    subtitulo: "Cenas rápidas y ricas. Desde el clásico Mixto hasta nuestras combinaciones especiales con ingredientes frescos.",
+    subtitulo: "Ingredientes frescos y de primerísima calidad y el pan perfectamente tostado. ¡Qué más se puede pedir!",
     imagenPrincipal: "/images/sandwiches-hero.jpg",
     productos: [
       { id: "sw1", nombre: "Mixto", descripcion: "Jamón York y queso.", precio: "3,00€" },
