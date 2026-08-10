@@ -181,20 +181,10 @@ export const categoriasData = {
     subtitulo: "El genuino sabor americano de nuestras hamburguesas te dejarán sin palabras. ¡Pruébalas!",
     imagenPrincipal: "/images/hamburguesas-hero.jpg",
     productos: [
-      // --- HAMBURGUESAS CLÁSICAS (Sin sección para que salgan primero) ---
       { id: "ham1", nombre: "Normal", descripcion: "Lechuga, tomate y cebolla.", precio: "3,50€" },
       { id: "ham2", nombre: "Normal con Queso", descripcion: "Lechuga, tomate, cebolla y queso.", precio: "4,50€" },
       { id: "ham3", nombre: "Especial", descripcion: "Lechuga, tomate, cebolla, queso, huevo y bacon.", precio: "6,00€" },
-      { id: "ham4", nombre: "Rustibó", descripcion: "Lechuga, tomate, cebolla, queso, huevo, bacon y hamburguesa de sabor (*pinchito o verduras).", precio: "6,00€" },
-      
-      // --- HAMBURGUESAS TEX-MEX (Con sección para generar el título separador) ---
-      { id: "tm7", seccion: "Hamburguesas Tex-Mex", nombre: "Hamburguesa Texas", descripcion: "Buey 200g, mermelada de arándanos, mezclum, cebolla caramelizada, queso de cabra y foie.", precio: "9,50€" },
-      { id: "tm8", seccion: "Hamburguesas Tex-Mex", nombre: "Hamburguesa Arizona", descripcion: "Buey 200g, mezclum, cheddar, aros de cebolla, bacon y salsa barbacoa.", precio: "8,50€" },
-      { id: "tm9", seccion: "Hamburguesas Tex-Mex", nombre: "Hamburguesa Atlanta", descripcion: "Buey 200g, mezclum, queso de cabra, berenjena, cebolla caramelizada y mostaza vieja.", precio: "8,50€" },
-      { id: "tm10", seccion: "Hamburguesas Tex-Mex", nombre: "Hamburguesa New York", descripcion: "Buey 200g, mezclum, cheddar, bacon, cebolla, tomate y huevo frito.", precio: "9,50€" },
-      { id: "tm11", seccion: "Hamburguesas Tex-Mex", nombre: "Pulled Pork Burger", descripcion: "Pulled pork, mezclum, tomate, cebolla roja, guacamole y queso cheddar.", precio: "9,50€" },
-      { id: "tm12", seccion: "Hamburguesas Tex-Mex", nombre: "Hamburguesa California", descripcion: "Buey 200g, mezclum, tomate, queso picante, jalapeños, cebolla roja y salsa chipotle.", precio: "8,50€" },
-      { id: "tm13", seccion: "Hamburguesas Tex-Mex", nombre: "Hamburguesa Miami (Vegana)", descripcion: "Hamburguesa vegana, tomate, mezclum, cebolla y salsa de mostaza.", precio: "8,00€" }
+      { id: "ham4", nombre: "Rustibó", descripcion: "Lechuga, tomate, cebolla, queso, huevo, bacon y hamburguesa de sabor. Hamburguesas de sabor: pinchito y verduras.", precio: "6,00€" }
     ]
   },
 
