@@ -32,7 +32,7 @@ const novedades = [
   {
     title: "Tarritos dulces",
     text: "Postres en tarrito para rematar el pedido: Kinder, carrot cake y horchata con fartons en temporada. Cremosos, frescos y perfectos para pedir uno más.",
-    image: "/images/postres_ustibo.jpg",
+    image: "/images/novedades-postre-tarritos-rustibo.jpg",
     href: "/categoria/postres",
   },
 ];
