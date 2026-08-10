@@ -86,6 +86,12 @@ export const categorySeo = {
       "Sandwiches para llevar en Alzira, clásicos y especiales, preparados al momento en Rustibo.",
     canonical: "/categoria/sandwiches",
   },
+  postres: {
+    title: "Postres | Comida para llevar en Alzira - Rustibo",
+    description:
+      "Postres para llevar en Alzira para completar tu pedido en Rustibo. Consulta disponibilidad al llamar o en tienda.",
+    canonical: "/categoria/postres",
+  },
   "menu-infantil": {
     title: "Menú Infantil | Comida para llevar en Alzira - Rustibo",
     description:
@@ -115,6 +121,7 @@ export const legacyRoutes = {
   "rustibizzas-para-llevar-alzira": { type: "category", categorySlug: "rustibizza", ...categorySeo.rustibizza, canonical: "/rustibizzas-para-llevar-alzira/" },
   "pollo-frito-para-llevar-alzira": { type: "category", categorySlug: "pollo-rustichicken", ...categorySeo["pollo-rustichicken"], canonical: "/pollo-frito-para-llevar-alzira/" },
   "sandwiches-para-llevar-alzira": { type: "category", categorySlug: "sandwiches", ...categorySeo.sandwiches, canonical: "/sandwiches-para-llevar-alzira/" },
+  "postres-para-llevar-alzira": { type: "category", categorySlug: "postres", ...categorySeo.postres, canonical: "/postres-para-llevar-alzira/" },
   menu_infantil: { type: "category", categorySlug: "menu-infantil", ...categorySeo["menu-infantil"], canonical: "/menu_infantil/" },
   contact: {
     type: "contact",

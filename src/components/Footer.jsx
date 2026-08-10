@@ -22,6 +22,7 @@ const footerColumns = [
       { label: "Arroces", href: "/categoria/arroces" },
       { label: "Hamburguesas", href: "/categoria/hamburguesas" },
       { label: "Rusti Chicken", href: "/categoria/pollo-rustichicken" },
+      { label: "Postres", href: "/categoria/postres" },
     ],
   },
   {

@@ -299,6 +299,18 @@ export const categoriasData = {
     ]
   },
 
+  // ==========================================
+  // CATEGORÍA: POSTRES
+  // ==========================================
+  "postres": {
+    titulo: "Postres",
+    subtitulo: "Termina tu pedido con algo dulce. Consulta nuestros postres disponibles al llamar o en tienda.",
+    imagenPrincipal: "/images/novedad-mac-cheese.jpg",
+    productos: [
+      { id: "po1", nombre: "Postres disponibles en tienda", descripcion: "Llámanos y te contamos las opciones dulces del día para completar tu pedido.", precio: "" }
+    ]
+  },
+
 
   "menu-infantil": {
   titulo: "Infantil",

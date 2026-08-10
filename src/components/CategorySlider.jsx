@@ -31,6 +31,7 @@ export default function CategorySlider() {
     { name: "RustiBizza", img: "/images/categories/cat_rustibizza.jpg" },
     { name: "Pollo RustiChicken", img: "/images/categories/cat_pollo.jpg" },
     { name: "Sandwiches", img: "/images/categories/cat_sandwiches.jpg" },
+    { name: "Postres", img: "/images/novedad-mac-cheese.jpg" },
     { name: "Menú Infantil", img: "/images/categories/cat_infantil.jpg" },
   ];
 
