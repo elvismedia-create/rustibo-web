@@ -1,11 +1,9 @@
 import Link from "next/link";
 import { ArrowRight, Clock } from "lucide-react";
 import { blogPosts } from "@/data/blogData";
+import { metadataFromSeo, pageSeo } from "@/data/seoData";
 
-export const metadata = {
-  title: "Blog Rustibo | Comida para llevar, pizzas y pollo en Alzira",
-  description: "Consejos e ideas para pedir comida para llevar en Alzira: pizzas artesanas, Rusti Chicken, entrantes y cenas a domicilio.",
-};
+export const metadata = metadataFromSeo(pageSeo.blog);
 
 export default function BlogPage() {
   return (

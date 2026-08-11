@@ -22,44 +22,67 @@ export const viewport = {
   initialScale: 1,
 };
 
-const reviewsData = {
-  rating: "4.8",
-  reviews: "250",
-};
-
 export default function RootLayout({ children }) {
-  // AQUÍ ESTÁ LA MAGIA: Tu dirección real inyectada para Google
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "FoodEstablishment", 
-    "name": "Rustibo Alzira",
-    "image": "https://www.rustibo.net/images/rustibo.jpg", 
-    "telephone": "962413948", 
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Carrer Pastora, 9",
-      "addressLocality": "Alzira",
-      "addressRegion": "Valencia",
-      "postalCode": "46600",
-      "addressCountry": "ES"
-    },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": reviewsData.rating, 
-      "reviewCount": reviewsData.reviews 
-    },
-    "openingHoursSpecification": [
+    "@graph": [
       {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-        "opens": "20:00",
-        "closes": "23:00"
+        "@type": "WebSite",
+        "@id": "https://www.rustibo.net/#website",
+        "url": "https://www.rustibo.net/",
+        "name": "Rustibo",
+        "inLanguage": "es-ES"
       },
       {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Saturday", "Sunday"],
-        "opens": "12:00",
-        "closes": "15:00"
+        "@type": ["FoodEstablishment", "LocalBusiness"],
+        "@id": "https://www.rustibo.net/#localbusiness",
+        "name": "Rustibo",
+        "url": "https://www.rustibo.net/",
+        "image": "https://www.rustibo.net/images/rustibo.jpg",
+        "logo": "https://www.rustibo.net/images/rustibo_logo.png",
+        "telephone": "+34962413948",
+        "priceRange": "€€",
+        "servesCuisine": [
+          "Comida para llevar",
+          "Pizzas",
+          "Tex Mex",
+          "Arroces",
+          "Bocadillos",
+          "Pollo frito",
+          "Postres"
+        ],
+        "sameAs": [
+          "https://www.instagram.com/rustibo/",
+          "https://www.facebook.com/rustibomenjarperemportarsl"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Carrer Pastora, 9",
+          "addressLocality": "Alzira",
+          "addressRegion": "Valencia",
+          "postalCode": "46600",
+          "addressCountry": "ES"
+        },
+        "areaServed": {
+          "@type": "City",
+          "name": "Alzira"
+        },
+        "hasMenu": "https://www.rustibo.net/carta/",
+        "acceptsReservations": false,
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+            "opens": "20:00",
+            "closes": "23:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Saturday", "Sunday"],
+            "opens": "12:00",
+            "closes": "15:00"
+          }
+        ]
       }
     ]
   };

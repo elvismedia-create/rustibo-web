@@ -1,7 +1,6 @@
-export const metadata = {
-  title: "Aviso legal | Rustibo",
-  description: "Aviso legal de Rustibo Alzira: titularidad, datos de contacto, condiciones de uso, propiedad intelectual y responsabilidad.",
-};
+import { metadataFromSeo, pageSeo } from "@/data/seoData";
+
+export const metadata = metadataFromSeo(pageSeo.avisoLegal);
 
 export default function AvisoLegalPage() {
   return (

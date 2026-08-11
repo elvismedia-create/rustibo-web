@@ -1,9 +1,7 @@
 import LegalPolicy, { cookiesSections } from "@/components/LegalPolicy";
+import { metadataFromSeo, pageSeo } from "@/data/seoData";
 
-export const metadata = {
-  title: "Política de cookies | Rustibo",
-  description: "Política de cookies de Rustibo Alzira. Información sobre el uso de cookies, consentimiento y configuración del navegador.",
-};
+export const metadata = metadataFromSeo(pageSeo.cookies);
 
 export default function CookiesPage() {
   return <LegalPolicy title="Política de cookies" sections={cookiesSections} />;

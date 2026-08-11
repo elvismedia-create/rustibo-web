@@ -1,11 +1,9 @@
 import Link from "next/link";
 import { ArrowRight, Home, PackageCheck, Phone } from "lucide-react";
 import { categoriasData } from "@/data/menuData";
+import { metadataFromSeo, pageSeo } from "@/data/seoData";
 
-export const metadata = {
-  title: "Carta Rustibo | Pide online en Alzira",
-  description: "Consulta la carta completa de Rustibo: pizzas, entrantes, hamburguesas, pollo, arroces, kebabs y más.",
-};
+export const metadata = metadataFromSeo(pageSeo.carta);
 
 export default function CartaPage() {
   const categorias = Object.entries(categoriasData).map(([key, data]) => ({

@@ -9,9 +9,9 @@ export const homeSeo = {
 
 export const categorySeo = {
   "tex-mex": {
-    title: "Tex Mex | Comida para llevar en Alzira - Rustibo",
+    title: "Tex Mex para llevar en Alzira | Nachos, burgers y pizza - Rustibo",
     description:
-      "Disfruta de la mejor comida para llevar en Alzira, Valencia. En Rustibo ofrecemos hamburguesas, pizzas, paellas, fideuás, pastas, entrantes, kebabs, menú infantil, ensaladas, sándwiches y pollo frito.",
+      "Pide Tex Mex para llevar en Alzira: nachos Rustibo, patatas del chef, burgers, pizza Mariachi y sabores potentes para recoger o recibir en casa.",
     canonical: "/categoria/tex-mex",
   },
   arroces: {
@@ -87,9 +87,9 @@ export const categorySeo = {
     canonical: "/categoria/sandwiches",
   },
   postres: {
-    title: "Postres | Comida para llevar en Alzira - Rustibo",
+    title: "Postres para llevar en Alzira | Tarritos Rustibo",
     description:
-      "Postres para llevar en Alzira para completar tu pedido en Rustibo. Consulta disponibilidad al llamar o en tienda.",
+      "Postres para llevar en Alzira: tarritos Kinder, carrot cake y horchata con fartons en temporada. Completa tu pedido Rustibo.",
     canonical: "/categoria/postres",
   },
   "menu-infantil": {
@@ -147,6 +147,12 @@ export const legacyRoutes = {
 };
 
 export const pageSeo = {
+  carta: {
+    title: "Carta Rustibo | Comida para llevar en Alzira",
+    description:
+      "Consulta la carta completa de Rustibo en Alzira: pizzas, Tex Mex, arroces, bocadillos, carnes, entrantes, kebabs, pasta, pollo RustiChicken y postres.",
+    canonical: "/carta/",
+  },
   novedades: {
     title: "Novedades | Comida para llevar en Alzira - Rustibo",
     description:
@@ -158,6 +164,30 @@ export const pageSeo = {
     description:
       "Aprovecha las promociones de Rustibo en Alzira, Valencia. 50% de descuento en la segunda pizza de lunes a viernes y 3x2 en pizzas los sábados y domingos.",
     canonical: "/promociones/",
+  },
+  blog: {
+    title: "Blog Rustibo | Comida para llevar, pizzas y pollo en Alzira",
+    description:
+      "Consejos e ideas para pedir comida para llevar en Alzira: pizzas artesanas, Rusti Chicken, entrantes, postres y cenas a domicilio.",
+    canonical: "/blog/",
+  },
+  avisoLegal: {
+    title: "Aviso legal | Rustibo",
+    description:
+      "Aviso legal de Rustibo Alzira: titularidad, datos de contacto, condiciones de uso, propiedad intelectual y responsabilidad.",
+    canonical: "/aviso-legal/",
+  },
+  privacidad: {
+    title: "Política de privacidad | Rustibo",
+    description:
+      "Política de privacidad de Rustibo Alzira. Información sobre datos personales, pedidos, contacto y derechos del usuario.",
+    canonical: "/privacidad/",
+  },
+  cookies: {
+    title: "Política de cookies | Rustibo",
+    description:
+      "Política de cookies de Rustibo Alzira. Información sobre uso de cookies, consentimiento y configuración del navegador.",
+    canonical: "/cookies/",
   },
 };
 

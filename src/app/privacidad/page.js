@@ -1,9 +1,7 @@
 import LegalPolicy, { privacySections } from "@/components/LegalPolicy";
+import { metadataFromSeo, pageSeo } from "@/data/seoData";
 
-export const metadata = {
-  title: "Política de privacidad | Rustibo",
-  description: "Política de privacidad de Rustibo Alzira. Información sobre datos personales, pedidos, contacto y derechos del usuario.",
-};
+export const metadata = metadataFromSeo(pageSeo.privacidad);
 
 export default function PrivacidadPage() {
   return <LegalPolicy title="Política de privacidad" sections={privacySections} />;

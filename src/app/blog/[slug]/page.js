@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft, ArrowRight, CalendarDays, Clock, Phone } from "lucide-react";
 import { blogPosts, getBlogPost } from "@/data/blogData";
+import { SITE_URL } from "@/data/seoData";
 
 export async function generateStaticParams() {
   return blogPosts.map((post) => ({ slug: post.slug }));
@@ -21,11 +22,17 @@ export async function generateMetadata({ params }) {
     title: `${post.title} | Blog Rustibo`,
     description: post.excerpt,
     keywords: post.keywords,
+    alternates: {
+      canonical: `/blog/${post.slug}/`,
+    },
     openGraph: {
       title: post.title,
       description: post.excerpt,
+      url: new URL(`/blog/${post.slug}/`, SITE_URL).toString(),
       images: [post.image],
       type: "article",
+      publishedTime: post.date,
+      modifiedTime: post.date,
     },
   };
 }
@@ -43,9 +50,11 @@ export default async function BlogPostPage({ params }) {
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
+    "@id": new URL(`/blog/${post.slug}/#article`, SITE_URL).toString(),
+    mainEntityOfPage: new URL(`/blog/${post.slug}/`, SITE_URL).toString(),
     headline: post.title,
     description: post.excerpt,
-    image: post.image,
+    image: new URL(post.image, SITE_URL).toString(),
     datePublished: post.date,
     dateModified: post.date,
     author: {
