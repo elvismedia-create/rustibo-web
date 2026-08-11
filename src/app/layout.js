@@ -15,6 +15,14 @@ export const metadata = {
   metadataBase: new URL("https://www.rustibo.net"),
   title: "Rustibo | Comida para llevar en Alzira",
   description: "Tu opción para cenar en Alzira. Pizzas, hamburguesas, pollo frito y más.",
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icon-192.png", type: "image/png", sizes: "192x192" },
+      { url: "/icon-512.png", type: "image/png", sizes: "512x512" },
+    ],
+    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
+  },
 };
 
 export const viewport = {
