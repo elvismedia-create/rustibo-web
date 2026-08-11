@@ -19,10 +19,6 @@ const footerColumns = [
       { label: "Pizzas", href: "/categoria/pizzas" },
       { label: "Entrantes", href: "/categoria/entrantes" },
       { label: "Tex Mex", href: "/categoria/tex-mex" },
-      { label: "Arroces", href: "/categoria/arroces" },
-      { label: "Hamburguesas", href: "/categoria/hamburguesas" },
-      { label: "Rusti Chicken", href: "/categoria/pollo-rustichicken" },
-      { label: "Postres", href: "/categoria/postres" },
     ],
   },
   {
