@@ -607,10 +607,12 @@ button {
 
   .mobile-wordmark-link {
     display: flex !important;
+    justify-content: center;
     left: 50%;
     position: absolute;
     top: 54px;
     transform: translate(-50%, -50%);
+    width: 230px;
     z-index: 3;
   }
 
@@ -623,6 +625,7 @@ button {
     height: 68px;
     max-width: 230px;
     object-fit: contain;
+    width: 100%;
   }
 
   .mobile-delivery-row {
@@ -657,9 +660,21 @@ button {
     display: block !important;
   }
 
+  .is-home-header.is-home-header-hidden .mobile-app-header {
+    max-height: none !important;
+    opacity: 1;
+    padding: 0 !important;
+  }
+
+  .is-home-header.is-home-header-hidden .mobile-delivery-row {
+    max-height: none !important;
+    opacity: 1;
+    padding: 24px 22px 22px !important;
+  }
+
   .is-home-header.is-home-header-hidden .mobile-wordmark-link {
-    opacity: 0;
-    pointer-events: none;
+    opacity: 1;
+    pointer-events: auto;
   }
 }
 
@@ -672,6 +687,7 @@ button {
 
   .mobile-wordmark-link {
     top: 54px;
+    width: 250px;
   }
 
   .desktop-logo {
@@ -682,6 +698,10 @@ button {
   .mobile-delivery-row {
     min-height: 106px;
     padding: 24px 28px 22px;
+  }
+
+  .is-home-header.is-home-header-hidden .mobile-delivery-row {
+    padding: 24px 28px 22px !important;
   }
 
   .mobile-delivery-address {
