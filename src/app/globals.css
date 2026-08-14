@@ -600,6 +600,7 @@ button {
     background: var(--color-white);
     height: 0 !important;
     max-width: none;
+    overflow: visible;
     padding: 0;
     position: relative;
   }
@@ -655,11 +656,17 @@ button {
   .mobile-category-nav {
     display: block !important;
   }
+
+  .is-home-header.is-home-header-hidden .mobile-wordmark-link {
+    opacity: 0;
+    pointer-events: none;
+  }
 }
 
 @media (min-width: 901px) and (max-width: 1180px) {
   .mobile-app-header {
     height: 0 !important;
+    overflow: visible;
     padding: 0;
   }
 
