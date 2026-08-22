@@ -98,7 +98,7 @@ export const categoriasData = {
       { id: "boc6", nombre: "Lomo a la Catalana", descripcion: "Lomo con tomate restregado.", precio: "4,50€" },
       { id: "boc7", nombre: "Sepia a la Plancha", descripcion: "Sepia a la plancha.", precio: "7,00€" },
       { id: "boc8", nombre: "Sepia a la Romana", descripcion: "Sepia rebozada.", precio: "7,00€" },
-      { id: "boc9", nombre: "Especial", descripcion: "Tortilla de patatas, pimiento verde, longanizas y barbacoa.", precio: "6,00€" },
+      { id: "boc9", nombre: "Especial", descripcion: "Tortilla de patatas, pimiento verde, longanizas y barbacoa.", precio: "6,50€" },
       { id: "boc10", nombre: "Tortilla a la Francesa", descripcion: "Tortilla a la francesa con longaniza.", precio: "5,80€" },
       { id: "boc11", nombre: "Tortilla a la Francesa 2", descripcion: "Tortilla a la francesa con pincho moruno.", precio: "5,80€" },
       { id: "boc12", nombre: "Rustibó", descripcion: "Lomo, pimiento verde, patatas fritas, cebolla y alioli.", precio: "6,00€" },
