@@ -99,6 +99,7 @@ export const categoriasData = {
       { id: "boc7", nombre: "Sepia a la Plancha", descripcion: "Sepia a la plancha.", precio: "7,00€" },
       { id: "boc8", nombre: "Sepia a la Romana", descripcion: "Sepia rebozada.", precio: "7,00€" },
       { id: "boc9", nombre: "Especial", descripcion: "Tortilla de patatas, pimiento verde, longanizas y barbacoa.", precio: "6,50€" },
+      { id: "boc20", nombre: "Tortilla de Patata", descripcion: "Tortilla de patata.", precio: "5,00€" },
       { id: "boc10", nombre: "Tortilla a la Francesa con Longanizas", descripcion: "Tortilla a la francesa con longanizas.", precio: "6,20€" },
       { id: "boc11", nombre: "Tortilla a la Francesa con Pinchos", descripcion: "Tortilla a la francesa con pinchos morunos.", precio: "6,20€" },
       { id: "boc12", nombre: "Rustibó", descripcion: "Lomo, pimiento verde, patatas fritas, cebolla y alioli.", precio: "6,00€" },
@@ -108,8 +109,7 @@ export const categoriasData = {
       { id: "boc16", nombre: "Jamón a la Catalana", descripcion: "Jamón serrano con tomate.", precio: "4,50€" },
       { id: "boc17", nombre: "Vegetal", descripcion: "Lechuga, tomate, queso, jamón york, huevo, atún y mayonesa.", precio: "6,00€" },
       { id: "boc18", nombre: "Queso Chili", descripcion: "Sobrasada, bacon, queso picante y cebolla.", precio: "6,00€" },
-      { id: "boc19", nombre: "Calamares", descripcion: "Calamares rebozados.", precio: "6,50€" },
-      { id: "boc20", nombre: "Tortilla de Patata", descripcion: "Tortilla de patata.", precio: "5,00€" }
+      { id: "boc19", nombre: "Calamares", descripcion: "Calamares rebozados.", precio: "6,50€" }
     ]
   },
 
