@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Phone } from "lucide-react";
 
@@ -37,6 +38,7 @@ const heroSlides = [
 
 export default function HomeHeroSlider() {
   const [activeSlide, setActiveSlide] = useState(0);
+  const [enableVideo, setEnableVideo] = useState(false);
 
   useEffect(() => {
     const interval = window.setInterval(() => {
@@ -44,6 +46,15 @@ export default function HomeHeroSlider() {
     }, 6500);
 
     return () => window.clearInterval(interval);
+  }, []);
+
+  useEffect(() => {
+    const timer = window.setTimeout(() => {
+      const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      setEnableVideo(!reduceMotion);
+    }, 2500);
+
+    return () => window.clearTimeout(timer);
   }, []);
 
   return (
@@ -54,24 +65,28 @@ export default function HomeHeroSlider() {
           className={`home-hero-slide ${index === activeSlide ? "is-active" : ""}`}
           aria-hidden={index !== activeSlide}
         >
-          {slide.video ? (
+          <Image
+            src={slide.image}
+            alt=""
+            fill
+            priority={index === 0}
+            fetchPriority={index === 0 ? "high" : "auto"}
+            sizes="(max-width: 768px) 100vw, 1200px"
+            className="home-hero-slide-media absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+          />
+          {slide.video && enableVideo ? (
             <video
               className="home-hero-slide-media absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
               autoPlay
               muted
               loop
               playsInline
-              preload="metadata"
+              preload="none"
               poster={slide.image}
             >
               <source src={slide.video} type="video/mp4" />
             </video>
-          ) : (
-            <div
-              className="home-hero-slide-media absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
-              style={{ backgroundImage: `url('${slide.image}')` }}
-            />
-          )}
+          ) : null}
           <div className="home-hero-content relative z-10 flex min-h-[520px] max-w-lg flex-col items-start justify-center px-6 py-10 sm:px-10 lg:px-14 bg-gradient-to-r from-[var(--color-green-dark)] via-[var(--color-green-dark)]/80 to-transparent">
             <span className="font-brand-menu mb-3 inline-flex w-fit rounded-full bg-[var(--color-lime)] px-4 py-2 text-lg uppercase text-[var(--color-green-dark)]">
               {slide.eyebrow}

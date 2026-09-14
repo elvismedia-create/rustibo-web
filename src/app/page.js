@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight, Clock, CreditCard, MapPin } from "lucide-react";
 import AboutSection from "@/components/AboutSection";
 import HomeHeroSlider from "@/components/HomeHeroSlider";
@@ -153,9 +154,11 @@ export default function Home() {
               style={{ width: "calc(33.333% - 14px)", minWidth: "280px" }}
             >
               <div className="relative h-[280px] overflow-hidden rounded-t-2xl rounded-b-none">
-                <img
+                <Image
                   src={promo.image}
                   alt={promo.title}
+                  fill
+                  sizes="(max-width: 768px) 280px, 33vw"
                   className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
@@ -195,16 +198,24 @@ export default function Home() {
               className="group relative block h-[160px] overflow-hidden rounded-2xl transition-all hover:brightness-95"
               style={{
                 backgroundColor: card.bg,
-                backgroundImage: card.bgImage ? `url('${card.bgImage}')` : undefined,
-                backgroundPosition: "center",
-                backgroundSize: "cover",
               }}
             >
+              {card.bgImage ? (
+                <Image
+                  src={card.bgImage}
+                  alt=""
+                  fill
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                  className="object-cover"
+                />
+              ) : null}
               {card.image && (
-                <img
+                <Image
                   src={card.image}
                   alt=""
                   aria-hidden="true"
+                  width={260}
+                  height={180}
                   className={`menu-card-food ${card.imageClass}`}
                 />
               )}

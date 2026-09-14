@@ -449,10 +449,7 @@ button {
   .mobile-app-header,
   .mobile-delivery-row {
     overflow: hidden;
-    transition:
-      max-height 180ms ease,
-      opacity 180ms ease,
-      padding 180ms ease;
+    transition: opacity 180ms ease;
   }
 
   .mobile-wordmark-link {
@@ -577,10 +574,8 @@ button {
 
   .is-home-header.is-home-header-hidden .mobile-app-header,
   .is-home-header.is-home-header-hidden .mobile-delivery-row {
-    max-height: 0 !important;
-    opacity: 0;
-    padding-bottom: 0 !important;
-    padding-top: 0 !important;
+    max-height: none !important;
+    opacity: 1;
   }
 }
 
