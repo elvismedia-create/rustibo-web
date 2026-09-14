@@ -64,7 +64,7 @@ export default function HomeHeroSlider() {
           key={slide.title}
           className={`home-hero-slide ${index === activeSlide ? "is-active" : ""}`}
           aria-hidden={index !== activeSlide}
-          inert={index !== activeSlide ? "" : undefined}
+          inert={index !== activeSlide}
         >
           <Image
             src={slide.image}
@@ -72,6 +72,7 @@ export default function HomeHeroSlider() {
             fill
             priority={index === 0}
             fetchPriority={index === 0 ? "high" : "auto"}
+            loading={index === 0 ? "eager" : "lazy"}
             sizes="(max-width: 768px) 100vw, 1200px"
             className="home-hero-slide-media absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
           />

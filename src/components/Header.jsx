@@ -4,8 +4,15 @@ import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { ChevronDown, ChevronLeft, ChevronRight, MapPin, Menu, Phone, Star, Store } from "lucide-react";
+import { ChevronDown, ChevronLeft, ChevronRight, Flame, MapPin, Menu, Phone, ShoppingBag, Star, Store } from "lucide-react";
 import { categoriasData } from "@/data/menuData";
+
+const mobileIntentLinks = [
+  { label: "Kebab 5€", href: "/categoria/kebabs" },
+  { label: "Burger especial", href: "/categoria/hamburguesas" },
+  { label: "Pollo asado", href: "/categoria/carnes-asadas" },
+  { label: "Bocadillos", href: "/categoria/bocadillos" },
+];
 
 export default function Header() {
   const [isCartaOpen, setIsCartaOpen] = useState(false);
@@ -194,7 +201,32 @@ export default function Header() {
             })}
           </div>
         </nav>
+
+        <nav className="mobile-intent-nav lg:hidden" aria-label="Pedidos rápidos">
+          <div className="mobile-intent-scroll">
+            <span className="mobile-intent-label">
+              <Flame size={15} strokeWidth={2.7} />
+              Lo más buscado
+            </span>
+            {mobileIntentLinks.map((item) => (
+              <Link key={item.href} href={item.href} prefetch={false} className="mobile-intent-link">
+                {item.label}
+              </Link>
+            ))}
+          </div>
+        </nav>
       </header>
+
+      <nav className="mobile-order-dock lg:hidden" aria-label="Acciones rápidas de pedido">
+        <Link href="/carta" prefetch={false} className="mobile-order-dock-secondary">
+          <ShoppingBag size={20} strokeWidth={2.5} />
+          Carta
+        </Link>
+        <a href="tel:962413948" className="mobile-order-dock-primary">
+          <Phone size={21} strokeWidth={2.6} />
+          Llamar ahora
+        </a>
+      </nav>
     </>
   );
 }
