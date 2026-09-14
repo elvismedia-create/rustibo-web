@@ -12,12 +12,12 @@ export default function CartaPage() {
   }));
 
   return (
-    <main className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
-      <div className="mb-8 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+    <main className="carta-page mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
+      <div className="carta-page-header mb-8 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
         <div>
-          <p className="text-sm font-normal uppercase text-[var(--color-gray-sub)]">Recogida y domicilio en Alzira</p>
-          <h1 className="text-6xl uppercase text-[var(--color-green-dark)] md:text-7xl">Carta Rustibo</h1>
-          <p className="mt-2 max-w-2xl font-normal text-[var(--color-gray-text)]">
+          <p className="carta-page-kicker text-sm font-normal uppercase text-[var(--color-gray-sub)]">Recogida y domicilio en Alzira</p>
+          <h1 className="carta-page-title text-6xl uppercase text-[var(--color-green-dark)] md:text-7xl">Carta Rustibo</h1>
+          <p className="carta-page-intro mt-2 max-w-2xl font-normal text-[var(--color-gray-text)]">
             Elige una categoría, revisa platos y precios, y llama para completar tu pedido. Domicilio con mínimo de 12€ y pago con tarjeta en casa.
           </p>
         </div>
@@ -48,10 +48,10 @@ export default function CartaPage() {
         </div>
       </div>
 
-      <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="carta-category-grid grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {categorias.map((cat) => (
-          <Link key={cat.slug} href={`/categoria/${cat.slug}`} className="promo-card group overflow-hidden rounded-2xl bg-[var(--color-white)]">
-            <div className="relative aspect-[16/9] overflow-hidden">
+          <Link key={cat.slug} href={`/categoria/${cat.slug}`} className="carta-category-card promo-card group overflow-hidden rounded-2xl bg-[var(--color-white)]">
+            <div className="carta-category-image relative aspect-[16/9] overflow-hidden">
               <div
                 className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
                 style={{ backgroundImage: `url('${cat.imagenPrincipal}')` }}
@@ -60,7 +60,7 @@ export default function CartaPage() {
                 {cat.titulo}
               </h2>
             </div>
-            <div className="flex items-center justify-between gap-4 p-5">
+            <div className="carta-category-body flex items-center justify-between gap-4 p-5">
               <p className="line-clamp-2 text-sm font-normal text-[var(--color-gray-text)]">{cat.subtitulo}</p>
               <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[var(--color-lime)] text-[var(--color-green-dark)]">
                 <ArrowRight size={20} />

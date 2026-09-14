@@ -1255,11 +1255,87 @@ button {
     font-family: var(--font-mobile);
   }
 
+  .carta-page {
+    padding-bottom: 34px;
+    padding-top: 26px;
+  }
+
+  .carta-page-header {
+    gap: 16px;
+    margin-bottom: 22px;
+  }
+
+  .carta-page-kicker {
+    color: var(--color-green-medium);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+  }
+
+  .carta-page-title {
+    font-size: 48px;
+    line-height: 0.92;
+    margin-top: 6px;
+  }
+
+  .carta-page-intro {
+    font-size: 14px;
+    line-height: 1.45;
+    margin-top: 12px;
+  }
+
   .home-hero,
   .home-hero-content,
   .home-hero-content p,
   .home-hero-actions {
     font-family: var(--font-body);
+  }
+
+  .carta-category-grid {
+    gap: 12px;
+  }
+
+  .carta-category-card {
+    border: 0;
+    border-radius: 10px;
+    background: var(--color-green-dark);
+  }
+
+  .carta-category-image {
+    aspect-ratio: 1.35;
+  }
+
+  .carta-category-image::after {
+    background: linear-gradient(180deg, transparent 35%, rgba(17, 17, 17, 0.58));
+    content: "";
+    inset: 0;
+    pointer-events: none;
+    position: absolute;
+  }
+
+  .carta-category-image h2 {
+    bottom: 13px;
+    font-size: 34px;
+    left: 15px;
+    padding: 0;
+    right: 12px;
+    z-index: 1;
+  }
+
+  .carta-category-body {
+    background: var(--color-white);
+    min-height: 58px;
+    padding: 12px 13px 12px 15px;
+  }
+
+  .carta-category-body p {
+    font-size: 12px;
+    line-height: 1.25;
+  }
+
+  .carta-category-body span {
+    height: 36px;
+    width: 36px;
   }
 
   .desktop-logo {
