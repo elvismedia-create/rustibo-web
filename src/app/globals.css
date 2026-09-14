@@ -346,6 +346,96 @@ button {
   text-transform: uppercase;
 }
 
+.featured-eyebrow {
+  align-items: center;
+  color: var(--color-red-price);
+  display: flex;
+  font-size: 12px;
+  font-weight: 800;
+  gap: 6px;
+  letter-spacing: 0.04em;
+  line-height: 1;
+  margin-bottom: 7px;
+  text-transform: uppercase;
+}
+
+.featured-products-grid {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.featured-product-card {
+  align-items: center;
+  background: var(--color-white);
+  border: 1px solid var(--color-green-border);
+  border-radius: 10px;
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+  min-height: 112px;
+  padding: 17px 15px 16px 18px;
+  transition: border-color 160ms ease, transform 160ms ease;
+}
+
+.featured-product-card:hover {
+  border-color: var(--color-green-medium);
+  transform: translateY(-2px);
+}
+
+.featured-product-copy {
+  min-width: 0;
+}
+
+.featured-product-copy h3 {
+  color: var(--color-green-dark);
+  font-family: var(--font-display) !important;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 0.96;
+  text-transform: uppercase;
+}
+
+.featured-product-copy p {
+  color: var(--color-gray-text);
+  font-size: 12px;
+  line-height: 1.3;
+  margin-top: 7px;
+}
+
+.featured-product-meta {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  gap: 12px;
+}
+
+.featured-product-meta > span:first-child {
+  color: var(--color-red-price);
+  font-family: var(--font-display) !important;
+  font-size: 23px;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.featured-product-arrow {
+  align-items: center;
+  background: var(--color-lime);
+  border-radius: 999px;
+  color: var(--color-green-dark);
+  display: flex;
+  height: 32px;
+  justify-content: center;
+  transition: background-color 160ms ease, color 160ms ease;
+  width: 32px;
+}
+
+.featured-product-card:hover .featured-product-arrow {
+  background: var(--color-green-dark);
+  color: var(--color-white);
+}
+
 .section-heading-tight {
   margin-bottom: 17px;
 }
@@ -1238,6 +1328,23 @@ button {
 
   .section-heading-tight {
     margin-bottom: 22px;
+  }
+
+  .featured-products-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .featured-product-card {
+    min-height: 122px;
+    padding: 16px 13px 15px 15px;
+  }
+
+  .featured-product-copy h3 {
+    font-size: 23px;
+  }
+
+  .featured-product-copy p {
+    font-size: 12px;
   }
 
   .section-heading-row {

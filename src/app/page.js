@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, Clock, CreditCard, MapPin } from "lucide-react";
+import { ArrowRight, Clock, CreditCard, MapPin, Star } from "lucide-react";
 import AboutSection from "@/components/AboutSection";
 import HomeHeroSlider from "@/components/HomeHeroSlider";
 import { homeSeo, metadataFromSeo } from "@/data/seoData";
@@ -77,6 +77,15 @@ const menuCards = [
     color: "var(--color-green-dark)",
     bgImage: "/images/categories/card-bg-carnes.webp",
   },
+];
+
+const featuredProducts = [
+  { name: "Kebab", price: "5,00€", detail: "El clásico que siempre apetece", href: "/categoria/kebabs" },
+  { name: "Hamburguesa Especial", price: "6,50€", detail: "Queso, huevo y bacon", href: "/categoria/hamburguesas" },
+  { name: "Bocata Rustibó", price: "6,50€", detail: "Lomo, pimiento, patatas y alioli", href: "/categoria/bocadillos" },
+  { name: "Pizza 3x2", price: "Paga 2", detail: "Plan perfecto para compartir", href: "/promociones" },
+  { name: "RustiChicken", price: "9,50€", detail: "Crujiente y recién hecho", href: "/categoria/pollo-rustichicken" },
+  { name: "Bocata de Calamares", price: "6,50€", detail: "Un clásico de Rustibó", href: "/categoria/bocadillos" },
 ];
 
 const SHOW_RUSTI_POINTS = false;
@@ -173,6 +182,35 @@ export default function Home() {
                 <span className="promo-arrow">
                   →
                 </span>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      <section className="section-gap-bottom mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="section-heading-tight">
+          <div className="section-heading-row">
+            <div>
+              <p className="featured-eyebrow"><Star size={15} fill="currentColor" /> LOS FAVORITOS</p>
+              <h2 className="section-title-compact">Lo más pedido en Rustibó</h2>
+            </div>
+            <Link href="/carta" className="section-view-all">
+              VER CARTA
+            </Link>
+          </div>
+        </div>
+
+        <div className="featured-products-grid">
+          {featuredProducts.map((product) => (
+            <Link key={product.name} href={product.href} className="featured-product-card group">
+              <div className="featured-product-copy">
+                <h3>{product.name}</h3>
+                <p>{product.detail}</p>
+              </div>
+              <div className="featured-product-meta">
+                <span>{product.price}</span>
+                <span className="featured-product-arrow" aria-hidden="true"><ArrowRight size={18} /></span>
               </div>
             </Link>
           ))}
