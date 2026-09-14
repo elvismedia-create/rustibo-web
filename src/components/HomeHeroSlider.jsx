@@ -9,7 +9,7 @@ const heroSlides = [
   {
     eyebrow: "Recién hecho",
     title: "Sabor Rustibo",
-    highlight: "en movimiento!",
+    highlight: "recién hecho!",
     text: "Pizzas, bocadillos, kebabs y caprichos dulces listos para llevar o recibir en casa. Tú llamas, nosotros lo preparamos.",
     image: "/images/novedades-postre-tarritos-rustibo.jpg",
     video: "/video/hero-rustibo-tarritos.mp4",
@@ -94,7 +94,7 @@ export default function HomeHeroSlider() {
             <span className="font-brand-menu mb-3 inline-flex w-fit rounded-full bg-[var(--color-lime)] px-4 py-2 text-lg uppercase text-[var(--color-green-dark)]">
               {slide.eyebrow}
             </span>
-            <h1 className="text-5xl uppercase leading-none text-[var(--color-white)] sm:text-6xl lg:text-7xl">
+            <h1 className="text-4xl uppercase leading-none text-[var(--color-white)] sm:text-5xl lg:text-6xl">
               <span className="block whitespace-nowrap">{slide.title}</span>
               <span className="block text-[var(--color-lime)]">{slide.highlight}</span>
             </h1>

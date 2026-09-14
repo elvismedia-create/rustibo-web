@@ -1198,7 +1198,8 @@ button {
   }
 
   .home-hero-content h1 {
-    font-size: clamp(46px, 14vw, 58px);
+    font-size: clamp(32px, 9.5vw, 39px);
+    line-height: 1;
   }
 
   .home-hero-content p {
