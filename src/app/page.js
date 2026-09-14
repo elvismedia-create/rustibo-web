@@ -80,12 +80,12 @@ const menuCards = [
 ];
 
 const featuredProducts = [
-  { name: "Kebab", category: "KEBABS", price: "5,00€", detail: "El clásico que siempre apetece", href: "/categoria/kebabs" },
-  { name: "Hamburguesa Especial", category: "HAMBURGUESAS", price: "6,50€", detail: "Queso, huevo y bacon", href: "/categoria/hamburguesas" },
-  { name: "Bocata Rustibó", category: "BOCADILLOS", price: "6,50€", detail: "Lomo, pimiento, patatas y alioli", href: "/categoria/bocadillos" },
-  { name: "Pizza 3x2", category: "PROMOCIÓN", price: "Paga 2", detail: "Plan perfecto para compartir", href: "/promociones" },
-  { name: "RustiChicken", category: "POLLO CRUJIENTE", price: "9,50€", detail: "Crujiente y recién hecho", href: "/categoria/pollo-rustichicken" },
-  { name: "Bocata de Calamares", category: "BOCADILLOS", price: "6,50€", detail: "Un clásico de Rustibó", href: "/categoria/bocadillos" },
+  { name: "Kebab", price: "5,00€", detail: "El clásico que siempre apetece", href: "/categoria/kebabs" },
+  { name: "Hamburguesa Especial", price: "6,50€", detail: "Queso, huevo y bacon", href: "/categoria/hamburguesas" },
+  { name: "Bocata Rustibó", price: "6,50€", detail: "Lomo, pimiento, patatas y alioli", href: "/categoria/bocadillos" },
+  { name: "Pizza 3x2", price: "Paga 2", detail: "Plan perfecto para compartir", href: "/promociones" },
+  { name: "RustiChicken", price: "9,50€", detail: "Crujiente y recién hecho", href: "/categoria/pollo-rustichicken" },
+  { name: "Bocata de Calamares", price: "6,50€", detail: "Un clásico de Rustibó", href: "/categoria/bocadillos" },
 ];
 
 const SHOW_RUSTI_POINTS = false;
@@ -204,7 +204,6 @@ export default function Home() {
           {featuredProducts.map((product) => (
             <Link key={product.name} href={product.href} className="featured-product-card group">
               <div className="featured-product-copy">
-                <span className="featured-product-category">{product.category}</span>
                 <h3>{product.name}</h3>
                 <p>{product.detail}</p>
               </div>
