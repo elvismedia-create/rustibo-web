@@ -29,7 +29,6 @@ export default function Header() {
 
   useEffect(() => {
     if (!isHome) {
-      setIsHomeHeaderHidden(false);
       return undefined;
     }
 

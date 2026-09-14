@@ -64,6 +64,7 @@ export default function HomeHeroSlider() {
           key={slide.title}
           className={`home-hero-slide ${index === activeSlide ? "is-active" : ""}`}
           aria-hidden={index !== activeSlide}
+          inert={index !== activeSlide ? "" : undefined}
         >
           <Image
             src={slide.image}
@@ -83,8 +84,10 @@ export default function HomeHeroSlider() {
               playsInline
               preload="none"
               poster={slide.image}
+              aria-hidden="true"
             >
               <source src={slide.video} type="video/mp4" />
+              <track kind="captions" src="/video/silent-captions.vtt" srcLang="es" label="Sin audio" default />
             </video>
           ) : null}
           <div className="home-hero-content relative z-10 flex min-h-[520px] max-w-lg flex-col items-start justify-center px-6 py-10 sm:px-10 lg:px-14 bg-gradient-to-r from-[var(--color-green-dark)] via-[var(--color-green-dark)]/80 to-transparent">
@@ -99,11 +102,11 @@ export default function HomeHeroSlider() {
               {slide.text}
             </p>
             <div className="home-hero-actions mt-7 flex flex-wrap gap-4">
-              <a href="tel:962413948" className="order-button font-brand-menu inline-flex items-center gap-2 rounded-2xl px-8 py-4 text-xl uppercase">
+              <a href="tel:962413948" tabIndex={index === activeSlide ? undefined : -1} className="order-button font-brand-menu inline-flex items-center gap-2 rounded-2xl px-8 py-4 text-xl uppercase">
                 Llamar ahora
                 <Phone size={22} />
               </a>
-              <Link href={slide.secondaryHref} className="font-brand-menu inline-flex items-center gap-2 rounded-2xl border-2 border-[var(--color-white)] px-8 py-4 text-xl uppercase text-[var(--color-white)] hover:bg-[var(--color-white)] hover:text-[var(--color-green-dark)]">
+              <Link href={slide.secondaryHref} tabIndex={index === activeSlide ? undefined : -1} className="font-brand-menu inline-flex items-center gap-2 rounded-2xl border-2 border-[var(--color-white)] px-8 py-4 text-xl uppercase text-[var(--color-white)] hover:bg-[var(--color-white)] hover:text-[var(--color-green-dark)]">
                 {slide.secondaryLabel}
                 <ArrowRight size={22} />
               </Link>

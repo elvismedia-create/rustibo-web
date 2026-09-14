@@ -17,10 +17,12 @@ export default function CookieConsent() {
   const [preferences, setPreferences] = useState(defaultPreferences);
 
   useEffect(() => {
+    let frame = 0;
     const stored = window.localStorage.getItem(STORAGE_KEY);
-    if (!stored) {
-      setIsOpen(true);
-    }
+    frame = window.requestAnimationFrame(() => {
+      setIsOpen(!stored);
+      setIsReady(true);
+    });
 
     const openPreferences = () => {
       const current = window.localStorage.getItem(STORAGE_KEY);
@@ -36,9 +38,9 @@ export default function CookieConsent() {
     };
 
     window.addEventListener("rustibo:open-cookie-preferences", openPreferences);
-    setIsReady(true);
 
     return () => {
+      window.cancelAnimationFrame(frame);
       window.removeEventListener("rustibo:open-cookie-preferences", openPreferences);
     };
   }, []);
