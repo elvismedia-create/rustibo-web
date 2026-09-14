@@ -154,7 +154,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex snap-x gap-5 overflow-x-auto pb-3 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+        <div className="promos-scroll flex snap-x gap-5 overflow-x-auto pb-3 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
           {promos.map((promo) => (
             <Link
               key={promo.title}
@@ -162,7 +162,7 @@ export default function Home() {
               className="surface-bordered group block shrink-0 snap-start overflow-hidden rounded-2xl transition hover:brightness-95"
               style={{ width: "calc(33.333% - 14px)", minWidth: "280px" }}
             >
-              <div className="relative h-[280px] overflow-hidden rounded-t-2xl rounded-b-none">
+              <div className="promo-card-image relative h-[280px] overflow-hidden rounded-t-2xl rounded-b-none">
                 <Image
                   src={promo.image}
                   alt={promo.title}
@@ -188,7 +188,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section-gap-bottom mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <section className="home-menu-explore section-gap-bottom mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="section-heading-tight">
           <div className="section-heading-row">
             <div>
