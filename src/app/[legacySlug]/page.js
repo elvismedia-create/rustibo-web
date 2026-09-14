@@ -27,7 +27,7 @@ function ContactPage() {
   return (
     <main className="mx-auto max-w-4xl px-4 py-12 text-center sm:px-6 lg:px-8">
       <p className="text-sm font-normal uppercase text-[var(--color-gray-sub)]">Rustibo Alzira</p>
-      <h1 className="mt-2 text-6xl uppercase text-[var(--color-green-dark)] md:text-7xl">Contacto</h1>
+      <h1 className="mt-2 text-6xl uppercase text-[var(--color-green-dark)] md:text-7xl">Pedir Rustibo</h1>
       <div className="surface-bordered mt-7 rounded-2xl p-7 font-normal text-[var(--color-gray-text)]">
         <p className="text-xl">Haz tu pedido por teléfono o ven a recogerlo en tienda.</p>
         <p className="mt-3">Carrer Pastora, 9, 46600 Alzira, Valencia.</p>

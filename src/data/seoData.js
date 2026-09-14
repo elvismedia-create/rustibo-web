@@ -1,9 +1,9 @@
 export const SITE_URL = "https://www.rustibo.net";
 
 export const homeSeo = {
-  title: "Comida para llevar en Alzira | Casera y hecha al día - Rustibo",
+  title: "Comida para llevar en Alzira a domicilio | Rustibo",
   description:
-    "Disfruta de comida casera en Alzira con Rustibo. Elige entre pizzas, bocadillos y carnes. Haz tu pedido y recíbelo en casa gratis. Comidas para llevar Alzira.",
+    "Pide comida casera en Alzira: pizzas, bocadillos, kebabs, hamburguesas y entrantes. Domicilio gratis desde 12€ o recogida en tienda.",
   canonical: "/",
 };
 
@@ -33,9 +33,9 @@ export const categorySeo = {
     canonical: "/categoria/carnes-asadas",
   },
   entrantes: {
-    title: "Entrantes | Comida para llevar en Alzira - Rustibo",
+    title: "Entrantes para llevar en Alzira | Croquetas, bravas y tapas",
     description:
-      "Descubre nuestros entrantes artesanales en Alzira: croquetas, patatas, tequeños, alitas, nachos y tapas para compartir.",
+      "Completa tu pedido con entrantes Rustibo: croquetas, bravas, tequeños, alitas, nachos y calamares para compartir en Alzira.",
     canonical: "/categoria/entrantes",
   },
   ensaladas: {
@@ -45,15 +45,15 @@ export const categorySeo = {
     canonical: "/categoria/ensaladas",
   },
   hamburguesas: {
-    title: "Hamburguesas | Comida para llevar en Alzira - Rustibo",
+    title: "Hamburguesas en Alzira para llevar y domicilio | Rustibo",
     description:
-      "Hamburguesas para llevar en Alzira con carne, ingredientes frescos y recetas especiales de Rustibo.",
+      "Hamburguesas recién hechas en Alzira: normal, con queso, especial y Rustibó. Pide para recoger o a domicilio desde Rustibo.",
     canonical: "/categoria/hamburguesas",
   },
   kebabs: {
-    title: "Kebabs | Comida para llevar en Alzira - Rustibo",
+    title: "Kebab en Alzira a domicilio y para llevar | Rustibo",
     description:
-      "Kebabs para llevar en Alzira con carne, vegetales frescos y salsas. Pide en Rustibo para recoger o domicilio.",
+      "Pide kebab en Alzira: ternera o pollo, normal, con queso, super y especial. Recogida en tienda o domicilio gratis desde 12€.",
     canonical: "/categoria/kebabs",
   },
   pasta: {
@@ -103,9 +103,9 @@ export const categorySeo = {
 export const legacyRoutes = {
   "comida-para-llevar-en-alzira-productos": {
     type: "carta",
-    title: "Productos | Comida para llevar en Alzira - Rustibo",
+    title: "Carta de comida para llevar en Alzira | Rustibo",
     description:
-      "Explora la variedad de productos en Rustibo, tu local de comidas para llevar en Alzira, Valencia. Hamburguesas, pizzas, arroces, carnes, pastas, entrantes, bocadillos, sándwiches, menú infantil y pollo frito.",
+      "Consulta la carta Rustibo: pizzas, bocadillos, kebabs, hamburguesas, entrantes, arroces, carnes y postres para llevar o domicilio en Alzira.",
     canonical: "/comida-para-llevar-en-alzira-productos/",
   },
   "tex-mex-para-llevar-alzira": { type: "category", categorySlug: "tex-mex", ...categorySeo["tex-mex"], canonical: "/tex-mex-para-llevar-alzira/" },
@@ -125,9 +125,9 @@ export const legacyRoutes = {
   menu_infantil: { type: "category", categorySlug: "menu-infantil", ...categorySeo["menu-infantil"], canonical: "/menu_infantil/" },
   contact: {
     type: "contact",
-    title: "Contacto | Comida para llevar en Alzira - Rustibo",
+    title: "Teléfono Rustibo Alzira | Pedidos para llevar y domicilio",
     description:
-      "Ponte en contacto con Rustibo, tu local de comidas para llevar en Alzira, Valencia. Estamos aquí para responder a tus preguntas y recibir tus pedidos.",
+      "Llama a Rustibo Alzira al 962 41 39 48 para pedir comida para llevar o a domicilio. Estamos en Carrer Pastora, 9.",
     canonical: "/contact/",
   },
   politica_de_privacidad: {
