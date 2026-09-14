@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, Clock, CreditCard, MapPin, Star } from "lucide-react";
+import { ArrowRight, Clock, CreditCard, MapPin } from "lucide-react";
 import AboutSection from "@/components/AboutSection";
 import HomeHeroSlider from "@/components/HomeHeroSlider";
 import { homeSeo, metadataFromSeo } from "@/data/seoData";
@@ -192,7 +192,6 @@ export default function Home() {
         <div className="section-heading-tight">
           <div className="section-heading-row">
             <div>
-              <p className="featured-eyebrow"><Star size={15} fill="currentColor" /> LOS FAVORITOS</p>
               <h2 className="section-title-compact">Lo más pedido en Rustibó</h2>
             </div>
             <Link href="/carta" className="section-view-all">
