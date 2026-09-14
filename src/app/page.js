@@ -188,7 +188,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="home-menu-explore section-gap-bottom mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <section className="section-gap-bottom mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="section-heading-tight">
           <div className="section-heading-row">
             <div>
@@ -216,7 +216,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section-gap-bottom mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <section className="home-menu-explore section-gap-bottom mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="section-heading-tight">
           <div className="section-heading-row">
             <h2 className="section-title-compact">Explora nuestro menú</h2>
