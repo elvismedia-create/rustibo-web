@@ -124,11 +124,11 @@ function RustiPointsSection() {
 
 export default function Home() {
   return (
-    <div>
+    <div className="home-page">
       <section className="mx-auto max-w-7xl px-4 pt-8 sm:px-6 lg:px-8">
         <HomeHeroSlider />
 
-        <div className="delivery-note section-gap-above">
+        <div className="home-benefits delivery-note section-gap-above">
           <span className="delivery-note-item delivery-note-item-left">
             <Clock size={19} />
             <span>Haz tus pedidos entre las 19:00-20:00h. Recíbelo cuando desees.</span>
@@ -144,7 +144,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section-gap-top mx-auto max-w-7xl px-4 pb-12 sm:px-6 lg:px-8">
+      <section className="home-promos section-gap-top mx-auto max-w-7xl px-4 pb-12 sm:px-6 lg:px-8">
         <div className="section-heading-tight">
           <div className="section-heading-row">
             <h2 className="section-title-compact">PROMOS DESTACADAS</h2>
@@ -188,7 +188,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section-gap-bottom mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <section className="home-featured section-gap-bottom mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="section-heading-tight">
           <div className="section-heading-row">
             <div>
