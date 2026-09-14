@@ -1406,11 +1406,18 @@ button {
   }
 
   .section-title-compact {
+    font-family: var(--font-display) !important;
     font-size: 28px;
+    font-weight: 400 !important;
+    line-height: 1;
+    text-transform: uppercase;
   }
 
   .section-view-all {
-    font-size: 17px;
+    font-family: var(--font-body) !important;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.03em;
     padding-bottom: 2px;
   }
 
@@ -1423,7 +1430,11 @@ button {
   }
 
   .promo-title {
-    font-size: 30px;
+    font-family: var(--font-body) !important;
+    font-size: 21px;
+    font-weight: 850 !important;
+    line-height: 1.05;
+    text-transform: none;
   }
 
   .promo-highlight {
@@ -1456,8 +1467,11 @@ button {
   }
 
   .menu-section-heading {
-    font-size: 26px;
+    font-family: var(--font-body) !important;
+    font-size: 24px;
+    font-weight: 850 !important;
     margin-bottom: 18px;
+    text-transform: none;
   }
 
   .menu-item-row {
@@ -1467,7 +1481,11 @@ button {
   }
 
   .menu-item-title {
-    font-size: 28px;
+    font-family: var(--font-body) !important;
+    font-size: 19px;
+    font-weight: 800 !important;
+    line-height: 1.1;
+    text-transform: none;
   }
 
   .menu-item-description {
