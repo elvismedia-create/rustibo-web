@@ -4,12 +4,12 @@ export default function AboutSection() {
       <div className="relative overflow-hidden rounded-[28px] border border-[var(--color-green-border)] bg-[var(--color-black)]">
         <div
           className="about-history-bg absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/images/about-rustibo-team.png')" }}
+          style={{ backgroundImage: "url('/images/about-rustibo-team.webp')" }}
           aria-hidden="true"
         />
         <div
           className="about-history-bg about-history-bg-alt absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/images/about-rustibo-kitchen.png')" }}
+          style={{ backgroundImage: "url('/images/about-rustibo-kitchen.webp')" }}
           aria-hidden="true"
         />
         <div className="relative min-h-[286px]">

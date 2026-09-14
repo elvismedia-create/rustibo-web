@@ -51,7 +51,9 @@ export default function HomeHeroSlider() {
   useEffect(() => {
     const timer = window.setTimeout(() => {
       const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-      setEnableVideo(!reduceMotion);
+      const compactViewport = window.matchMedia("(max-width: 767px)").matches;
+      const saveData = navigator.connection?.saveData === true;
+      setEnableVideo(!reduceMotion && !compactViewport && !saveData);
     }, 2500);
 
     return () => window.clearTimeout(timer);
@@ -63,16 +65,13 @@ export default function HomeHeroSlider() {
         <div
           key={slide.title}
           className={`home-hero-slide ${index === activeSlide ? "is-active" : ""}`}
-          aria-hidden={index !== activeSlide}
           inert={index !== activeSlide}
         >
           <Image
             src={slide.image}
             alt=""
             fill
-            priority={index === 0}
-            fetchPriority={index === 0 ? "high" : "auto"}
-            loading={index === 0 ? "eager" : "lazy"}
+            preload={index === 0}
             sizes="(max-width: 768px) 100vw, 1200px"
             className="home-hero-slide-media absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
           />
