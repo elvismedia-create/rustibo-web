@@ -26,6 +26,7 @@
   --card-postres-text: #4a2060;
   --font-display: var(--font-bebas), 'Bebas Neue', sans-serif;
   --font-body: system-ui, -apple-system, sans-serif;
+  --font-mobile: var(--font-manrope), 'Helvetica Neue', Arial, sans-serif;
   --section-gap: 38px;
 }
 
@@ -1247,6 +1248,18 @@ button {
 
   .mobile-app-header {
     height: 84px;
+  }
+
+  main,
+  .site-footer {
+    font-family: var(--font-mobile);
+  }
+
+  .home-hero,
+  .home-hero-content,
+  .home-hero-content p,
+  .home-hero-actions {
+    font-family: var(--font-body);
   }
 
   .desktop-logo {

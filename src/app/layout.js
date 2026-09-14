@@ -1,4 +1,4 @@
-import { Bebas_Neue } from "next/font/google";
+import { Bebas_Neue, Manrope } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -9,6 +9,12 @@ const bebas = Bebas_Neue({
   subsets: ["latin"],
   variable: "--font-bebas",
   display: 'swap',
+});
+
+const manrope = Manrope({
+  subsets: ["latin"],
+  variable: "--font-manrope",
+  display: "swap",
 });
 
 export const metadata = {
@@ -103,7 +109,7 @@ export default function RootLayout({ children }) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className={`${bebas.variable} antialiased bg-[var(--color-white)] text-[var(--color-black)] min-h-screen`}>
+      <body className={`${bebas.variable} ${manrope.variable} antialiased bg-[var(--color-white)] text-[var(--color-black)] min-h-screen`}>
         <Header />
         <main className="w-full">
           {children}
