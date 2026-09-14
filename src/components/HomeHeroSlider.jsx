@@ -10,7 +10,7 @@ const heroSlides = [
     eyebrow: "Recién hecho",
     title: "Sabor Rustibo",
     highlight: "en movimiento!",
-    text: "Primeros planos de nuestro producto, packaging Rustibo y ese punto caliente que entra por los ojos antes de llamar.",
+    text: "Pizzas, bocadillos, kebabs y caprichos dulces listos para llevar o recibir en casa. Tú llamas, nosotros lo preparamos.",
     image: "/images/novedades-postre-tarritos-rustibo.jpg",
     video: "/video/hero-rustibo-tarritos.mp4",
     secondaryHref: "/carta",
