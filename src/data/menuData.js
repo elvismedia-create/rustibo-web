@@ -17,13 +17,13 @@ export const categoriasData = {
       { id: "tm5", seccion: "Para Empezar y Compartir", nombre: "Sandwich Pulled Pork", descripcion: "Mezclum, tomate, cheddar, pulled pork, cebolla roja y crema agria.", precio: "6,50€" },
       { id: "tm6", seccion: "Para Empezar y Compartir", nombre: "Rustibizza Mariachi", descripcion: "Salsa de tomate picante, queso, pimientos, cebolla, pollo, guacamole y cheddar.", precio: "6,00€" },
       
-      { id: "tm7", seccion: "Hamburguesas Tex-Mex", nombre: "Hamburguesa Texas", descripcion: "Buey 200g, mermelada de arándanos, mezclum, cebolla caramelizada, queso de cabra y foie.", precio: "9,50€" },
-      { id: "tm8", seccion: "Hamburguesas Tex-Mex", nombre: "Hamburguesa Arizona", descripcion: "Buey 200g, mezclum, cheddar, aros de cebolla, bacon y salsa barbacoa.", precio: "8,50€" },
-      { id: "tm9", seccion: "Hamburguesas Tex-Mex", nombre: "Hamburguesa Atlanta", descripcion: "Buey 200g, mezclum, queso de cabra, berenjena, cebolla caramelizada y mostaza vieja.", precio: "8,50€" },
-      { id: "tm10", seccion: "Hamburguesas Tex-Mex", nombre: "Hamburguesa New York", descripcion: "Buey 200g, mezclum, cheddar, bacon, cebolla, tomate y huevo frito.", precio: "9,50€" },
-      { id: "tm11", seccion: "Hamburguesas Tex-Mex", nombre: "Pulled Pork Burger", descripcion: "Pulled pork, mezclum, tomate, cebolla roja, guacamole y queso cheddar.", precio: "9,50€" },
-      { id: "tm12", seccion: "Hamburguesas Tex-Mex", nombre: "Hamburguesa California", descripcion: "Buey 200g, mezclum, tomate, queso picante, jalapeños, cebolla roja y salsa chipotle.", precio: "8,50€" },
-      { id: "tm13", seccion: "Hamburguesas Tex-Mex", nombre: "Hamburguesa Miami (Vegana)", descripcion: "Hamburguesa vegana, tomate, mezclum, cebolla y salsa de mostaza.", precio: "8,00€" }
+      { id: "tm7", seccion: "Hamburguesas Tex-Mex", nombre: "Hamburguesa Texas", descripcion: "Buey 200g, mermelada de arándanos, mezclum, cebolla caramelizada, queso de cabra y foie.", precio: "10,00€" },
+      { id: "tm8", seccion: "Hamburguesas Tex-Mex", nombre: "Hamburguesa Arizona", descripcion: "Buey 200g, mezclum, cheddar, aros de cebolla, bacon y salsa barbacoa.", precio: "9,00€" },
+      { id: "tm9", seccion: "Hamburguesas Tex-Mex", nombre: "Hamburguesa Atlanta", descripcion: "Buey 200g, mezclum, queso de cabra, berenjena, cebolla caramelizada y mostaza vieja.", precio: "9,00€" },
+      { id: "tm10", seccion: "Hamburguesas Tex-Mex", nombre: "Hamburguesa New York", descripcion: "Buey 200g, mezclum, cheddar, bacon, cebolla, tomate y huevo frito.", precio: "10,00€" },
+      { id: "tm11", seccion: "Hamburguesas Tex-Mex", nombre: "Pulled Pork Burger", descripcion: "Pulled pork, mezclum, tomate, cebolla roja, guacamole y queso cheddar.", precio: "10,00€" },
+      { id: "tm12", seccion: "Hamburguesas Tex-Mex", nombre: "Hamburguesa California", descripcion: "Buey 200g, mezclum, tomate, queso picante, jalapeños, cebolla roja y salsa chipotle.", precio: "9,00€" },
+      { id: "tm13", seccion: "Hamburguesas Tex-Mex", nombre: "Hamburguesa Miami (Vegana)", descripcion: "Hamburguesa vegana, tomate, mezclum, cebolla y salsa de mostaza.", precio: "8,50€" }
     ]
   },
 
@@ -127,7 +127,7 @@ export const categoriasData = {
       { id: "ent4", nombre: "Bolitas de Pollo o Queso (10u)", descripcion: "", precio: "4,30€" },
       { id: "ent5", nombre: "Bolitas de Jalapeño (8u)", descripcion: "", precio: "4,30€" },
       { id: "ent6", nombre: "Alitas con Picadillo", descripcion: "", precio: "7,00€" },
-      { id: "ent7", nombre: "Alitas en Adobo", descripcion: "", precio: "4,50€" },
+      { id: "ent7", nombre: "Alitas en Adobo", descripcion: "", precio: "5,00€" },
       { id: "ent8", nombre: "Sepia a la Plancha", descripcion: "", precio: "7,50€" },
       { id: "ent9", nombre: "Sepia a la Romana", descripcion: "", precio: "7,50€" },
       { id: "ent10", nombre: "Calamares Rebozada", descripcion: "", precio: "6,50€" },
@@ -200,7 +200,7 @@ export const categoriasData = {
     productos: [
       { id: "ca1", nombre: "Pollo Asado 1600gr", descripcion: "", precio: "11,00€" },
       { id: "ca2", nombre: "1/2 Pollo Asado", descripcion: "", precio: "6,50€" },
-      { id: "ca3", nombre: "Alitas en Adobo", descripcion: "", precio: "4,50€" },
+      { id: "ca3", nombre: "Alitas en Adobo", descripcion: "", precio: "5,00€" },
       { id: "ca4", nombre: "6 Alas de Pollo", descripcion: "", precio: "7,00€" },
       { id: "ca5", nombre: "Pollo a Curry", descripcion: "", precio: "13,50€" },
       { id: "ca6", nombre: "Pollo al Ajillo", descripcion: "", precio: "13,50€" },
