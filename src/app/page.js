@@ -144,7 +144,35 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="home-promos section-gap-top mx-auto max-w-7xl px-4 pb-12 sm:px-6 lg:px-8">
+      <section className="home-featured section-gap-top section-gap-bottom mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="section-heading-tight">
+          <div className="section-heading-row">
+            <div>
+              <h2 className="section-title-compact">Lo más pedido en Rustibó</h2>
+            </div>
+            <Link href="/carta" className="section-view-all">
+              VER CARTA
+            </Link>
+          </div>
+        </div>
+
+        <div className="featured-products-grid">
+          {featuredProducts.map((product) => (
+            <Link key={product.name} href={product.href} className="featured-product-card group">
+              <div className="featured-product-copy">
+                <h3>{product.name}</h3>
+                <p>{product.detail}</p>
+              </div>
+              <div className="featured-product-meta">
+                <span>{product.price}</span>
+                <span className="featured-product-arrow" aria-hidden="true"><ArrowRight size={18} /></span>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      <section className="home-promos mx-auto max-w-7xl px-4 pb-12 sm:px-6 lg:px-8">
         <div className="section-heading-tight">
           <div className="section-heading-row">
             <h2 className="section-title-compact">PROMOS DESTACADAS</h2>
@@ -182,34 +210,6 @@ export default function Home() {
                 <span className="promo-arrow">
                   →
                 </span>
-              </div>
-            </Link>
-          ))}
-        </div>
-      </section>
-
-      <section className="home-featured section-gap-bottom mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="section-heading-tight">
-          <div className="section-heading-row">
-            <div>
-              <h2 className="section-title-compact">Lo más pedido en Rustibó</h2>
-            </div>
-            <Link href="/carta" className="section-view-all">
-              VER CARTA
-            </Link>
-          </div>
-        </div>
-
-        <div className="featured-products-grid">
-          {featuredProducts.map((product) => (
-            <Link key={product.name} href={product.href} className="featured-product-card group">
-              <div className="featured-product-copy">
-                <h3>{product.name}</h3>
-                <p>{product.detail}</p>
-              </div>
-              <div className="featured-product-meta">
-                <span>{product.price}</span>
-                <span className="featured-product-arrow" aria-hidden="true"><ArrowRight size={18} /></span>
               </div>
             </Link>
           ))}
