@@ -7,7 +7,7 @@ const footerColumns = [
   {
     title: "RUSTIBO",
     links: [
-      { label: "Acerca de nosotros", href: "/#sobre-rustibo" },
+      { label: "Acerca de nosotros", href: "/sobre-rustibo" },
       { label: "Novedades", href: "/novedades" },
       { label: "Llamar a Rustibo", href: "tel:962413948" },
       { label: "Promociones", href: "/promociones" },
@@ -54,7 +54,7 @@ export default function Footer() {
             className="footer-logo h-12 w-auto object-contain"
           />
           <div className="footer-social mt-7 flex items-center gap-4">
-            <span className="text-[14px] font-normal text-[var(--color-green-medium)]">Síguenos en:</span>
+            <span className="footer-follow-label text-[14px] font-normal text-[var(--color-green-medium)]">Síguenos en:</span>
             <a href="https://www.instagram.com/rustibo/" aria-label="Instagram" target="_blank" rel="noopener noreferrer" className="text-[var(--color-green-dark)] hover:text-[var(--color-green-medium)]">
               <Instagram size={22} strokeWidth={2.4} />
             </a>

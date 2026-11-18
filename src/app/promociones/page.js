@@ -31,10 +31,10 @@ const promos = [
 export default function PromocionesPage() {
   return (
     <main className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
-      <div className="mb-8 rounded-[28px] bg-[var(--color-green-dark)] p-8 text-[var(--color-white)] md:p-12">
+      <div className="promotions-hero mb-8 rounded-[28px] bg-[var(--color-green-dark)] p-8 text-[var(--color-white)] md:p-12">
         <BadgePercent className="mb-5 text-[var(--color-lime)]" size={42} />
-        <h1 className="text-6xl uppercase leading-none md:text-8xl">Promociones Rustibo</h1>
-        <p className="mt-4 max-w-2xl text-lg font-normal text-[var(--color-white)]">
+        <h1 className="promotions-title text-6xl uppercase leading-none md:text-8xl">Promociones Rustibo</h1>
+        <p className="promotions-intro mt-4 max-w-2xl text-lg font-normal text-[var(--color-white)]">
           Ofertas pensadas para pedir rápido, compartir fácil y cenar bien en Alzira.
         </p>
       </div>
@@ -55,7 +55,7 @@ export default function PromocionesPage() {
             <div className="mt-4 flex items-start justify-between gap-4 px-1">
               <div>
                 <p className="text-lg font-semibold uppercase text-[var(--color-green-medium)]">{promo.price}</p>
-                <h2 className="text-5xl uppercase leading-none text-[var(--color-green-dark)]">{promo.title}</h2>
+                <h2 className="promotions-offer-title text-5xl uppercase leading-none text-[var(--color-green-dark)]">{promo.title}</h2>
                 <p className="mt-2 max-w-xl font-normal text-[var(--color-gray-text)]">{promo.detail}</p>
               </div>
               <span className="font-brand-menu inline-flex shrink-0 items-center gap-2 rounded-full bg-[var(--color-lime)] px-5 py-3 uppercase text-[var(--color-green-dark)]">

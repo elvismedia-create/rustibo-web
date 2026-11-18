@@ -1,8 +1,10 @@
 import { categoriasData } from "@/data/menuData";
 import { categorySeo, metadataFromSeo } from "@/data/seoData";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ArrowLeft, Bean, CircleAlert, Egg, Fish, Home, Milk, Nut, PackageCheck, Phone, Shell, Shrimp, Wheat } from "lucide-react";
+import { ArrowLeft, Bean, Check, CircleAlert, Egg, Fish, Home, Milk, Nut, PackageCheck, Phone, Shell, Shrimp, Wheat } from "lucide-react";
+import AddToOrderNote from "@/components/AddToOrderNote";
 
 export const dynamicParams = false;
 
@@ -145,16 +147,15 @@ export default async function CategoryPage({ params }) {
           Volver a la carta
         </Link>
 
-        <div className="relative overflow-hidden rounded-[28px] border border-[var(--color-green-border)] bg-[var(--color-green-dark)] text-[var(--color-white)]">
+        <div className="category-hero-card relative overflow-hidden rounded-[28px] border border-[var(--color-green-border)] bg-[var(--color-green-dark)] text-[var(--color-white)]">
           <div
-            className="absolute inset-0 bg-cover bg-center"
+            className="category-hero-media absolute inset-0 bg-cover bg-center"
             style={{ backgroundImage: `url('${categoria.imagenPrincipal}')` }}
           />
           <div className="category-hero-content relative z-10 max-w-lg px-6 py-10 sm:px-10 lg:px-14 lg:py-12 bg-gradient-to-r from-[var(--color-green-dark)] via-[var(--color-green-dark)]/80 to-transparent">
-            <p className="mb-3 text-sm font-normal uppercase text-[var(--color-lime)]">Carta Rustibo</p>
-            <h1 className="category-hero-title text-6xl uppercase leading-none sm:text-7xl lg:text-8xl">{categoria.titulo}</h1>
+            <h1 className="category-hero-title uppercase leading-none">{categoria.titulo}</h1>
             {categoria.subtitulo && (
-              <p className="mt-4 text-lg font-normal leading-relaxed text-[var(--color-white)]">{categoria.subtitulo}</p>
+              <p className="category-hero-description mt-4 font-normal leading-relaxed text-[var(--color-white)]">{categoria.subtitulo}</p>
             )}
             <a href="tel:962413948" className="order-button font-brand-menu mt-5 inline-flex items-center gap-2 rounded-2xl px-7 py-4 text-xl uppercase">
               <Phone size={21} />
@@ -166,28 +167,53 @@ export default async function CategoryPage({ params }) {
 
       <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {esMenuInfantil ? (
-          <div className="zona-infantil rounded-[28px] p-8 md:p-12">
-            <div className="relative z-10 grid gap-8 md:grid-cols-[1fr_auto] md:items-center">
+          <div className="zona-infantil kids-menu-panel">
+            <div className="kids-menu-top">
               <div>
-                <h2 className="text-5xl uppercase text-[var(--color-black)]">A elegir entre</h2>
-                <div className="mt-5 flex flex-wrap gap-3">
-                  {categoria.opciones.map((opt) => (
-                    <span key={opt} className="font-brand-menu rounded-full border-4 border-[var(--color-black)] bg-[var(--color-white)] px-6 py-3 text-xl text-[var(--color-black)]">
-                      {opt}
-                    </span>
-                  ))}
+                <p className="kids-menu-eyebrow">Menú infantil</p>
+                <h2 className="kids-menu-title">Elige su plato favorito</h2>
+              </div>
+              <div className="kids-menu-price" aria-label={`Menú completo ${categoria.precioTotal}`}>
+                <span>Menú completo</span>
+                <strong>{categoria.precioTotal}</strong>
+              </div>
+            </div>
+
+            <div className="kids-menu-steps">
+              <section className="kids-menu-step" aria-labelledby="kids-step-main">
+                <div className="kids-menu-step-heading">
+                  <span className="kids-menu-step-number">1</span>
+                  <h3 id="kids-step-main">Elige un plato principal</h3>
                 </div>
-                <h3 className="mt-8 text-4xl uppercase text-[var(--color-black)]">Incluye</h3>
-                <ul className="mt-4 grid gap-3 sm:grid-cols-2">
-                  {categoria.incluye.map((inc) => (
-                    <li key={inc} className="rounded-xl bg-[var(--color-white)] px-4 py-3 text-lg font-normal text-[var(--color-black)]">{inc}</li>
+                <ul className="kids-menu-options">
+                  {categoria.opciones.map((opt) => (
+                    <li className="kids-menu-option-card" key={opt.nombre}>
+                      <div className="kids-menu-option-image">
+                        <Image
+                          src={opt.imagen}
+                          alt={opt.alt}
+                          width={opt.width}
+                          height={opt.height}
+                          sizes="(max-width: 640px) 29vw, (max-width: 1180px) 18vw, 14vw"
+                        />
+                      </div>
+                      <span>{opt.nombre}</span>
+                    </li>
                   ))}
                 </ul>
-              </div>
-              <div className="flex h-52 w-52 rotate-6 flex-col items-center justify-center rounded-full border-4 border-[var(--color-black)] bg-[var(--color-white)] text-[var(--color-black)]">
-                <span className="font-brand-menu text-lg uppercase">Solo por</span>
-                <span className="text-7xl uppercase leading-none">{categoria.precioTotal}</span>
-              </div>
+              </section>
+
+              <section className="kids-menu-step" aria-labelledby="kids-step-included">
+                <div className="kids-menu-step-heading">
+                  <span className="kids-menu-step-number">2</span>
+                  <h3 id="kids-step-included">Y además, incluye</h3>
+                </div>
+                <ul className="kids-menu-included">
+                  {categoria.incluye.map((inc) => (
+                    <li key={inc}><Check size={16} aria-hidden="true" />{inc}</li>
+                  ))}
+                </ul>
+              </section>
             </div>
           </div>
         ) : (
@@ -200,17 +226,22 @@ export default async function CategoryPage({ params }) {
                 <div className="surface-bordered menu-list-card overflow-hidden">
                   {productos.map((producto) => {
                     const allergens = inferAllergens(producto, slug);
+                    const unitMatch = producto.nombre.match(/\s*(\(\d+\s*u\))$/i);
+                    const nombreSinUnidades = unitMatch
+                      ? producto.nombre.slice(0, unitMatch.index).trimEnd()
+                      : producto.nombre;
 
                     return (
                       <article key={producto.id} className="menu-item-row flex justify-between">
                         <div className="min-w-0 flex-1">
                           <h3 className="menu-item-title">
-                            {producto.nombre.split("*").map((part, index, array) => (
+                            {nombreSinUnidades.split("*").map((part, index, array) => (
                               <span key={index}>
                                 {part}
                                 {index < array.length - 1 && <span className="text-[var(--color-red-price)]">*</span>}
                               </span>
                             ))}
+                            {unitMatch && <span className="menu-item-unit">{" "}{unitMatch[1]}</span>}
                           </h3>
                           {producto.descripcion && (
                             <p className="menu-item-description max-w-2xl">
@@ -241,6 +272,7 @@ export default async function CategoryPage({ params }) {
                         </div>
                         <div className="shrink-0 text-right">
                           <RenderPrecio precio={producto.precio} />
+                          <AddToOrderNote product={producto} category={slug} />
                         </div>
                       </article>
                     );
@@ -251,23 +283,23 @@ export default async function CategoryPage({ params }) {
           </div>
         )}
 
-        <div className="menu-service-strip mt-10">
+        <div className="menu-service-strip category-service-strip mt-10">
           <div className="menu-service-item">
             <Home size={46} strokeWidth={1.8} />
-            <span>Recoger<br />en tienda</span>
+            <span>Recoger en tienda</span>
           </div>
           <div className="menu-service-item">
             <PackageCheck size={46} strokeWidth={1.8} />
             <span>Domicilio</span>
           </div>
           <div className="menu-service-divider" />
-          <p>La empresa se reserva variar los precios según mercado.</p>
+          <p>Los precios pueden variar según el mercado.</p>
         </div>
 
-        <div className="surface-bordered mt-10 rounded-2xl p-6 text-center">
-          <h2 className="text-4xl uppercase text-[var(--color-green-dark)]">Completa tu pedido por teléfono</h2>
-          <p className="mt-2 font-normal text-[var(--color-gray-text)]">Recogida en tienda o domicilio con pedido mínimo de 12€. También puedes pagar con tarjeta en casa.</p>
-          <p className="mx-auto mt-3 max-w-2xl text-xs font-normal leading-relaxed text-[var(--color-gray-sub)]">
+        <div className="surface-bordered category-phone-order mt-10 rounded-2xl p-6 text-center">
+          <h2 className="category-phone-title text-4xl uppercase text-[var(--color-green-dark)]">¿Listo para pedir?</h2>
+          <p className="category-phone-copy mt-2 font-normal text-[var(--color-gray-text)]">Llámanos y dinos qué quieres para recoger o recibir en casa.</p>
+          <p className="category-allergen-note mx-auto mt-3 max-w-2xl text-xs font-normal leading-relaxed text-[var(--color-gray-sub)]">
             Información de alérgenos orientativa según ingredientes visibles en carta. Consulta en tienda para confirmar trazas o cambios de receta.
           </p>
           <a href="tel:962413948" className="phone-cta-button order-button font-brand-menu mt-7 inline-flex items-center justify-center gap-4 rounded-3xl uppercase">

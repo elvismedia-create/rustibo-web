@@ -15,7 +15,7 @@ export const categoriasData = {
       { id: "tm3", seccion: "Para Empezar y Compartir", nombre: "Jalapeños", descripcion: "", precio: "1,50€ / ud" },
       { id: "tm4", seccion: "Para Empezar y Compartir", nombre: "Pizza Mariachi", descripcion: "Salsa de tomate picante, queso, pimiento verde y rojo, cebolla, pollo, guacamole y cheddar.", precio: "Peq: 9,00€ | Med: 13,70€" },
       { id: "tm5", seccion: "Para Empezar y Compartir", nombre: "Sandwich Pulled Pork", descripcion: "Mezclum, tomate, cheddar, pulled pork, cebolla roja y crema agria.", precio: "6,50€" },
-      { id: "tm6", seccion: "Para Empezar y Compartir", nombre: "Rustibizza Mariachi", descripcion: "Salsa de tomate picante, queso, pimientos, cebolla, pollo, guacamole y cheddar.", precio: "6,00€" },
+      { id: "tm6", seccion: "Para Empezar y Compartir", nombre: "Rustibizza Mariachi", descripcion: "Salsa de tomate picante, queso, pimientos, cebolla, pollo, guacamole y cheddar.", precio: "6,50€" },
       
       { id: "tm7", seccion: "Hamburguesas Tex-Mex", nombre: "Hamburguesa Texas", descripcion: "Buey 200g, mermelada de arándanos, mezclum, cebolla caramelizada, queso de cabra y foie.", precio: "10,00€" },
       { id: "tm8", seccion: "Hamburguesas Tex-Mex", nombre: "Hamburguesa Arizona", descripcion: "Buey 200g, mezclum, cheddar, aros de cebolla, bacon y salsa barbacoa.", precio: "9,00€" },
@@ -147,8 +147,9 @@ export const categoriasData = {
       { id: "ent24", nombre: "Jalapeños", descripcion: "", precio: "1,30€ / ud" },
       { id: "ent25", nombre: "Albóndigas de Bacalao (6u)", descripcion: "", precio: "4,00€" },
       { id: "ent26", nombre: "Croquetas Caseras (6u)", descripcion: "Setas, ibérico o cocido.", precio: "4,00€" },
-      { id: "ent27", nombre: "Croquetas (6u) Pollo o Jamón", descripcion: "Pollo o Jamón.", precio: "4,00€" },
-      { id: "ent28", nombre: "Croquetas (6u) Bogavante", descripcion: "Bogavante.", precio: "5,50€" },
+      { id: "ent27", nombre: "Croquetas Pollo o Jamón (6u)", descripcion: "Pollo o Jamón.", precio: "4,00€" },
+      { id: "ent28", nombre: "Croquetas Bogavante (6u)", descripcion: "Bogavante.", precio: "5,50€" },
+      { id: "ent36", nombre: "Croquetas de Boletus", descripcion: "Con huevos al plato y trufa.", precio: "6,50€" },
       { id: "ent29", nombre: "Pinchos Morunos (1u)", descripcion: "", precio: "2,50€" },
       { id: "ent30", nombre: "Aros de Cebolla", descripcion: "", precio: "4,00€" },
       { id: "ent31", nombre: "Muslos de Cangrejos (1u)", descripcion: "", precio: "1,50€" },
@@ -254,17 +255,17 @@ export const categoriasData = {
     subtitulo: "Descubre nuestros genuinos rollos de pizza. ¡Pruébalos!",
     imagenPrincipal: "/images/rustibizza-hero.jpg",
     productos: [
-      { id: "rz1", nombre: "York", descripcion: "Tomate, queso y jamón york.", precio: "4,50€" },
-      { id: "rz2", nombre: "Bacon", descripcion: "Tomate, queso y bacon.", precio: "4,50€" },
-      { id: "rz3", nombre: "Champiñones", descripcion: "Tomate, queso, jamón york y champiñón.", precio: "5,00€" },
-      { id: "rz4", nombre: "Vegetal", descripcion: "Tomate, pimiento rojo, pimiento verde, champiñones, cebolla y espárragos.", precio: "5,00€" },
-      { id: "rz5", nombre: "Atún", descripcion: "Tomate, queso, jamón york y atún.", precio: "5,00€" },
-      { id: "rz6", nombre: "4 Quesos", descripcion: "Tomate y mezcla de 4 quesos.", precio: "5,00€" },
-      { id: "rz7", nombre: "Kebab", descripcion: "Tomate, queso, cebolla, kebab y salsa de yogurt o barbacoa.", precio: "5,50€" },
-      { id: "rz8", nombre: "Barbacoa", descripcion: "Tomate, queso, salsa de carne y salsa barbacoa.", precio: "5,50€" },
-      { id: "rz9", nombre: "Carbonara", descripcion: "Tomate, queso, bacon, champiñón y nata.", precio: "5,50€" },
-      { id: "rz10", nombre: "Especial", descripcion: "Tomate, queso, bacon, cebolla, champiñón, nata y huevo.", precio: "6,00€" },
-      { id: "rz11", nombre: "Mariachi", descripcion: "Salsa de tomate picante, queso, pimiento verde, pimiento rojo, cebolla, pollo, guacamole y queso cheddar.", precio: "6,00€" }
+      { id: "rz1", nombre: "York", descripcion: "Tomate, queso y jamón york.", precio: "5,00€" },
+      { id: "rz2", nombre: "Bacon", descripcion: "Tomate, queso y bacon.", precio: "5,00€" },
+      { id: "rz3", nombre: "Champiñones", descripcion: "Tomate, queso, jamón york y champiñón.", precio: "5,50€" },
+      { id: "rz4", nombre: "Vegetal", descripcion: "Tomate, pimiento rojo, pimiento verde, champiñones, cebolla y espárragos.", precio: "5,50€" },
+      { id: "rz5", nombre: "Atún", descripcion: "Tomate, queso, jamón york y atún.", precio: "5,50€" },
+      { id: "rz6", nombre: "4 Quesos", descripcion: "Tomate y mezcla de 4 quesos.", precio: "5,50€" },
+      { id: "rz7", nombre: "Kebab", descripcion: "Tomate, queso, cebolla, kebab y salsa de yogurt o barbacoa.", precio: "6,00€" },
+      { id: "rz8", nombre: "Barbacoa", descripcion: "Tomate, queso, salsa de carne y salsa barbacoa.", precio: "6,00€" },
+      { id: "rz9", nombre: "Carbonara", descripcion: "Tomate, queso, bacon, champiñón y nata.", precio: "6,00€" },
+      { id: "rz10", nombre: "Especial", descripcion: "Tomate, queso, bacon, cebolla, champiñón, nata y huevo.", precio: "6,50€" },
+      { id: "rz11", nombre: "Mariachi", descripcion: "Salsa de tomate picante, queso, pimiento verde, pimiento rojo, cebolla, pollo, guacamole y queso cheddar.", precio: "6,50€" }
     ]
   },
 
@@ -324,7 +325,29 @@ export const categoriasData = {
   temaColor: "var(--color-lime)",
   icono: "🎨", 
   precioTotal: "7,00€",
-  opciones: ["Hamburguesa", "Pizza pequeña", "Sandwich"],
+  opciones: [
+    {
+      nombre: "Hamburguesa simple",
+      imagen: "/images/menu-infantil/hamburguesa.png",
+      alt: "Hamburguesa simple",
+      width: 339,
+      height: 260,
+    },
+    {
+      nombre: "Pizza pequeña",
+      imagen: "/images/menu-infantil/pizza.png",
+      alt: "Pizza pequeña de york y queso",
+      width: 461,
+      height: 260,
+    },
+    {
+      nombre: "Sándwich de york y queso",
+      imagen: "/images/menu-infantil/sandwich.png",
+      alt: "Sándwich tostado de york y queso",
+      width: 374,
+      height: 260,
+    },
+  ],
   incluye: ["Refresco de bote", "Patatas fritas", "Petit Suisse", "Sorpresa"]
 }
 

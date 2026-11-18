@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import CookieConsent from "@/components/CookieConsent";
+import OrderNote from "@/components/OrderNote";
 
 const bebas = Bebas_Neue({
   weight: "400",
@@ -116,6 +117,7 @@ export default function RootLayout({ children }) {
           <Footer /> 
         </main>
         <CookieConsent />
+        <OrderNote />
       </body>
     </html>
   );
