@@ -52,7 +52,10 @@ export default function HomeHeroSlider() {
   useEffect(() => {
     const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     const saveData = navigator.connection?.saveData === true;
-    if (reduceMotion || saveData) setShowVideo(false);
+    if (!reduceMotion && !saveData) return;
+
+    const frame = window.requestAnimationFrame(() => setShowVideo(false));
+    return () => window.cancelAnimationFrame(frame);
   }, []);
 
   return (
@@ -91,10 +94,17 @@ export default function HomeHeroSlider() {
             <span className="font-brand-menu mb-3 inline-flex w-fit rounded-full bg-[var(--color-lime)] px-4 py-2 text-lg uppercase text-[var(--color-green-dark)]">
               {slide.eyebrow}
             </span>
-            <h1 className="text-4xl uppercase leading-none text-[var(--color-white)] sm:text-5xl lg:text-6xl">
-              <span className="block whitespace-nowrap">{slide.title}</span>
-              <span className="block text-[var(--color-lime)]">{slide.highlight}</span>
-            </h1>
+            {index === 0 ? (
+              <h1 className="text-4xl uppercase leading-none text-[var(--color-white)] sm:text-5xl lg:text-6xl">
+                <span className="block whitespace-nowrap">{slide.title}</span>
+                <span className="block text-[var(--color-lime)]">{slide.highlight}</span>
+              </h1>
+            ) : (
+              <h2 className="text-4xl uppercase leading-none text-[var(--color-white)] sm:text-5xl lg:text-6xl">
+                <span className="block whitespace-nowrap">{slide.title}</span>
+                <span className="block text-[var(--color-lime)]">{slide.highlight}</span>
+              </h2>
+            )}
             <p className="mt-2 max-w-[410px] text-base font-semibold leading-snug text-[var(--color-white)] sm:text-lg lg:max-w-[460px]">
               {slide.text}
             </p>

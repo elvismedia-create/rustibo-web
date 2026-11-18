@@ -1,9 +1,7 @@
 import AboutSection from "@/components/AboutSection";
+import { metadataFromSeo, pageSeo } from "@/data/seoData";
 
-export const metadata = {
-  title: "Sobre Rustibó | Comida para llevar en Alzira",
-  description: "Conoce la historia y el equipo de Rustibó, comida recién hecha para llevar en Alzira desde 2007.",
-};
+export const metadata = metadataFromSeo(pageSeo.about);
 
 export default function AboutPage() {
   return (

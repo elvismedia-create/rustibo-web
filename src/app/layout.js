@@ -56,7 +56,6 @@ export default function RootLayout({ children }) {
         "image": "https://www.rustibo.net/images/rustibo.jpg",
         "logo": "https://www.rustibo.net/images/rustibo_logo.png",
         "telephone": "+34962413948",
-        "priceRange": "€€",
         "servesCuisine": [
           "Comida para llevar",
           "Pizzas",
@@ -83,21 +82,6 @@ export default function RootLayout({ children }) {
           "name": "Alzira"
         },
         "hasMenu": "https://www.rustibo.net/carta/",
-        "acceptsReservations": false,
-        "openingHoursSpecification": [
-          {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-            "opens": "20:00",
-            "closes": "23:00"
-          },
-          {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": ["Saturday", "Sunday"],
-            "opens": "12:00",
-            "closes": "15:00"
-          }
-        ]
       }
     ]
   };
@@ -107,7 +91,7 @@ export default function RootLayout({ children }) {
       <head>
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }}
         />
       </head>
       <body className={`${bebas.variable} ${manrope.variable} antialiased bg-[var(--color-white)] text-[var(--color-black)] min-h-screen`}>

@@ -1870,7 +1870,7 @@ button {
     padding: 44px 22px;
   }
 
-  .home-hero-content h1 {
+  .home-hero-content :is(h1, h2) {
     font-size: clamp(32px, 9.5vw, 39px);
     line-height: 1;
   }
@@ -2358,7 +2358,7 @@ button {
     display: none;
   }
 
-  .home-hero-content h1 {
+  .home-hero-content :is(h1, h2) {
     font-size: clamp(25px, 7.2vw, 30px);
     line-height: 0.94;
   }
@@ -2927,7 +2927,7 @@ button {
     padding: 7px 12px;
   }
 
-  .home-hero-content h1 {
+  .home-hero-content :is(h1, h2) {
     font-size: clamp(32px, 4vw, 44px);
     line-height: .98;
   }
