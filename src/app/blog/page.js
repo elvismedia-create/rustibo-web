@@ -27,8 +27,8 @@ export default function BlogPage() {
                 <span>{post.category}</span>
                 <span className="inline-flex items-center gap-1"><Clock size={14} />{post.readTime}</span>
               </div>
-              <h2 className="text-3xl uppercase leading-none text-[var(--color-green-dark)]">{post.title}</h2>
-              <p className="mt-3 text-sm font-normal leading-relaxed text-[var(--color-gray-text)]">{post.excerpt}</p>
+              <h2 className="blog-card-title text-3xl uppercase leading-none text-[var(--color-green-dark)]">{post.title}</h2>
+              <p className="blog-card-excerpt mt-3 text-sm font-normal leading-relaxed text-[var(--color-gray-text)]">{post.excerpt}</p>
               <span className="font-brand-menu mt-5 inline-flex items-center gap-2 text-xl uppercase text-[var(--color-green-dark)] group-hover:underline">
                 Leer artículo <ArrowRight size={18} />
               </span>

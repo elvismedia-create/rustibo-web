@@ -38,66 +38,73 @@ const heroSlides = [
 
 export default function HomeHeroSlider() {
   const [activeSlide, setActiveSlide] = useState(0);
-  const [enableVideo, setEnableVideo] = useState(false);
+  const [showVideo, setShowVideo] = useState(true);
+  const slides = showVideo ? heroSlides : heroSlides.filter((slide) => !slide.video);
 
   useEffect(() => {
     const interval = window.setInterval(() => {
-      setActiveSlide((current) => (current + 1) % heroSlides.length);
+      setActiveSlide((current) => (current + 1) % slides.length);
     }, 6500);
 
     return () => window.clearInterval(interval);
-  }, []);
+  }, [slides.length]);
 
   useEffect(() => {
-    const timer = window.setTimeout(() => {
-      const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-      const compactViewport = window.matchMedia("(max-width: 767px)").matches;
-      const saveData = navigator.connection?.saveData === true;
-      setEnableVideo(!reduceMotion && !compactViewport && !saveData);
-    }, 2500);
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const saveData = navigator.connection?.saveData === true;
+    if (!reduceMotion && !saveData) return;
 
-    return () => window.clearTimeout(timer);
+    const frame = window.requestAnimationFrame(() => setShowVideo(false));
+    return () => window.cancelAnimationFrame(frame);
   }, []);
 
   return (
     <div className="home-hero group relative min-h-[520px] overflow-hidden rounded-[28px] border border-[var(--color-green-border)] bg-[var(--color-green-dark)] text-[var(--color-white)]">
-      {heroSlides.map((slide, index) => (
+      {slides.map((slide, index) => (
         <div
           key={slide.title}
           className={`home-hero-slide ${index === activeSlide ? "is-active" : ""}`}
           inert={index !== activeSlide}
         >
-          <Image
-            src={slide.image}
-            alt=""
-            fill
-            preload={index === 0}
-            sizes="(max-width: 768px) 100vw, 1200px"
-            className="home-hero-slide-media absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
-          />
-          {slide.video && enableVideo ? (
+          {slide.video && showVideo && index === activeSlide ? (
             <video
               className="home-hero-slide-media absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
               autoPlay
               muted
               loop
               playsInline
-              preload="none"
+              preload="auto"
               poster={slide.image}
               aria-hidden="true"
+              onError={() => setShowVideo(false)}
             >
               <source src={slide.video} type="video/mp4" />
-              <track kind="captions" src="/video/silent-captions.vtt" srcLang="es" label="Sin audio" default />
             </video>
-          ) : null}
+          ) : (
+            <Image
+              src={slide.image}
+              alt=""
+              fill
+              preload={index === activeSlide && index === 0}
+              sizes="(max-width: 768px) 100vw, 1200px"
+              className="home-hero-slide-media absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+            />
+          )}
           <div className="home-hero-content relative z-10 flex min-h-[520px] max-w-lg flex-col items-start justify-center px-6 py-10 sm:px-10 lg:px-14 bg-gradient-to-r from-[var(--color-green-dark)] via-[var(--color-green-dark)]/80 to-transparent">
             <span className="font-brand-menu mb-3 inline-flex w-fit rounded-full bg-[var(--color-lime)] px-4 py-2 text-lg uppercase text-[var(--color-green-dark)]">
               {slide.eyebrow}
             </span>
-            <h1 className="text-4xl uppercase leading-none text-[var(--color-white)] sm:text-5xl lg:text-6xl">
-              <span className="block whitespace-nowrap">{slide.title}</span>
-              <span className="block text-[var(--color-lime)]">{slide.highlight}</span>
-            </h1>
+            {index === 0 ? (
+              <h1 className="text-4xl uppercase leading-none text-[var(--color-white)] sm:text-5xl lg:text-6xl">
+                <span className="block whitespace-nowrap">{slide.title}</span>
+                <span className="block text-[var(--color-lime)]">{slide.highlight}</span>
+              </h1>
+            ) : (
+              <h2 className="text-4xl uppercase leading-none text-[var(--color-white)] sm:text-5xl lg:text-6xl">
+                <span className="block whitespace-nowrap">{slide.title}</span>
+                <span className="block text-[var(--color-lime)]">{slide.highlight}</span>
+              </h2>
+            )}
             <p className="mt-2 max-w-[410px] text-base font-semibold leading-snug text-[var(--color-white)] sm:text-lg lg:max-w-[460px]">
               {slide.text}
             </p>
@@ -116,7 +123,7 @@ export default function HomeHeroSlider() {
       ))}
 
       <div className="home-hero-dots" aria-label="Slides del hero">
-        {heroSlides.map((slide, index) => (
+        {slides.map((slide, index) => (
           <button
             key={slide.title}
             type="button"

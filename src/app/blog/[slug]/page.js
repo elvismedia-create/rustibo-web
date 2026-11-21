@@ -34,6 +34,12 @@ export async function generateMetadata({ params }) {
       publishedTime: post.date,
       modifiedTime: post.date,
     },
+    twitter: {
+      card: "summary_large_image",
+      title: post.title,
+      description: post.excerpt,
+      images: [post.image],
+    },
   };
 }
 
@@ -69,7 +75,10 @@ export default async function BlogPostPage({ params }) {
 
   return (
     <main>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd).replace(/</g, "\\u003c") }}
+      />
 
       <article className="mx-auto max-w-4xl px-4 py-10 sm:px-6 lg:px-8">
         <Link href="/blog" className="font-brand-menu mb-6 inline-flex items-center gap-2 text-xl uppercase text-[var(--color-green-dark)] hover:text-[var(--color-green-nav)]">

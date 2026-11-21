@@ -9,6 +9,5 @@ export default function robots() {
       allow: "/",
     },
     sitemap: new URL("/sitemap.xml", SITE_URL).toString(),
-    host: SITE_URL,
   };
 }

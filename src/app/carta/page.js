@@ -15,35 +15,34 @@ export default function CartaPage() {
     <main className="carta-page mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
       <div className="carta-page-header mb-8 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
         <div>
-          <p className="carta-page-kicker text-sm font-normal uppercase text-[var(--color-gray-sub)]">Recogida y domicilio en Alzira</p>
           <h1 className="carta-page-title text-6xl uppercase text-[var(--color-green-dark)] md:text-7xl">Carta Rustibo</h1>
           <p className="carta-page-intro mt-2 max-w-2xl font-normal text-[var(--color-gray-text)]">
-            Elige una categoría, revisa platos y precios, y llama para completar tu pedido. Domicilio con mínimo de 12€ y pago con tarjeta en casa.
+            Elige tus platos y llámanos.
           </p>
         </div>
-        <a href="tel:962413948" className="order-button font-brand-menu inline-flex items-center justify-center gap-2 rounded-2xl px-7 py-4 text-xl uppercase">
+        <a href="tel:962413948" className="carta-phone-cta order-button font-brand-menu inline-flex items-center justify-center gap-2 rounded-2xl px-7 py-4 text-xl uppercase">
           <Phone size={22} />
           Pedir por teléfono
         </a>
       </div>
 
-      <div className="mb-8 grid gap-4 rounded-2xl border border-[var(--color-green-border)] bg-[var(--color-green-bg)] p-5 md:grid-cols-2">
-        <div className="flex items-center gap-4">
-          <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[var(--color-lime)] text-[var(--color-green-dark)]">
+      <div className="carta-page-services mb-8 grid gap-4 rounded-2xl border border-[var(--color-green-border)] bg-[var(--color-green-bg)] p-5 md:grid-cols-2">
+        <div className="carta-service-option flex items-center gap-4">
+          <span className="carta-service-icon flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[var(--color-lime)] text-[var(--color-green-dark)]">
             <Home size={25} strokeWidth={2.2} />
           </span>
           <div>
-            <h2 className="text-3xl uppercase leading-none text-[var(--color-green-dark)]">Recoger en tienda</h2>
-            <p className="mt-1 text-sm font-normal text-[var(--color-green-medium)]">Llama, te lo preparamos y pasa a recogerlo en Rustibo.</p>
+            <h2 className="carta-service-title text-3xl uppercase leading-none text-[var(--color-green-dark)]">Recoger en tienda</h2>
+            <p className="carta-service-description mt-1 text-sm font-normal text-[var(--color-green-medium)]">Llama y recoge en tienda.</p>
           </div>
         </div>
-        <div className="flex items-center gap-4">
-          <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[var(--color-lime)] text-[var(--color-green-dark)]">
+        <div className="carta-service-option flex items-center gap-4">
+          <span className="carta-service-icon flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[var(--color-lime)] text-[var(--color-green-dark)]">
             <PackageCheck size={25} strokeWidth={2.2} />
           </span>
           <div>
-            <h2 className="text-3xl uppercase leading-none text-[var(--color-green-dark)]">Envío a domicilio</h2>
-            <p className="mt-1 text-sm font-normal text-[var(--color-green-medium)]">Domicilio en Alzira con pedido mínimo de 12€.</p>
+            <h2 className="carta-service-title text-3xl uppercase leading-none text-[var(--color-green-dark)]">Envío a domicilio</h2>
+            <p className="carta-service-description mt-1 text-sm font-normal text-[var(--color-green-medium)]">Domicilio gratis desde 12€.</p>
           </div>
         </div>
       </div>
@@ -56,12 +55,15 @@ export default function CartaPage() {
                 className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
                 style={{ backgroundImage: `url('${cat.imagenPrincipal}')` }}
               />
-              <h2 className="absolute bottom-4 left-4 right-4 text-5xl uppercase leading-none text-[var(--color-white)]">
+              <h2 className="carta-category-title carta-category-title-overlay absolute bottom-4 left-4 uppercase leading-none text-[var(--color-white)]">
                 {cat.titulo}
               </h2>
             </div>
             <div className="carta-category-body flex items-center justify-between gap-4 p-5">
-              <p className="line-clamp-2 text-sm font-normal text-[var(--color-gray-text)]">{cat.subtitulo}</p>
+              <div className="carta-category-copy">
+                <h2 className="carta-category-body-title">{cat.titulo}</h2>
+                <p className="line-clamp-2 text-sm font-normal text-[var(--color-gray-text)]">{cat.subtitulo}</p>
+              </div>
               <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[var(--color-lime)] text-[var(--color-green-dark)]">
                 <ArrowRight size={20} />
               </span>

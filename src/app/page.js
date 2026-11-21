@@ -1,7 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, Clock, CreditCard, MapPin } from "lucide-react";
-import AboutSection from "@/components/AboutSection";
+import { ArrowRight, Clock, CreditCard, MapPin, Search } from "lucide-react";
 import HomeHeroSlider from "@/components/HomeHeroSlider";
 import { homeSeo, metadataFromSeo } from "@/data/seoData";
 
@@ -125,60 +124,47 @@ function RustiPointsSection() {
 export default function Home() {
   return (
     <div className="home-page">
-      <section className="mx-auto max-w-7xl px-4 pt-8 sm:px-6 lg:px-8">
+      <section className="home-hero-section mx-auto max-w-7xl px-4 pt-8 sm:px-6 lg:px-8">
         <HomeHeroSlider />
-
-        <div className="home-benefits delivery-note section-gap-above">
-          <span className="delivery-note-item delivery-note-item-left">
-            <Clock size={19} />
-            <span>Haz tus pedidos entre las 19:00-20:00h. Recíbelo cuando desees.</span>
-          </span>
-          <span className="delivery-note-item">
-            <MapPin size={19} />
-            <span><strong>Pedidos a domicilio gratis</strong>. Mínimo 12€.</span>
-          </span>
-          <span className="delivery-note-item">
-            <CreditCard size={19} />
-            <span><strong>Pago con tarjeta</strong> a domicilio.</span>
-          </span>
-        </div>
       </section>
 
       <section className="home-featured section-gap-top section-gap-bottom mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="section-heading-tight">
           <div className="section-heading-row">
-            <div>
-              <h2 className="section-title-compact">Lo más pedido en Rustibó</h2>
-            </div>
-            <Link href="/carta" className="section-view-all">
-              VER CARTA
-            </Link>
+            <h2 className="section-title-compact home-featured-heading">
+              <span className="home-featured-heading-desktop">Lo más pedido en Rustibó</span>
+            </h2>
           </div>
         </div>
 
-        <div className="featured-products-grid">
-          {featuredProducts.map((product) => (
-            <Link key={product.name} href={product.href} className="featured-product-card group">
-              <div className="featured-product-copy">
-                <h3>{product.name}</h3>
-                <p>{product.detail}</p>
+        <div className="featured-ticker" aria-label="Productos más pedidos">
+          <div className="featured-ticker-track">
+            {[false, true].map((duplicate) => (
+              <div className="featured-ticker-group" key={duplicate ? "duplicate" : "main"} aria-hidden={duplicate || undefined}>
+                {featuredProducts.map((product) => (
+                  <Link
+                    key={product.name}
+                    href={product.href}
+                    className="featured-ticker-item"
+                    tabIndex={duplicate ? -1 : undefined}
+                  >
+                    <strong>{product.name}</strong>
+                    <span className="featured-ticker-detail">{product.detail}</span>
+                    <span className="featured-ticker-price">{product.price}</span>
+                  </Link>
+                ))}
               </div>
-              <div className="featured-product-meta">
-                <span>{product.price}</span>
-                <span className="featured-product-arrow" aria-hidden="true"><ArrowRight size={18} /></span>
-              </div>
-            </Link>
-          ))}
+            ))}
+          </div>
         </div>
       </section>
 
       <section className="home-promos mx-auto max-w-7xl px-4 pb-12 sm:px-6 lg:px-8">
         <div className="section-heading-tight">
           <div className="section-heading-row">
-            <h2 className="section-title-compact">PROMOS DESTACADAS</h2>
-            <Link href="/promociones" className="section-view-all">
-              VER TODAS
-            </Link>
+            <h2 className="section-title-compact home-promos-heading">
+              <span className="home-promos-heading-desktop">PROMOS DESTACADAS</span>
+            </h2>
           </div>
         </div>
 
@@ -219,7 +205,10 @@ export default function Home() {
       <section className="home-menu-explore section-gap-bottom mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="section-heading-tight">
           <div className="section-heading-row">
-            <h2 className="section-title-compact">Explora nuestro menú</h2>
+            <h2 className="section-title-compact home-menu-explore-heading">
+              <Search size={21} aria-hidden="true" />
+              <span>Explora nuestro menú</span>
+            </h2>
             <Link href="/carta" className="section-view-all">
               VER TODAS
             </Link>
@@ -270,7 +259,21 @@ export default function Home() {
 
       {SHOW_RUSTI_POINTS && <RustiPointsSection />}
 
-      <AboutSection />
+      <div className="home-benefits home-benefits-before-team delivery-note mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <span className="delivery-note-item delivery-note-item-left">
+          <Clock size={19} />
+          <span>Haz tus pedidos entre las 19:00-20:00h. Recíbelo cuando desees.</span>
+        </span>
+        <span className="delivery-note-item">
+          <MapPin size={19} />
+          <span><strong>A domicilio gratis.</strong> Mínimo 12&nbsp;€.</span>
+        </span>
+        <span className="delivery-note-item">
+          <CreditCard size={19} />
+          <span><strong>Pago con tarjeta</strong> a domicilio.</span>
+        </span>
+        </div>
+
     </div>
   );
 }

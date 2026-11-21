@@ -106,23 +106,23 @@ export const legacyRoutes = {
     title: "Carta de comida para llevar en Alzira | Rustibo",
     description:
       "Consulta la carta Rustibo: pizzas, bocadillos, kebabs, hamburguesas, entrantes, arroces, carnes y postres para llevar o domicilio en Alzira.",
-    canonical: "/comida-para-llevar-en-alzira-productos/",
+    canonical: "/carta/",
   },
-  "tex-mex-para-llevar-alzira": { type: "category", categorySlug: "tex-mex", ...categorySeo["tex-mex"], canonical: "/tex-mex-para-llevar-alzira/" },
-  "arroces-para-llevar-alzira": { type: "category", categorySlug: "arroces", ...categorySeo.arroces, canonical: "/arroces-para-llevar-alzira/" },
-  "bocadillos-para-llevar-en-alzira": { type: "category", categorySlug: "bocadillos", ...categorySeo.bocadillos, canonical: "/bocadillos-para-llevar-en-alzira/" },
-  "carnes-asadas-para-llevar-alzira": { type: "category", categorySlug: "carnes-asadas", ...categorySeo["carnes-asadas"], canonical: "/carnes-asadas-para-llevar-alzira/" },
-  "entrantes-para-llevar-alzira": { type: "category", categorySlug: "entrantes", ...categorySeo.entrantes, canonical: "/entrantes-para-llevar-alzira/" },
-  "ensaladas-para-llevar-alzira": { type: "category", categorySlug: "ensaladas", ...categorySeo.ensaladas, canonical: "/ensaladas-para-llevar-alzira/" },
-  "hamburguesas-para-llevar-alzira": { type: "category", categorySlug: "hamburguesas", ...categorySeo.hamburguesas, canonical: "/hamburguesas-para-llevar-alzira/" },
-  "kebabs-para-llevar-alzira": { type: "category", categorySlug: "kebabs", ...categorySeo.kebabs, canonical: "/kebabs-para-llevar-alzira/" },
-  "pasta-para-llevar-alzira": { type: "category", categorySlug: "pasta", ...categorySeo.pasta, canonical: "/pasta-para-llevar-alzira/" },
-  "pizzas-para-llevar-alzira": { type: "category", categorySlug: "pizzas", ...categorySeo.pizzas, canonical: "/pizzas-para-llevar-alzira/" },
-  "rustibizzas-para-llevar-alzira": { type: "category", categorySlug: "rustibizza", ...categorySeo.rustibizza, canonical: "/rustibizzas-para-llevar-alzira/" },
-  "pollo-frito-para-llevar-alzira": { type: "category", categorySlug: "pollo-rustichicken", ...categorySeo["pollo-rustichicken"], canonical: "/pollo-frito-para-llevar-alzira/" },
-  "sandwiches-para-llevar-alzira": { type: "category", categorySlug: "sandwiches", ...categorySeo.sandwiches, canonical: "/sandwiches-para-llevar-alzira/" },
-  "postres-para-llevar-alzira": { type: "category", categorySlug: "postres", ...categorySeo.postres, canonical: "/postres-para-llevar-alzira/" },
-  menu_infantil: { type: "category", categorySlug: "menu-infantil", ...categorySeo["menu-infantil"], canonical: "/menu_infantil/" },
+  "tex-mex-para-llevar-alzira": { type: "category", categorySlug: "tex-mex", ...categorySeo["tex-mex"], canonical: "/categoria/tex-mex/" },
+  "arroces-para-llevar-alzira": { type: "category", categorySlug: "arroces", ...categorySeo.arroces, canonical: "/categoria/arroces/" },
+  "bocadillos-para-llevar-en-alzira": { type: "category", categorySlug: "bocadillos", ...categorySeo.bocadillos, canonical: "/categoria/bocadillos/" },
+  "carnes-asadas-para-llevar-alzira": { type: "category", categorySlug: "carnes-asadas", ...categorySeo["carnes-asadas"], canonical: "/categoria/carnes-asadas/" },
+  "entrantes-para-llevar-alzira": { type: "category", categorySlug: "entrantes", ...categorySeo.entrantes, canonical: "/categoria/entrantes/" },
+  "ensaladas-para-llevar-alzira": { type: "category", categorySlug: "ensaladas", ...categorySeo.ensaladas, canonical: "/categoria/ensaladas/" },
+  "hamburguesas-para-llevar-alzira": { type: "category", categorySlug: "hamburguesas", ...categorySeo.hamburguesas, canonical: "/categoria/hamburguesas/" },
+  "kebabs-para-llevar-alzira": { type: "category", categorySlug: "kebabs", ...categorySeo.kebabs, canonical: "/categoria/kebabs/" },
+  "pasta-para-llevar-alzira": { type: "category", categorySlug: "pasta", ...categorySeo.pasta, canonical: "/categoria/pasta/" },
+  "pizzas-para-llevar-alzira": { type: "category", categorySlug: "pizzas", ...categorySeo.pizzas, canonical: "/categoria/pizzas/" },
+  "rustibizzas-para-llevar-alzira": { type: "category", categorySlug: "rustibizza", ...categorySeo.rustibizza, canonical: "/categoria/rustibizza/" },
+  "pollo-frito-para-llevar-alzira": { type: "category", categorySlug: "pollo-rustichicken", ...categorySeo["pollo-rustichicken"], canonical: "/categoria/pollo-rustichicken/" },
+  "sandwiches-para-llevar-alzira": { type: "category", categorySlug: "sandwiches", ...categorySeo.sandwiches, canonical: "/categoria/sandwiches/" },
+  "postres-para-llevar-alzira": { type: "category", categorySlug: "postres", ...categorySeo.postres, canonical: "/categoria/postres/" },
+  menu_infantil: { type: "category", categorySlug: "menu-infantil", ...categorySeo["menu-infantil"], canonical: "/categoria/menu-infantil/" },
   contact: {
     type: "contact",
     title: "Teléfono Rustibo Alzira | Pedidos para llevar y domicilio",
@@ -135,14 +135,14 @@ export const legacyRoutes = {
     title: "Politica de privacidad | Comida para llevar en Alzira - Rustibo",
     description:
       "Política de privacidad de Rustibo, local de comida para llevar en Alzira. Información sobre contacto, pedidos y tratamiento de datos.",
-    canonical: "/politica_de_privacidad/",
+    canonical: "/privacidad/",
   },
   politica_de_cookies: {
     type: "cookies",
     title: "Politica de Cookies | Comida para llevar en Alzira - Rustibo",
     description:
       "Política de cookies de Rustibo, comida para llevar en Alzira. Consulta información sobre el uso de cookies en la web.",
-    canonical: "/politica_de_cookies/",
+    canonical: "/cookies/",
   },
 };
 
@@ -170,6 +170,12 @@ export const pageSeo = {
     description:
       "Consejos e ideas para pedir comida para llevar en Alzira: pizzas artesanas, Rusti Chicken, entrantes, postres y cenas a domicilio.",
     canonical: "/blog/",
+  },
+  about: {
+    title: "Sobre Rustibó | Comida para llevar en Alzira",
+    description:
+      "Conoce la historia y el equipo de Rustibó, comida recién hecha para llevar en Alzira desde 2007.",
+    canonical: "/sobre-rustibo/",
   },
   avisoLegal: {
     title: "Aviso legal | Rustibo",
@@ -208,11 +214,20 @@ export function metadataFromSeo(seo) {
       siteName: "Rustibo",
       locale: "es_ES",
       type: "website",
+      images: [
+        {
+          url: "/images/hero-rustibo-comidas-para-llevar.jpg",
+          width: 1920,
+          height: 1080,
+          alt: "Comida para llevar de Rustibó en Alzira",
+        },
+      ],
     },
     twitter: {
       card: "summary_large_image",
       title: seo.title,
       description: seo.description,
+      images: ["/images/hero-rustibo-comidas-para-llevar.jpg"],
     },
   };
 }

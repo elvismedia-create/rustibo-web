@@ -14,9 +14,9 @@ export default function AboutSection() {
         />
         <div className="relative min-h-[286px]">
           <div className="flex min-h-[286px] max-w-[520px] flex-col justify-center px-7 py-10 sm:px-9 sm:py-12 lg:px-10">
-            <h2 className="text-4xl uppercase leading-none text-[var(--color-white)] md:text-5xl">
+            <h1 className="text-4xl uppercase leading-none text-[var(--color-white)] md:text-5xl">
               Nuestro Equipo
-            </h2>
+            </h1>
 
             <div className="mt-5 max-w-2xl space-y-3 text-xs font-normal leading-snug text-[var(--color-lime)] sm:text-sm lg:text-[15px]">
               <p>

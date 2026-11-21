@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   ...(process.env.NEXT_OUTPUT === "export" ? { output: "export" } : {}),
+  poweredByHeader: false,
   trailingSlash: true,
   images: {
     unoptimized: process.env.NEXT_OUTPUT === "export",
