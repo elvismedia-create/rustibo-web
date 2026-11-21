@@ -124,7 +124,7 @@ function RustiPointsSection() {
 export default function Home() {
   return (
     <div className="home-page">
-      <section className="mx-auto max-w-7xl px-4 pt-8 sm:px-6 lg:px-8">
+      <section className="home-hero-section mx-auto max-w-7xl px-4 pt-8 sm:px-6 lg:px-8">
         <HomeHeroSlider />
       </section>
 

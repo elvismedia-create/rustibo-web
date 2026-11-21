@@ -2972,3 +2972,236 @@ button {
     bottom: 13px;
   }
 }
+
+@media (max-width: 640px) {
+  .site-header {
+    border-bottom: 1px solid var(--color-green-border);
+  }
+
+  .mobile-app-header {
+    align-items: center;
+    display: flex;
+    height: 58px !important;
+    justify-content: space-between;
+    max-width: none;
+    overflow: hidden;
+    padding: 0 16px !important;
+    position: relative;
+  }
+
+  .mobile-wordmark-link {
+    justify-content: flex-start;
+    left: auto;
+    position: static;
+    top: auto;
+    transform: none;
+    width: auto;
+  }
+
+  .desktop-logo {
+    height: 42px !important;
+    max-width: 156px;
+    width: auto;
+  }
+
+  .mobile-header-phone {
+    align-items: center;
+    background: var(--color-lime);
+    border: 1px solid var(--color-green-border);
+    border-radius: 12px;
+    color: var(--color-green-dark);
+    display: inline-flex;
+    height: 38px;
+    justify-content: center;
+    width: 40px;
+  }
+
+  .mobile-delivery-row {
+    display: none !important;
+  }
+
+  .mobile-category-nav {
+    background: var(--color-white);
+    border-bottom: 1px solid var(--color-green-border);
+    border-top: 1px solid var(--color-green-border);
+    box-shadow: none;
+    display: block !important;
+  }
+
+  .mobile-category-scroll {
+    gap: 4px;
+    padding: 4px 10px;
+  }
+
+  .mobile-category-link {
+    font-size: 13px;
+    gap: 4px;
+    padding: 6px 9px 5px;
+  }
+
+  .is-home-header.is-home-header-hidden .mobile-app-header {
+    height: 58px !important;
+    max-height: none !important;
+    opacity: 1;
+    padding: 0 16px !important;
+  }
+
+  .home-page {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .home-hero-section {
+    order: 1;
+    padding-top: 10px;
+  }
+
+  .home-featured {
+    order: 2;
+    padding-bottom: 0;
+    padding-top: 12px !important;
+  }
+
+  .home-menu-explore {
+    order: 3;
+    padding-bottom: 12px;
+  }
+
+  .home-promos {
+    order: 4;
+    padding-bottom: 20px;
+    padding-top: 0 !important;
+  }
+
+  .home-benefits {
+    order: 5;
+  }
+
+  .home-hero {
+    border-radius: 14px;
+  }
+
+  .home-hero-slide-media {
+    flex-basis: 158px;
+    height: 158px !important;
+  }
+
+  .home-hero-content {
+    max-width: none !important;
+    padding: 9px 12px 30px;
+    width: 100%;
+  }
+
+  .home-hero-content :is(h1, h2) {
+    font-size: clamp(19px, 5.2vw, 22px);
+    line-height: 1;
+  }
+
+  .home-hero-content p {
+    display: none;
+  }
+
+  .home-hero-actions {
+    gap: 6px;
+    margin-top: 8px;
+  }
+
+  .home-hero-actions a {
+    border-radius: 9px;
+    font-size: 11px;
+    min-height: 34px;
+    padding: 6px 5px;
+  }
+
+  .home-hero-actions svg {
+    height: 14px;
+    width: 14px;
+  }
+
+  .home-menu-explore .section-heading-tight {
+    margin-bottom: 11px;
+  }
+
+  .home-menu-explore .section-view-all {
+    display: none;
+  }
+
+  .home-promos .promos-scroll {
+    display: grid;
+    gap: 8px;
+    margin: 0;
+    overflow: visible;
+    padding: 0;
+  }
+
+  .home-promos .promos-scroll > a {
+    align-items: center;
+    border: 1px solid var(--color-green-border);
+    border-radius: 12px;
+    display: grid;
+    grid-template-columns: 76px minmax(0, 1fr);
+    min-height: 88px;
+    min-width: 0 !important;
+    overflow: hidden;
+    width: 100% !important;
+  }
+
+  .home-promos .promo-card-image {
+    border-radius: 9px;
+    grid-column: 1;
+    grid-row: 1;
+    height: 68px !important;
+    margin: 8px;
+    width: 68px;
+  }
+
+  .home-promos .promo-card-image::after {
+    display: none;
+  }
+
+  .home-promos .promo-info-panel {
+    align-items: center;
+    background: var(--color-white) !important;
+    border-radius: 0;
+    display: grid;
+    gap: 7px;
+    grid-column: 2;
+    grid-row: 1;
+    grid-template-columns: minmax(0, 1fr) 28px;
+    min-height: 0;
+    padding: 8px 10px 8px 0;
+  }
+
+  .home-promos .promo-copy {
+    gap: 3px;
+  }
+
+  .home-promos .promo-kicker {
+    font-size: 9px;
+  }
+
+  .home-promos .promo-title {
+    font-size: 17px;
+    line-height: 1;
+  }
+
+  .home-promos .promo-highlight {
+    border: 0;
+    display: block;
+    font-size: 10px;
+    line-height: 1.1;
+    padding: 0;
+    width: auto;
+  }
+
+  .home-promos .promo-description {
+    display: none;
+  }
+
+  .home-promos .promo-arrow {
+    border-radius: 50%;
+    font-size: 15px;
+    height: 28px;
+    width: 28px;
+  }
+}

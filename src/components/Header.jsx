@@ -94,6 +94,10 @@ export default function Header() {
               />
             </Link>
 
+            <a href="tel:962413948" className="mobile-header-phone hidden" aria-label="Llamar a Rustibo">
+              <Phone size={18} strokeWidth={2.5} />
+            </a>
+
             <nav className="desktop-main-nav font-brand-menu ml-auto hidden items-center gap-8 text-xl uppercase lg:flex">
               <div
                 className="relative flex h-20 items-center"
