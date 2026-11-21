@@ -1,10 +1,10 @@
 import { categoriasData } from "@/data/menuData";
 import { categorySeo, metadataFromSeo } from "@/data/seoData";
 import Image from "next/image";
-import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ArrowLeft, Bean, Check, CircleAlert, Egg, Fish, Home, Milk, Nut, PackageCheck, Phone, Shell, Shrimp, Wheat } from "lucide-react";
+import { Bean, Check, CircleAlert, Egg, Fish, Home, Milk, Nut, PackageCheck, Phone, Shell, Shrimp, Wheat } from "lucide-react";
 import AddToOrderNote from "@/components/AddToOrderNote";
+import BackLink from "@/components/BackLink";
 
 export const dynamicParams = false;
 
@@ -142,10 +142,7 @@ export default async function CategoryPage({ params }) {
   return (
     <main className="pb-16">
       <section className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
-        <Link href="/carta" className="font-brand-menu mb-5 inline-flex items-center gap-2 text-xl uppercase text-[var(--color-green-dark)] hover:text-[var(--color-green-nav)]">
-          <ArrowLeft size={18} />
-          Volver a la carta
-        </Link>
+        <BackLink />
 
         <div className="category-hero-card relative overflow-hidden rounded-[28px] border border-[var(--color-green-border)] bg-[var(--color-green-dark)] text-[var(--color-white)]">
           <div

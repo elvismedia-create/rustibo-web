@@ -181,6 +181,8 @@ export default function Home() {
                   src={promo.image}
                   alt={promo.title}
                   fill
+                  loading="eager"
+                  unoptimized
                   sizes="(max-width: 768px) 280px, 33vw"
                   className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
