@@ -221,7 +221,7 @@ export default function Home() {
               key={card.title}
               href={card.href}
               prefetch={false}
-              className="group relative block h-[160px] overflow-hidden rounded-2xl transition-all hover:brightness-95"
+              className="home-menu-card group relative block h-[160px] overflow-hidden rounded-2xl transition-all hover:brightness-95"
               style={{
                 backgroundColor: card.bg,
               }}
@@ -232,7 +232,7 @@ export default function Home() {
                   alt=""
                   fill
                   sizes="(max-width: 768px) 100vw, 33vw"
-                  className="object-cover"
+                  className="home-menu-card-image object-cover"
                 />
               ) : null}
               {card.image && (
@@ -246,7 +246,7 @@ export default function Home() {
                 />
               )}
               <h3
-                className="absolute bottom-0 left-0 z-10 p-4 text-[34px] uppercase leading-none"
+                className="home-menu-card-title absolute bottom-0 left-0 z-10 p-4 text-[34px] uppercase leading-none"
                 style={{ color: card.color, fontFamily: "'Bebas Neue', sans-serif", fontWeight: 400 }}
               >
                 {card.title}

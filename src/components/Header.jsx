@@ -94,9 +94,20 @@ export default function Header() {
               />
             </Link>
 
-            <a href="tel:962413948" className="mobile-header-phone hidden" aria-label="Llamar a Rustibo">
-              <Phone size={18} strokeWidth={2.5} />
-            </a>
+            <div className="mobile-header-actions hidden">
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=Carrer%20Pastora%2C%209%2C%20Alzira"
+                className="mobile-header-location"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Ver Rustibo en Google Maps"
+              >
+                <MapPin size={18} strokeWidth={2.5} />
+              </a>
+              <a href="tel:962413948" className="mobile-header-phone" aria-label="Llamar a Rustibo">
+                <Phone size={18} strokeWidth={2.5} />
+              </a>
+            </div>
 
             <nav className="desktop-main-nav font-brand-menu ml-auto hidden items-center gap-8 text-xl uppercase lg:flex">
               <div
@@ -175,9 +186,10 @@ export default function Header() {
               </a>
             </nav>
 
-            <Link
-              href="/carta"
-              prefetch={false}
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=Carrer%20Pastora%2C%209%2C%20Alzira"
+              target="_blank"
+              rel="noreferrer"
               className="desktop-address-link ml-auto hidden min-w-0 items-center gap-3 rounded-xl border border-[var(--color-green-border)] bg-[var(--color-green-bg)] px-4 py-2 text-left lg:flex lg:max-w-xs"
             >
               <MapPin size={22} className="shrink-0 text-[var(--color-green-dark)]" />
@@ -185,7 +197,7 @@ export default function Header() {
                 <span className="font-brand-menu block text-base uppercase leading-none text-[var(--color-green-dark)]">Domicilio o recogida</span>
                 <span className="block truncate text-sm text-[var(--color-green-medium)]">Carrer Pastora, 9, Alzira</span>
               </span>
-            </Link>
+            </a>
           </div>
         </div>
 

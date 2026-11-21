@@ -2974,6 +2974,33 @@ button {
 }
 
 @media (max-width: 640px) {
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: clip;
+  }
+
+  .home-page {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .home-page > section {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    max-width: 100%;
+    min-width: 0;
+    width: 100% !important;
+  }
+
+  .home-featured,
+  .home-promos,
+  .home-menu-explore {
+    max-width: 100% !important;
+    min-width: 0 !important;
+    width: 100% !important;
+  }
+
   .site-header {
     border-bottom: 1px solid var(--color-green-border);
   }
@@ -3005,6 +3032,26 @@ button {
   }
 
   .mobile-header-phone {
+    align-items: center;
+    background: var(--color-lime);
+    border: 1px solid var(--color-green-border);
+    border-radius: 12px;
+    color: var(--color-green-dark);
+    display: inline-flex;
+    height: 38px;
+    justify-content: center;
+    width: 40px;
+  }
+
+  .mobile-header-actions {
+    align-items: center;
+    display: flex;
+    flex: 0 0 auto;
+    gap: 8px;
+    margin-left: auto;
+  }
+
+  .mobile-header-location {
     align-items: center;
     background: var(--color-lime);
     border: 1px solid var(--color-green-border);
@@ -3064,12 +3111,13 @@ button {
 
   .home-menu-explore {
     order: 3;
-    padding-bottom: 12px;
+    padding: 14px clamp(16px, 4.5vw, 24px);
   }
 
   .home-promos {
     order: 4;
     padding-bottom: 20px;
+    padding-inline: clamp(16px, 4.5vw, 24px);
     padding-top: 0 !important;
   }
 
@@ -3119,7 +3167,7 @@ button {
   }
 
   .home-menu-explore .section-heading-tight {
-    margin-bottom: 11px;
+    margin-bottom: 12px;
   }
 
   .home-menu-explore .section-view-all {
@@ -3139,8 +3187,8 @@ button {
     border: 1px solid var(--color-green-border);
     border-radius: 12px;
     display: grid;
-    grid-template-columns: 76px minmax(0, 1fr);
-    min-height: 88px;
+    grid-template-columns: 86px minmax(0, 1fr);
+    min-height: 112px;
     min-width: 0 !important;
     overflow: hidden;
     width: 100% !important;
@@ -3150,9 +3198,9 @@ button {
     border-radius: 9px;
     grid-column: 1;
     grid-row: 1;
-    height: 68px !important;
+    height: 72px !important;
     margin: 8px;
-    width: 68px;
+    width: 72px;
   }
 
   .home-promos .promo-card-image::after {
@@ -3169,7 +3217,7 @@ button {
     grid-row: 1;
     grid-template-columns: minmax(0, 1fr) 28px;
     min-height: 0;
-    padding: 8px 10px 8px 0;
+    padding: 8px 10px 8px 4px;
   }
 
   .home-promos .promo-copy {
@@ -3178,24 +3226,35 @@ button {
 
   .home-promos .promo-kicker {
     font-size: 9px;
+    font-weight: 800;
+    line-height: 1.1;
   }
 
   .home-promos .promo-title {
-    font-size: 17px;
-    line-height: 1;
+    font-size: 15px;
+    line-height: 1.08;
+    overflow-wrap: anywhere;
   }
 
   .home-promos .promo-highlight {
     border: 0;
     display: block;
     font-size: 10px;
+    font-weight: 800;
     line-height: 1.1;
     padding: 0;
     width: auto;
   }
 
   .home-promos .promo-description {
-    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    color: var(--color-gray-text);
+    display: -webkit-box;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 1.25;
+    overflow: hidden;
   }
 
   .home-promos .promo-arrow {
@@ -3203,5 +3262,36 @@ button {
     font-size: 15px;
     height: 28px;
     width: 28px;
+  }
+
+  .home-menu-explore > .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+    min-width: 0;
+  }
+
+  .home-menu-explore > .grid > .home-menu-card {
+    height: 116px;
+    min-width: 0;
+    position: relative;
+    width: 100%;
+  }
+
+  .home-menu-explore .home-menu-card-image {
+    object-fit: contain !important;
+    object-position: right center !important;
+  }
+
+  .home-menu-explore > .grid > .home-menu-card > .home-menu-card-title {
+    bottom: 0;
+    box-sizing: border-box;
+    font-size: clamp(15px, 4.2vw, 18px) !important;
+    left: 0;
+    max-width: 100%;
+    overflow-wrap: normal;
+    padding: 10px !important;
+    right: 0;
+    white-space: nowrap;
+    width: 100%;
   }
 }
