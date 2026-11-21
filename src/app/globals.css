@@ -249,6 +249,11 @@
     order: -1;
   }
 
+  .home-menu-explore > .grid > .home-menu-card:nth-child(2) > .home-menu-card-image {
+    transform: rotate(6deg) scale(0.9) translateX(2%);
+    transform-origin: center right;
+  }
+
   .home-menu-explore > .grid {
     gap: 14px;
   }
@@ -2512,6 +2517,26 @@ button {
   .category-allergen-note { font-size: 11px; line-height: 1.4; }
   .category-phone-order .phone-cta-button { font-size: 24px; min-height: 58px; padding: 13px 24px; }
   .category-phone-order .phone-cta-icon { height: 25px; width: 25px; }
+
+  .menu-service-strip.category-service-strip {
+    background: var(--color-green-dark);
+    border: 0;
+    color: var(--color-white);
+    margin-left: 16px;
+    margin-right: 16px;
+    width: auto;
+  }
+
+  .category-service-strip .menu-service-item svg {
+    background: transparent;
+    border: 0;
+    color: var(--color-lime);
+  }
+
+  .category-service-strip .menu-service-item span,
+  .category-service-strip p {
+    color: var(--color-white);
+  }
 }
 
 @media (max-width: 640px) {
@@ -2923,6 +2948,26 @@ button {
     line-height: 1.35;
     text-align: left;
     text-transform: none;
+  }
+
+  .menu-service-strip.category-service-strip {
+    background: var(--color-green-dark);
+    border: 0;
+    color: var(--color-white);
+    margin-left: 16px;
+    margin-right: 16px;
+    width: auto;
+  }
+
+  .category-service-strip .menu-service-item svg {
+    background: transparent;
+    border: 0;
+    color: var(--color-lime);
+  }
+
+  .category-service-strip .menu-service-item span,
+  .category-service-strip p {
+    color: var(--color-white);
   }
 
   .category-phone-order {
@@ -3634,8 +3679,13 @@ button {
     font-weight: 700 !important;
   }
 
+  .home-menu-explore .home-menu-card-image {
+    transform: scale(1.2);
+    transform-origin: right center;
+  }
+
   .home-menu-explore > .grid > .home-menu-card:nth-child(2) > .home-menu-card-image {
-    transform: rotate(7deg) scale(1.08) translateX(4%);
+    transform: rotate(20deg) scale(1.2) translateX(3%);
     transform-origin: center right;
   }
 
