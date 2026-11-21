@@ -2613,6 +2613,23 @@ button {
     margin-left: 0;
   }
 
+  .home-benefits-before-team.delivery-note {
+    background: var(--color-green-dark) !important;
+    border: 0 !important;
+    color: var(--color-white) !important;
+    margin-left: 16px !important;
+    margin-right: 16px !important;
+    width: auto !important;
+  }
+
+  .home-benefits-before-team .delivery-note-item svg {
+    color: var(--color-lime);
+  }
+
+  .home-benefits-before-team .delivery-note-item strong {
+    color: var(--color-lime);
+  }
+
   .order-note-fab {
     display: none;
   }
